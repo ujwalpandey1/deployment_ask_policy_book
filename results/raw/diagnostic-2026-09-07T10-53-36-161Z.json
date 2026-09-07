@@ -1,0 +1,1804 @@
+{
+  "source_run": "results/raw/dev-model-hybrid-2026-09-07T10-52-24-503Z.jsonl",
+  "evidence_scope": "Development debugging, additional API calls; not a scoring run.",
+  "rows": [
+    {
+      "id": "indiafinbench_NUM_009",
+      "input": {
+        "id": "indiafinbench_NUM_009",
+        "question": "Under SEBI ICDR Regulations 2018, if a warrant is allotted on 1 January 2024, what is the latest calendar date on which the warrant holder can exercise the option to acquire equity shares, assuming the warrant exercise price is paid on the last permissible day?",
+        "role": "legal",
+        "as_of": "2023-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "Under SEBI ICDR Regulations 2018, the tenure of warrants issued in an initial public offer shall not exceed eighteen months from the date of their allotment.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "The warrant holder shall exercise the option to acquire equity shares against each warrant within three months from the date of payment of warrant exercise price.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "If a warrant is allotted on 1 January 2024, and the warrant exercise price is paid on the last permissible day (which can be up to eighteen months from allotment), then the latest calendar date on which the warrant holder can exercise the option to acquire shares is three months from that payment date, i.e., eighteen months plus three months from 1 January 2024, totaling twenty-one months from the allotment date, which is 1 October 2025.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "operands": [
+              {
+                "value": "18",
+                "source": "E1"
+              },
+              {
+                "value": "3",
+                "source": "E1"
+              }
+            ],
+            "unit": "months"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2018_securities_and_exchange_board_of_india_issue_of_capital_063",
+          "section": "SEBI_2018_securities_and_exchange_board_of_india_issue_of_capital_063#s09428",
+          "text": "The tenure of warrants issued in an initial public offer shall not exceed eighteen months from the date of their allotment. The warrant holder shall exercise the option to acquire equity shares against each warrant within three months from the date of payment of warrant exercise price. At least twenty-five per cent. of the warrant consideration shall be paid upfront and disclosed in the offer document.",
+          "title": "Securities and exchange board of india issue of capital",
+          "effective_date": "2018-01-01",
+          "role": "public",
+          "coverage": 0.404,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2018_securities_and_exchange_board_of_india_issue_of_capital_063",
+          "section": "SEBI_2018_securities_and_exchange_board_of_india_issue_of_capital_063#s65114",
+          "text": "The SEBI (ICDR) Regulations 2018 superseded the SEBI (Issue of Capital and Disclosure Requirements) Regulations, 2009. The 2018 regulations were notified on the 60th day from publication. The definition of 'financial year' was inserted by the SEBI (ICDR) (Amendment) Regulations, 2025 w.e.f. 08.03.2025. Prior to this amendment, the ICDR Regulations 2018 did not contain an explicit definition of 'financial year' as a standalone defined term.",
+          "title": "Securities and exchange board of india issue of capital",
+          "effective_date": "2018-01-01",
+          "role": "public",
+          "coverage": 0.152,
+          "score": 0.04285714285714286
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073",
+          "section": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s52394",
+          "text": "Regulation 8(8): Where the acquirer has acquired or agreed to acquire any shares or voting rights in the target company during the offer period at a price higher than the offer price, the offer price shall stand revised to the highest price paid or payable for any such acquisition. Provided that no such acquisition shall be made after the third working day prior to the commencement of the tendering period and until the expiry of the tendering period.",
+          "title": "Securities and exchange board of india substantial acqu",
+          "effective_date": "2011-01-01",
+          "role": "legal",
+          "coverage": 0.186,
+          "score": 0.04186046511627907
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073",
+          "section": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s21175",
+          "text": "A share shall be deemed to be frequently traded if the traded turnover on any stock exchange during the twelve calendar months preceding the calendar month in which the public announcement is required to be made under these regulations, is at least ten per cent of the total number of shares of such class of the target company. Where the acquirer or persons acting in concert with him acquires shares of the target company during the period of twenty-six weeks after the tendering period at a price higher than the offer price, the acquirer shall pay to all shareholders who accepted the open offer, the difference between the highest price paid during the twenty-six weeks period and the offer price.",
+          "title": "Securities and exchange board of india substantial acqu",
+          "effective_date": "2011-01-01",
+          "role": "legal",
+          "coverage": 0.191,
+          "score": 0.04090909090909091
+        },
+        {
+          "id": "E5",
+          "doc_id": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073",
+          "section": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s40214",
+          "text": "Regulation 18(4): Irrespective of whether a competing offer has been made, an acquirer may make upward revisions to the offer price at any time prior to the commencement of the last one working day before the commencement of the tendering period. Substituted by the SEBI (SAST) (Second Amendment) Regulations, 2018, w.e.f. 11-09-2018. Prior to its substitution, it read 'three working days'.",
+          "title": "Securities and exchange board of india substantial acqu",
+          "effective_date": "2011-01-01",
+          "role": "legal",
+          "coverage": 0.197,
+          "score": 0.04
+        },
+        {
+          "id": "E6",
+          "doc_id": "SEBI_2018_securities_and_exchange_board_of_india_issue_of_capital_063",
+          "section": "SEBI_2018_securities_and_exchange_board_of_india_issue_of_capital_063#s33387",
+          "text": "The SEBI (ICDR) Regulations, 2018 were amended as follows in relation to the draft letter of offer: Prior to 08.03.2025, the draft letter of offer was required to be filed with the Board. By the SEBI (ICDR) (Amendment) Regulations, 2025 w.e.f. 08.03.2025, the requirement was changed such that the draft letter of offer is filed with the stock exchange(s) instead of the Board.",
+          "title": "Securities and exchange board of india issue of capital",
+          "effective_date": "2018-01-01",
+          "role": "public",
+          "coverage": 0.115,
+          "score": 0.0360248447204969
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1304,
+        "output_tokens": 233,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0008944000000000001
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_113",
+      "input": {
+        "id": "indiafinbench_NUM_113",
+        "question": "An individual investment adviser collected fees of Rs 2.65 crore in the first eight months of the financial year. In the ninth month they collected Rs 0.22 crore and in the tenth month Rs 0.18 crore. At the end of which month is the fee-based transition threshold breached, and what is the total fee at that point?",
+        "role": "legal",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "The fee-based transition threshold for an individual investment adviser is 3 crore rupees in a financial year, as per Regulation 13(e).",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "The adviser collected Rs 2.65 crore in the first eight months, Rs 0.22 crore in the ninth month, totaling Rs 2.87 crore at the end of the ninth month, which is still below the 3 crore threshold.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "After collecting Rs 0.18 crore in the tenth month, the total reached Rs 3.05 crore, breaching the 3 crore rupees fee threshold at the end of the tenth month.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "operands": [
+              {
+                "value": "2.65",
+                "source": "question"
+              },
+              {
+                "value": "0.22",
+                "source": "question"
+              }
+            ],
+            "unit": "crore"
+          },
+          {
+            "operation": "add",
+            "operands": [
+              {
+                "value": "2.87",
+                "source": "E1"
+              },
+              {
+                "value": "0.18",
+                "source": "question"
+              }
+            ],
+            "unit": "crore"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s91121",
+          "text": "Regulation 13(e): individuals registered as investment advisers whose number of clients exceed three hundred at any point of time or the fee collected during the financial year exceeds three crore rupees, whichever is earlier shall — (i) immediately intimate the Administration and Supervisory Body and initiate the process of transition from individual to non-individual investment adviser; and (ii) apply for grant of in-principle approval for registration as non-individual investment adviser within 3 months from the date on which the threshold is reached.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.348,
+          "score": 0.043437862950058075
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s38844",
+          "text": "Regulation 13(e): individuals registered as investment advisers whose number of clients exceed three hundred at any point of time or the fee collected during the financial year exceeds three crore rupees, whichever is earlier shall immediately initiate the process of transition from individual to non-individual investment adviser.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.279,
+          "score": 0.04332171893147503
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s05992",
+          "text": "Regulation 13(e): individuals registered as investment advisers whose number of clients exceed three hundred at any point of time or the fee collected during the financial year exceeds three crore rupees, whichever is earlier shall — (i) immediately intimate the Administration and Supervisory Body and initiate the process of transition from individual to non-individual investment adviser.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.279,
+          "score": 0.04186046511627907
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s59639",
+          "text": "Regulation 13(e) (as amended w.e.f. 25-11-2025 by SEBI (Investment Advisers) (Second Amendment) Regulations, 2025): individuals registered as investment advisers whose number of clients exceed three hundred at any point of time or the fee collected during the financial year exceeds three crore rupees, whichever is earlier shall — (i) immediately intimate the Administration and Supervisory Body and initiate the process of transition from individual to non-individual investment adviser; and (ii) apply for grant of in-principle approval for registration as non-individual investment adviser within 3 months from the date on which the threshold is reached. [Prior to this amendment, per the 2020 version]: individuals... shall — (i) apply for grant of in-principle registration as non-individual investment adviser; (ii) the in-principle registration shall be valid for a period of three months.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.348,
+          "score": 0.04090909090909091
+        },
+        {
+          "id": "E5",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s32939",
+          "text": "Regulation 22(1): An individual investment adviser shall not provide distribution services. (2) The family of an individual investment adviser shall not provide distribution services to the client advised by the individual investment adviser and no individual investment adviser shall provide advice to a client who is receiving distribution services from other family members.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.127,
+          "score": 0.03961352657004831
+        },
+        {
+          "id": "E6",
+          "doc_id": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073",
+          "section": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s59074",
+          "text": "Regulation 16(1) fee table: Up to ten crore rupees — Rs 5,00,000; More than ten crore rupees but not more than one thousand crore rupees — 0.5% of the offer size; More than one thousand crore rupees — Rs 5,00,00,000 plus 0.125% of the portion in excess of one thousand crore rupees.",
+          "title": "Securities and exchange board of india substantial acqu",
+          "effective_date": "2011-01-01",
+          "role": "legal",
+          "coverage": 0.143,
+          "score": 0.03905437352245863
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1274,
+        "output_tokens": 235,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0008856000000000001
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_115",
+      "input": {
+        "id": "indiafinbench_NUM_115",
+        "question": "A Category I AIF has a total corpus of Rs 300 crore. What is the minimum continuing interest the Manager or Sponsor must maintain in this fund under SEBI AIF Regulations, 2012?",
+        "role": "legal",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "For a Category I Alternative Investment Fund (AIF), the Manager or Sponsor must maintain a continuing interest of not less than two and a half percent of the corpus or five crore rupees, whichever is lower.",
+            "evidence_ids": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
+            ]
+          },
+          {
+            "text": "Given the total corpus is Rs 300 crore, two and a half percent of this corpus is Rs 7.5 crore, which is higher than the minimum of five crore rupees specified.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "Therefore, the minimum continuing interest that the Manager or Sponsor must maintain in this fund is Rs 5 crore, as it is the lower of the two values (2.5% of corpus and Rs 5 crore).",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "operands": [
+              {
+                "value": "300",
+                "source": "question"
+              },
+              {
+                "value": "2.5",
+                "source": "E1"
+              }
+            ],
+            "unit": "crore"
+          },
+          {
+            "operation": "divide",
+            "operands": [
+              {
+                "value": "2.5",
+                "source": "E1"
+              },
+              {
+                "value": "100",
+                "source": "E1"
+              }
+            ],
+            "unit": "percentage"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s71350",
+          "text": "The Manager or Sponsor shall have a continuing interest in the Alternative Investment Fund of not less than two and half percent of the corpus or five crore rupees, whichever is lower. For Category III Alternative Investment Fund, the continuing interest shall be not less than five percent of the corpus or ten crore rupees, whichever is lower. Each scheme of the Alternative Investment Fund shall have corpus of at least twenty crore rupees.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.413,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s47427",
+          "text": "The Manager or Sponsor shall have a continuing interest in the Alternative Investment Fund of not less than two and half percent of the corpus or five crore rupees, whichever is lower, in the form of investment in the Alternative Investment Fund and such interest shall not be through the waiver of management fees: Provided that for Category III Alternative Investment Fund, the continuing interest shall be not less than five percent of the corpus or ten crore rupees, whichever is lower.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.413,
+          "score": 0.04285714285714286
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s88837",
+          "text": "Regulation 10(d): the Manager or Sponsor shall have a continuing interest in the Alternative Investment Fund of not less than two and half percent of the corpus or five crore rupees, whichever is lower, in the form of investment in the Alternative Investment Fund and such interest shall not be through the waiver of management fees: Provided that for Category III Alternative Investment Fund, the continuing interest shall be not less than five percent of the corpus or ten crore rupees, whichever is lower.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.424,
+          "score": 0.04186046511627907
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s46595",
+          "text": "Regulation 10(d): the Manager or Sponsor shall have a continuing interest in the Alternative Investment Fund of not less than two and half percent of the corpus or five crore rupees, whichever is lower, in the form of investment in the Alternative Investment Fund.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.372,
+          "score": 0.0405050505050505
+        },
+        {
+          "id": "E5",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s79626",
+          "text": "Regulation 10(d): Provided that for Category III Alternative Investment Fund, the continuing interest shall be not less than five percent of the corpus or ten crore rupees, whichever is lower.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.324,
+          "score": 0.04040404040404041
+        },
+        {
+          "id": "E6",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s21039",
+          "text": "Funds registered as venture capital funds under the Securities and Exchange Board of India (Venture Capital Funds) Regulations, 1996 shall be governed by the said regulations for a period of five years from the commencement of the SEBI (AIF) Regulations, 2012, provided that the existing fund shall not increase the targeted corpus of the fund. Venture capital funds may seek registration under the AIF Regulations as migrated venture capital funds in terms of Chapter III-D, within twelve months of notification of the relevant regulations.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.29,
+          "score": 0.038760407030527286
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1141,
+        "output_tokens": 246,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.00085
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_068",
+      "input": {
+        "id": "indiafinbench_NUM_068",
+        "question": "A Small Finance Bank has a Tier 1 Capital Ratio of 11.72% and an Adjusted PAT of ₹13,750 crore. According to Table 1 of the RBI SFB Dividend Directions 2026, what is the maximum dividend allowable under the bucket framework?",
+        "role": "public",
+        "as_of": "2025-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "According to Table 1 of the RBI Small Finance Bank Dividend Directions 2026, a Tier 1 Capital Ratio above 11.5% and up to 13.5% falls in Bucket B4, which allows a dividend of 40% of adjusted PAT.",
+            "evidence_ids": [
+              "E1",
+              "E5"
+            ]
+          },
+          {
+            "text": "Given the Tier 1 Capital Ratio of 11.72% (which is in Bucket B4) and an adjusted PAT of ₹13,750 crore, the maximum dividend allowable under the bucket framework is 40% of ₹13,750 crore, which is ₹5,500 crore.",
+            "evidence_ids": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "text": "This maximum payable dividend of ₹5,500 crore is also the lower of the 75% of PAT limit and the 40% of adjusted PAT limit as per the RBI illustration.",
+            "evidence_ids": [
+              "E2"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "operands": [
+              {
+                "value": "13750",
+                "source": "E1"
+              },
+              {
+                "value": "40",
+                "source": "E1"
+              }
+            ],
+            "unit": "crore"
+          },
+          {
+            "operation": "divide",
+            "operands": [
+              {
+                "value": "550000",
+                "source": "question"
+              },
+              {
+                "value": "100",
+                "source": "question"
+              }
+            ],
+            "unit": "crore"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s10547",
+          "text": "Table 1: Bucket B4 — Tier 1 Capital Ratio as at the end of previous FY: Above 11.5% and up to 13.5% — Dividend allowed as a % of adjusted PAT: 40.\n\nIllustration 1: Tier 1 Capital ratio as on March 31, 20X1 (D): 11.72%. The CET1 ratio falls in bucket B4. Adjusted PAT: ₹13,750 crore. Max payable as per Table 1 (40% of 13,750) (F): 5,500.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.502,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s12627",
+          "text": "Annex I: Illustration 1: Computation of maximum permissible dividend for FY 20X1-X2. Net profit (PAT) for FY 20X1-X2 (A): Rs17,000 crore. Net NPAs as on March 31, 20X2 (B): Rs6,500 crore. Adjusted PAT, i.e., (C) = (A) - 50% of (B): Rs13,750 crore. Tier 1 Capital ratio as on March 31, 20X1 (D): 11.72% (falls in Bucket B4). 75% of PAT (E): Rs12,750 crore. Max payable as per Table 1 (40% of 13,750) (F): Rs5,500 crore. Maximum Eligible Dividend (i.e., Lower of E or F): Rs5,500 crore.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.538,
+          "score": 0.04285714285714286
+        },
+        {
+          "id": "E3",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s58586",
+          "text": "C. Quantum of dividend payable. 8. Table 1: Bucket B1 — Tier 1 Capital Ratio up to 7.5%: Dividend allowed as 0 per cent of adjusted PAT. Bucket B10 — Tier 1 Capital Ratio above 19.5%: Dividend allowed as 100 per cent of adjusted PAT for the period.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.305,
+          "score": 0.04186046511627907
+        },
+        {
+          "id": "E4",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s59893",
+          "text": "Passage A:\nBucket B2: Tier 1 Capital Ratio above 7.5% and up to 9.5% — Dividend allowed: 20% of adjusted PAT.\n\nPassage B:\nBucket B3: Tier 1 Capital Ratio above 9.5% and up to 11.5% — Dividend allowed: 30% of adjusted PAT.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.297,
+          "score": 0.04040404040404041
+        },
+        {
+          "id": "E5",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s22462",
+          "text": "C. Quantum of dividend payable. 8. A bank which satisfies the eligibility criteria laid down in paragraph 7 above may declare and pay dividend up to the limits prescribed under Table 1 below, but in aggregate not exceeding 75% of the PAT for the period for which the dividend is being proposed. Table 1: Bucket B4 — Tier 1 Capital Ratio above 11.5% and up to 13.5%: Dividend allowed as 40 per cent of adjusted PAT for the period.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.398,
+          "score": 0.04011857707509882
+        },
+        {
+          "id": "E6",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s86878",
+          "text": "Illustration 2: Adjusted PAT i.e., (C): 38,000 crore. Tier 1 Capital ratio (D): 15%. The CET1 ratio falls in bucket B5. 75% of PAT (E): 30,375. Max payable as per Table 1 (50% of 38,000) (F): 19,000. Maximum Eligible Dividend (i.e., Lower of E or F): 19,000. Maximum Eligible Dividend as percentage of PAT: 46.91%.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.36,
+          "score": 0.03840579710144927
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1395,
+        "output_tokens": 266,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0009836
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_067",
+      "input": {
+        "id": "indiafinbench_NUM_067",
+        "question": "Using the formula for Adjusted PAT, calculate the Adjusted PAT for a Small Finance Bank with PAT of ₹17,000 crore and Net NPA of ₹6,500 crore.",
+        "role": "public",
+        "as_of": "2025-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "Adjusted Profit After Tax (PAT) is calculated as PAT minus 50% of Net NPA.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "For a Small Finance Bank with PAT of ₹17,000 crore and Net NPA of ₹6,500 crore, the Adjusted PAT is ₹13,750 crore.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "operands": [
+              {
+                "value": "17000",
+                "source": "question"
+              },
+              {
+                "value": "3250",
+                "source": "E1"
+              }
+            ],
+            "unit": "crore"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s76076",
+          "text": "'Adjusted Profit After Tax (PAT)' means PAT of the financial year for which the dividend is proposed to be paid minus 50 per cent of Net NPA as on March 31 of the financial year for which the dividend is to be paid.\n\nIllustration 1: Net profit (PAT) for FY 20X1-X2 (A): ₹17,000 crore. Net NPAs as on March 31, 20X2 (B): ₹6,500 crore. Adjusted PAT, i.e., (C) = (A) - 50% of (B).",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.49,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s17304",
+          "text": "Illustration 1: Net profit (PAT) for FY 20X1-X2 (A): ₹17,000 crore. Maximum Eligible Dividend (i.e., Lower of E or F): 5,500. Maximum Eligible Dividend as percentage of PAT: 32.35%.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.292,
+          "score": 0.042414174972314506
+        },
+        {
+          "id": "E3",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s73763",
+          "text": "Illustration 2: Net profit (PAT) for FY 20X1-X2 (A): 40,500 crore. Net NPAs as on March 31, 20X2 (B): 5,000 crore. Adjusted PAT i.e., (C) = (A) - 50% of (B): 38,000 crore. Tier 1 Capital ratio as on March 31, 20X1 (D): 15%. The CET1 ratio falls in bucket B5.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.29,
+          "score": 0.04103359173126615
+        },
+        {
+          "id": "E4",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s36102",
+          "text": "A bank which satisfies the eligibility criteria may declare and pay dividend up to the limits prescribed under Table 1 below, but in aggregate not exceeding 75% of the PAT for the period for which the dividend is being proposed.\n\nIllustration 1: Net profit (PAT) for FY 20X1-X2 (A): ₹17,000 crore. 75% of PAT (E): ₹12,750. Max payable as per Table 1 (F): ₹5,500. Maximum Eligible Dividend (i.e., Lower of E or F): 5,500.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.332,
+          "score": 0.04090909090909091
+        },
+        {
+          "id": "E5",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s47464",
+          "text": "'Adjusted Profit After Tax (PAT)' means PAT of the financial year for which the dividend is proposed to be paid minus 50 per cent of Net NPA as on March 31 of the financial year for which the dividend is to be paid.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.228,
+          "score": 0.0403242147922999
+        },
+        {
+          "id": "E6",
+          "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+          "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s59304",
+          "text": "Annex I: Illustration 2: Computation of maximum permissible dividend for FY 20X1-X2. Net profit (PAT) for FY 20X1-X2 (A): Rs40,500 crore. Net NPAs as on March 31, 20X2 (B): Rs5,000 crore. Adjusted PAT, i.e., (C) = (A) - 50% of (B): Rs38,000 crore. Tier 1 Capital ratio as on March 31, 20X1 (D): 15% (falls in Bucket B5). 75% of PAT (E): Rs30,375 crore. Max payable as per Table 1 (50% of 38,000) (F): Rs19,000 crore. Maximum Eligible Dividend (i.e., Lower of E or F): Rs19,000 crore.",
+          "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.29,
+          "score": 0.03888888888888889
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1342,
+        "output_tokens": 123,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0007336000000000002
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_007",
+      "input": {
+        "id": "indiafinbench_NUM_007",
+        "question": "Under SEBI Settlement Proceedings Regulations 2018, what is the total maximum number of calendar days from the date of service of a show cause notice within which a settlement application can be filed (including the initial sixty-day window and the additional delayed period)?",
+        "role": "public",
+        "as_of": "2023-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "Under SEBI Settlement Proceedings Regulations 2018, a settlement application must initially be filed within sixty calendar days from the date of service of the show cause notice.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "An application filed after the initial sixty-day period but within the next one hundred and twenty calendar days (the delayed period) can be considered with an increased settlement amount, but no application will be accepted after one hundred and twenty calendar days beyond the initial sixty-day window.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "Therefore, the total maximum number of calendar days from the date of service of a show cause notice within which a settlement application can be filed, including the initial sixty-day period and the delayed period, is 180 days.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "operands": [
+              {
+                "value": "60",
+                "source": "E1"
+              },
+              {
+                "value": "120",
+                "source": "E1"
+              }
+            ],
+            "unit": "calendar days"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2018_securities_and_exchange_board_of_india_settlement_proce_064",
+          "section": "SEBI_2018_securities_and_exchange_board_of_india_settlement_proce_064#s60150",
+          "text": "An application in respect of any specified proceeding pending before the Board shall not be considered if it is made after sixty days from the date of service of the notice to show cause. Where the application is filed after sixty calendar days from the expiry of the period specified in sub-regulation (1), the settlement amount determined in accordance with Schedule-II shall be increased. No such delayed application shall be considered if the application is filed after one hundred and twenty calendar days from the expiry of the sixty-day period.",
+          "title": "Securities and exchange board of india settlement proce",
+          "effective_date": "2018-01-01",
+          "role": "public",
+          "coverage": 0.573,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2018_securities_and_exchange_board_of_india_settlement_proce_064",
+          "section": "SEBI_2018_securities_and_exchange_board_of_india_settlement_proce_064#s90304",
+          "text": "An application in respect of any specified proceeding pending before the Board shall not be considered if it is made after sixty days from the date of service of the notice to show cause issued for initiation of such proceeding. Provided that no such delayed application shall be considered if the application is filed after one hundred and twenty calendar days from the expiry of the period specified in sub-regulation (1) or after the first hearing, whichever is earlier.",
+          "title": "Securities and exchange board of india settlement proce",
+          "effective_date": "2018-01-01",
+          "role": "public",
+          "coverage": 0.489,
+          "score": 0.04285714285714286
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 755,
+        "output_tokens": 206,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0006316000000000001
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_108",
+      "input": {
+        "id": "indiafinbench_NUM_108",
+        "question": "An individual investment adviser currently has 287 clients. Over the next month, 18 new clients are onboarded. How many total clients does the adviser now have, and by how many clients does this exceed the regulatory threshold that triggers mandatory transition to non-individual status?",
+        "role": "legal",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "The investment adviser currently has 287 clients and onboards 18 new clients, resulting in a total of 305 clients.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "The regulatory threshold for mandatory transition from individual to non-individual status is exceeding 300 clients at any point of time.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "The adviser exceeds the threshold by 5 clients (305 clients minus 300 clients), thus triggering the mandatory transition process under Regulation 13(e).",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "operands": [
+              {
+                "value": "287",
+                "source": "question"
+              },
+              {
+                "value": "18",
+                "source": "question"
+              }
+            ],
+            "unit": "clients"
+          },
+          {
+            "operation": "subtract",
+            "operands": [
+              {
+                "value": "305",
+                "source": "question"
+              },
+              {
+                "value": "300",
+                "source": "E1"
+              }
+            ],
+            "unit": "clients"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s91121",
+          "text": "Regulation 13(e): individuals registered as investment advisers whose number of clients exceed three hundred at any point of time or the fee collected during the financial year exceeds three crore rupees, whichever is earlier shall — (i) immediately intimate the Administration and Supervisory Body and initiate the process of transition from individual to non-individual investment adviser; and (ii) apply for grant of in-principle approval for registration as non-individual investment adviser within 3 months from the date on which the threshold is reached.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.256,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s59639",
+          "text": "Regulation 13(e) (as amended w.e.f. 25-11-2025 by SEBI (Investment Advisers) (Second Amendment) Regulations, 2025): individuals registered as investment advisers whose number of clients exceed three hundred at any point of time or the fee collected during the financial year exceeds three crore rupees, whichever is earlier shall — (i) immediately intimate the Administration and Supervisory Body and initiate the process of transition from individual to non-individual investment adviser; and (ii) apply for grant of in-principle approval for registration as non-individual investment adviser within 3 months from the date on which the threshold is reached. [Prior to this amendment, per the 2020 version]: individuals... shall — (i) apply for grant of in-principle registration as non-individual investment adviser; (ii) the in-principle registration shall be valid for a period of three months.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.256,
+          "score": 0.042414174972314506
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s38844",
+          "text": "Regulation 13(e): individuals registered as investment advisers whose number of clients exceed three hundred at any point of time or the fee collected during the financial year exceeds three crore rupees, whichever is earlier shall immediately initiate the process of transition from individual to non-individual investment adviser.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.188,
+          "score": 0.04230343300110742
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s05992",
+          "text": "Regulation 13(e): individuals registered as investment advisers whose number of clients exceed three hundred at any point of time or the fee collected during the financial year exceeds three crore rupees, whichever is earlier shall — (i) immediately intimate the Administration and Supervisory Body and initiate the process of transition from individual to non-individual investment adviser.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.188,
+          "score": 0.04090909090909091
+        },
+        {
+          "id": "E5",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s32939",
+          "text": "Regulation 22(1): An individual investment adviser shall not provide distribution services. (2) The family of an individual investment adviser shall not provide distribution services to the client advised by the individual investment adviser and no individual investment adviser shall provide advice to a client who is receiving distribution services from other family members.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.098,
+          "score": 0.03913043478260869
+        },
+        {
+          "id": "E6",
+          "doc_id": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071",
+          "section": "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s82005",
+          "text": "Regulation 13(h): the number of clients of a part-time investment adviser shall not exceed seventy-five in total at any point of time.",
+          "title": "Securities and exchange board of india investment advis",
+          "effective_date": "2013-01-01",
+          "role": "public",
+          "coverage": 0.118,
+          "score": 0.03905437352245863
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1200,
+        "output_tokens": 183,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0007727999999999999
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_074",
+      "input": {
+        "id": "indiafinbench_NUM_074",
+        "question": "In the GoI dated securities auction announced on March 28, 2026, what is the maximum total amount the Government of India can raise if it exercises the greenshoe option on both securities?",
+        "role": "public",
+        "as_of": "2025-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "The Government of India (GoI) has announced the sale of two dated securities with a notified amount of ₹29,000 crore in total, comprising ₹17,000 crore for the 6.68% GS 2040 Jul 07, 2040 and ₹12,000 crore for the 7.43% GS 2076 Jan 19, 2076.",
+            "evidence_ids": [
+              "E2"
+            ]
+          },
+          {
+            "text": "GoI will have the option to retain additional subscriptions up to ₹2,000 crore against each security, effectively a greenshoe option for ₹2,000 crore per security.",
+            "evidence_ids": [
+              "E2"
+            ]
+          },
+          {
+            "text": "Therefore, the maximum total amount GoI can raise if it exercises the greenshoe option on both securities is ₹33,000 crore, calculated as ₹29,000 crore base plus ₹4,000 crore greenshoe option (₹2,000 crore each for two securities).",
+            "evidence_ids": [
+              "E2"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "operands": [
+              {
+                "value": "29000",
+                "source": "E2"
+              },
+              {
+                "value": "2000",
+                "source": "E2"
+              }
+            ],
+            "unit": "crore"
+          },
+          {
+            "operation": "add",
+            "operands": [
+              {
+                "value": "31000",
+                "source": "question"
+              },
+              {
+                "value": "2000",
+                "source": "E2"
+              }
+            ],
+            "unit": "crore"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "RBI_Auction_of_auction_of_government_of_india_dated_securities_028",
+          "section": "RBI_Auction_of_auction_of_government_of_india_dated_securities_028#s66800",
+          "text": "Government of India (GoI) has announced the sale of two dated securities. GoI specific Notification: F.No.4(1)-B(W&M)/2026 dated March 28, 2026. Auction Date: April 02, 2026 (Thursday). Settlement Date: April 06, 2026 (Monday). When Issued trading period: March 30, 2026 - April 02, 2026.",
+          "title": "RBI Auction of auction of government of india dated securities",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.537,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "RBI_Auction_of_auction_of_government_of_india_dated_securities_028",
+          "section": "RBI_Auction_of_auction_of_government_of_india_dated_securities_028#s32368",
+          "text": "Government of India (GoI) has announced the sale (re-issue) of two dated securities for a notified amount of ₹29,000 crore as per the following details:\n1. 6.68% GS 2040 Jul 07, 2040 — ₹17,000 crore\n2. 7.43% GS 2076 Jan 19, 2076 — ₹12,000 crore\nTotal: ₹29,000 crore\nGoI will have the option to retain additional subscription up to ₹2,000 crore against each security mentioned above.",
+          "title": "RBI Auction of auction of government of india dated securities",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.488,
+          "score": 0.04285714285714286
+        },
+        {
+          "id": "E3",
+          "doc_id": "RBI_Auction_of_auction_of_state_government_securities_072",
+          "section": "RBI_Auction_of_auction_of_state_government_securities_072#s85285",
+          "text": "Passage A:\nPress Release dated March 20, 2026: The following State Governments have offered to sell stock by way of auction, for an aggregate amount of ₹55,688 Crore (Face Value).\n\nPassage B:\nPress Release dated March 21, 2026: The following State Governments have offered to sell stock by way of auction, for an aggregate amount of ₹57,408 Crore (Face Value).",
+          "title": "RBI Auction of auction of state government securities",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.295,
+          "score": 0.04090909090909091
+        },
+        {
+          "id": "E4",
+          "doc_id": "RBI_Auction_of_auction_of_government_of_india_dated_securities_028",
+          "section": "RBI_Auction_of_auction_of_government_of_india_dated_securities_028#s48266",
+          "text": "Government of India (GoI) has announced the sale (re-issue) of two dated securities:\n1. 6.68% GS 2040 — ₹17,000 crore, repayment Jul 07, 2040\n2. 7.43% GS 2076 — ₹12,000 crore, repayment Jan 19, 2076\nSettlement Date: April 06, 2026",
+          "title": "RBI Auction of auction of government of india dated securities",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.369,
+          "score": 0.040647118301314455
+        },
+        {
+          "id": "E5",
+          "doc_id": "RBI_Issuance_C_issuance_calendar_for_marketable_dated_securities_for_a_031",
+          "section": "RBI_Issuance_C_issuance_calendar_for_marketable_dated_securities_for_a_031#s98883",
+          "text": "Calendar for Issuance of Government of India Dated Securities (April 01, 2026 to September 30, 2026). Total: 8,20,000 crore.",
+          "title": "RBI Issuance C issuance calendar for marketable dated securities for a",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.266,
+          "score": 0.040343781597573306
+        },
+        {
+          "id": "E6",
+          "doc_id": "RBI_Issuance_C_issuance_calendar_for_marketable_dated_securities_for_a_031",
+          "section": "RBI_Issuance_C_issuance_calendar_for_marketable_dated_securities_for_a_031#s32618",
+          "text": "Calendar for Issuance of Government of India Dated Securities (April 01, 2026 to September 30, 2026). Auction Week 4 (April 20-24, 2026): ₹32,000 crore — (i) 3 Year for ₹11,000 crore (ii) 7 Year for ₹11,000 crore (iii) 30 Year for ₹5,000 crore (iv) 30 Year SGrB for ₹5,000 crore. Switch auctions will be conducted on the third Monday of every month.",
+          "title": "RBI Issuance C issuance calendar for marketable dated securities for a",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.273,
+          "score": 0.03829787234042553
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1237,
+        "output_tokens": 281,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0009444000000000001
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_119",
+      "input": {
+        "id": "indiafinbench_NUM_119",
+        "question": "An AIF Manager plans to launch a new scheme on October 15, 2025. By what date must the placement memorandum be filed with SEBI under SEBI AIF Regulations, 2012?",
+        "role": "public",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "Under SEBI AIF Regulations, 2012 regulation 12(2), the placement memorandum must be filed with SEBI through a merchant banker at least thirty days prior to the launch of the scheme.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "If the AIF Manager plans to launch the scheme on October 15, 2025, the placement memorandum must be filed by September 15, 2025, which is 30 days before the launch date.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "operands": [
+              {
+                "value": "15",
+                "source": "question"
+              },
+              {
+                "value": "30",
+                "source": "question"
+              }
+            ],
+            "unit": "days"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s71882",
+          "text": "Regulation 12(2): Such placement memorandum shall be filed with the Board through a merchant banker atleast thirty days prior to launch of scheme along with the fees as specified in the Second Schedule: Provided that payment of scheme fees shall not apply in case of launch of first scheme by the Alternative Investment Fund.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.361,
+          "score": 0.043437862950058075
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s34249",
+          "text": "Regulation 12(2): Such placement memorandum shall be filed with the Board through a merchant banker atleast thirty days prior to launch of scheme along with the fees as specified in the Second Schedule.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.361,
+          "score": 0.04332171893147503
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s68393",
+          "text": "Regulation 2(1)(pa) (inserted by SEBI (AIF) (Third Amendment) Regulations, 2021, w.e.f. 03-08-2021): 'large value fund for accredited investors' means an Alternative Investment Fund or scheme in which each investor is an accredited investor and invests not less than seventy crore rupees. [Renamed to 'Accredited Investors only fund' and updated by SEBI (AIF) (Third Amendment) Regulations, 2025, w.e.f. 19-11-2025.]",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.198,
+          "score": 0.04143763213530656
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s56198",
+          "text": "Regulation 15(1)(e) (pre-2021): AIF shall not invest in associates except with approval of 75% of investors. [Substituted w.e.f. 05-05-2021 by SEBI (AIF) (Second Amendment) Regulations, 2021]: AIF shall not invest except with approval of 75% of investors in — (a) associates; or (b) units of AIFs managed or sponsored by its Manager, Sponsor or associates of its Manager or Sponsor.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.204,
+          "score": 0.040826873385012924
+        },
+        {
+          "id": "E5",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s85569",
+          "text": "Regulation 10(f) (as amended by SEBI (AIF) (Third Amendment) Regulations, 2025, w.e.f. 19-11-2025): no scheme of the Alternative Investment Fund shall have more than one thousand investors: Provided that accredited investors shall be excluded while computing the number of investors in a scheme of an Alternative Investment Fund. [Prior to this amendment, all investors including accredited investors were counted toward the 1,000 cap.]",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.198,
+          "score": 0.03974854932301741
+        },
+        {
+          "id": "E6",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s75197",
+          "text": "The SEBI (AIF) Regulations, 2012 were the first set of regulations governing the alternative investment fund industry in India in a consolidated manner. The provision permitting social impact funds to issue 'social units' and to raise funds from social investors was inserted by the SEBI (Alternative Investment Funds) (Third Amendment) Regulations, 2022, w.e.f 25.07.2022. Before July 2022, social impact funds could not issue social units under the AIF Regulations.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.191,
+          "score": 0.03840579710144927
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1205,
+        "output_tokens": 149,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0007204
+      }
+    },
+    {
+      "id": "indiafinbench_REG_082",
+      "input": {
+        "id": "indiafinbench_REG_082",
+        "question": "When did the SEBI (Research Analysts) Regulations, 2014 come into force relative to their date of publication?",
+        "role": "legal",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "The SEBI (Research Analysts) Regulations, 2014 were published on September 1, 2014.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "These regulations came into force on the ninetieth day from the date of their publication in the Official Gazette, i.e., 90 days after September 1, 2014.",
+            "evidence_ids": [
+              "E1",
+              "E4"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "operands": [
+              {
+                "value": "1",
+                "source": "E1"
+              },
+              {
+                "value": "90",
+                "source": "E4"
+              }
+            ],
+            "unit": "days"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2014_securities_and_exchange_board_of_india_research_analyst_070",
+          "section": "SEBI_2014_securities_and_exchange_board_of_india_research_analyst_070#s87045",
+          "text": "These regulations may be called the Securities and Exchange Board of India (Research Analysts) Regulations, 2014. These regulations shall come into force on the ninetieth day from the date of their publication in the Official Gazette. The regulations were published on September 1, 2014.",
+          "title": "Securities and exchange board of india research analyst",
+          "effective_date": "2014-01-01",
+          "role": "public",
+          "coverage": 0.755,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2014_securities_and_exchange_board_of_india_research_analyst_070",
+          "section": "SEBI_2014_securities_and_exchange_board_of_india_research_analyst_070#s57767",
+          "text": "\"independent research analyst\" means a person whose only business activity is research analysis or preparation and/or publication of research report.",
+          "title": "Securities and exchange board of india research analyst",
+          "effective_date": "2014-01-01",
+          "role": "public",
+          "coverage": 0.361,
+          "score": 0.04285714285714286
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2014_securities_and_exchange_board_of_india_research_analyst_070",
+          "section": "SEBI_2014_securities_and_exchange_board_of_india_research_analyst_070#s79282",
+          "text": "Passage A:\n\"independent research analyst\" means a person whose only business activity is research analysis or preparation and/or publication of research report.\n\nPassage B:\n\"part-time research analyst\" means an individual or a partnership firm who for consideration, is engaged in the business of providing research services and is also engaged in any other business activity or employment.",
+          "title": "Securities and exchange board of india research analyst",
+          "effective_date": "2014-01-01",
+          "role": "public",
+          "coverage": 0.361,
+          "score": 0.04186046511627907
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_2014_securities_and_exchange_board_of_india_research_analyst_070",
+          "section": "SEBI_2014_securities_and_exchange_board_of_india_research_analyst_070#s54082",
+          "text": "These regulations shall come into force on the ninetieth day from the date of their publication in the Official Gazette.",
+          "title": "Securities and exchange board of india research analyst",
+          "effective_date": "2014-01-01",
+          "role": "public",
+          "coverage": 0.352,
+          "score": 0.0405050505050505
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 785,
+        "output_tokens": 130,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.000522
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_035",
+      "input": {
+        "id": "indiafinbench_NUM_035",
+        "question": "Under SEBI (Issue and Listing of Municipal Debt Securities) Regulations 2015, if a roll-over notice is dispatched to holders on 5 May 2025, what is the earliest date on which the roll-over can take effect (assuming all holders consent)?",
+        "role": "public",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "Under SEBI (Issue and Listing of Municipal Debt Securities) Regulations 2015, when rolling over municipal debt securities, the issuer must give a twenty one days' notice of the proposed roll-over to the holders.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "If the roll-over notice is dispatched on 5 May 2025, the earliest date on which the roll-over can take effect, assuming all holders consent within the notice period, is 26 May 2025.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "operands": [
+              {
+                "value": "5",
+                "source": "question"
+              },
+              {
+                "value": "21",
+                "source": "E1"
+              }
+            ],
+            "unit": "days"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2015_securities_and_exchange_board_of_india_issue_and_listin_066",
+          "section": "SEBI_2015_securities_and_exchange_board_of_india_issue_and_listin_066#s75515",
+          "text": "Where the issuer desires to roll-over the municipal debt securities issued, it shall do so only upon passing of a special resolution to that effect and give twenty one days' notice of the proposed roll over to the holders of municipal debt securities: Provided that, if the holders of municipal debt securities do not provide consent for the proposed roll over within the notice period, the issuer shall redeem the municipal debt securities of such holders.",
+          "title": "Securities and exchange board of india issue and listin",
+          "effective_date": "2015-01-01",
+          "role": "public",
+          "coverage": 0.457,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067",
+          "section": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067#s56975",
+          "text": "The definition of 'non-convertible debt securities' in SEBI LODR Regulations was substituted by the SEBI (LODR) (Fifth Amendment) Regulations, 2021 w.e.f. 7.9.2021. Before substitution, clause (t) defined non-convertible debt securities as 'debt securities' as defined under the SEBI (Issue and Listing of Debt Securities) Regulations, 2008. After the amendment, it aligned with the definition under the SEBI (Issue and Listing of Non-Convertible Securities) Regulations, 2021.",
+          "title": "Securities and exchange board of india listing obligati",
+          "effective_date": "2015-01-01",
+          "role": "public",
+          "coverage": 0.173,
+          "score": 0.04285714285714286
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 776,
+        "output_tokens": 152,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0005536
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_010",
+      "input": {
+        "id": "indiafinbench_NUM_010",
+        "question": "Under SEBI LODR Regulations 2015, if a listed entity holds its first board meeting on 1 April of a financial year, by what latest date must the second board meeting be held?",
+        "role": "legal",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "Under SEBI LODR Regulations 2015, the maximum gap between any two consecutive board meetings of a listed entity is 120 days.",
+            "evidence_ids": [
+              "E4"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "operands": [
+              {
+                "value": "1",
+                "source": "question"
+              },
+              {
+                "value": "120",
+                "source": "E4"
+              }
+            ],
+            "unit": "days"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067",
+          "section": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067#s05455",
+          "text": "The SEBI (LODR) Regulations, 2015 were published in the Official Gazette on 2nd September 2015, and shall come into force on the ninetieth day from the date of their publication: Provided that the provisions of sub-regulation (4) of regulation 23 and regulation 31A shall come into force on the date of notification of these regulations. The definition of 'mainstream media' was inserted by the SEBI (LODR) (Second Amendment) Regulations, 2023 w.e.f. 15.7.2023.",
+          "title": "Securities and exchange board of india listing obligati",
+          "effective_date": "2015-01-01",
+          "role": "public",
+          "coverage": 0.317,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067",
+          "section": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067#s86027",
+          "text": "The SEBI LODR Regulations, 2015 were published on 2 September 2015. The provision regarding 'fugitive economic offender' was inserted by the SEBI (LODR) (Sixth Amendment) Regulations, 2018, w.e.f. 16.11.2018, following the enactment of the Fugitive Economic Offenders Act, 2018. Prior to November 2018, the LODR Regulations did not contain any reference to fugitive economic offenders.",
+          "title": "Securities and exchange board of india listing obligati",
+          "effective_date": "2015-01-01",
+          "role": "public",
+          "coverage": 0.226,
+          "score": 0.04285714285714286
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067",
+          "section": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067#s15291",
+          "text": "The term 'main board' in SEBI LODR Regulations was originally cross-referenced to regulation 106N of the SEBI (ICDR) Regulations, 2009. This cross-reference was substituted by the SEBI (LODR) (Second Amendment) Regulations, 2021 w.e.f. 5.5.2021 to refer instead to regulation 2(ee) of the SEBI (Issue of Capital and Disclosure Requirements) Regulations, 2018.",
+          "title": "Securities and exchange board of india listing obligati",
+          "effective_date": "2015-01-01",
+          "role": "public",
+          "coverage": 0.216,
+          "score": 0.04186046511627907
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067",
+          "section": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067#s87917",
+          "text": "The maximum time gap of one hundred and twenty days between any two consecutive board meetings shall apply to listed entities. A listed entity whose paid-up share capital exceeds rupees ten crore or net worth exceeds rupees twenty-five crore, as at the end of the previous financial year, shall comply with the requirement of having at least one woman director on the board of directors.",
+          "title": "Securities and exchange board of india listing obligati",
+          "effective_date": "2015-01-01",
+          "role": "public",
+          "coverage": 0.211,
+          "score": 0.04090909090909091
+        },
+        {
+          "id": "E5",
+          "doc_id": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067",
+          "section": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067#s34040",
+          "text": "A transaction with a related party shall be considered material if the transaction(s) to be entered into individually or taken together with previous transactions during a financial year, exceeds Rupees one thousand crore or ten per cent. of the annual consolidated turnover of the listed entity as per the last audited financial statements of the listed entity, whichever is lower.",
+          "title": "Securities and exchange board of india listing obligati",
+          "effective_date": "2015-01-01",
+          "role": "public",
+          "coverage": 0.182,
+          "score": 0.03961352657004831
+        },
+        {
+          "id": "E6",
+          "doc_id": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067",
+          "section": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067#s56975",
+          "text": "The definition of 'non-convertible debt securities' in SEBI LODR Regulations was substituted by the SEBI (LODR) (Fifth Amendment) Regulations, 2021 w.e.f. 7.9.2021. Before substitution, clause (t) defined non-convertible debt securities as 'debt securities' as defined under the SEBI (Issue and Listing of Debt Securities) Regulations, 2008. After the amendment, it aligned with the definition under the SEBI (Issue and Listing of Non-Convertible Securities) Regulations, 2021.",
+          "title": "Securities and exchange board of india listing obligati",
+          "effective_date": "2015-01-01",
+          "role": "public",
+          "coverage": 0.134,
+          "score": 0.03840579710144927
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1264,
+        "output_tokens": 84,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.00064
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_033",
+      "input": {
+        "id": "indiafinbench_NUM_033",
+        "question": "Under SEBI (InvIT) Regulations 2014, if an entity associated with the InvIT has a gross turnover of ten crore rupees, what is the maximum permissible pecuniary relationship an independent director candidate may have with it â€” applying the two per cent cap or the fifty lakh rupee cap?",
+        "role": "legal",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "Under SEBI (InvIT) Regulations 2014, the material pecuniary relationship of an independent director candidate with an entity associated with the InvIT is capped at the lower of two percent of the entity's gross turnover or fifty lakh rupees.",
+            "evidence_ids": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "text": "If the entity associated with the InvIT has a gross turnover of ten crore rupees, two percent of this turnover is twenty lakh rupees, which is less than fifty lakh rupees.",
+            "evidence_ids": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "text": "Therefore, for an entity with a gross turnover of ten crore rupees, the maximum permissible pecuniary relationship an independent director candidate may have is capped at twenty lakh rupees, applying the two per cent cap rather than the fifty lakh rupee cap.",
+            "evidence_ids": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "operands": [
+              {
+                "value": "10",
+                "source": "question"
+              },
+              {
+                "value": "10000000",
+                "source": "question"
+              }
+            ],
+            "unit": "rupees"
+          },
+          {
+            "operation": "multiply",
+            "operands": [
+              {
+                "value": "0.02",
+                "source": "E1"
+              },
+              {
+                "value": "10000000",
+                "source": "question"
+              }
+            ],
+            "unit": "rupees"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2014_securities_and_exchange_board_of_india_infrastructure_i_091",
+          "section": "SEBI_2014_securities_and_exchange_board_of_india_infrastructure_i_091#s03392",
+          "text": "who, apart from receiving director's remuneration, does not have any or has had no material pecuniary relationship with the InvIT, its Holdco and/or SPV, parties to the InvIT, its holding company, the subsidiary or associate or their promoters or directors, during the three immediately preceding financial years... the aggregate of which in relation to points (A) to (D) shall not exceed two percent of its gross turnover or total income or fifty lakh rupees or such higher amount as may be specified from time to time, whichever is lower.",
+          "title": "Securities and exchange board of india infrastructure i",
+          "effective_date": "2014-01-01",
+          "role": "public",
+          "coverage": 0.423,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2014_securities_and_exchange_board_of_india_infrastructure_i_091",
+          "section": "SEBI_2014_securities_and_exchange_board_of_india_infrastructure_i_091#s31276",
+          "text": "the aggregate of which in relation to points (A) to (D) shall not exceed two percent of its gross turnover or total income or fifty lakh rupees or such higher amount as may be specified from time to time, whichever is lower.",
+          "title": "Securities and exchange board of india infrastructure i",
+          "effective_date": "2014-01-01",
+          "role": "public",
+          "coverage": 0.229,
+          "score": 0.04285714285714286
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2014_securities_and_exchange_board_of_india_infrastructure_i_091",
+          "section": "SEBI_2014_securities_and_exchange_board_of_india_infrastructure_i_091#s93922",
+          "text": "is or has been an employee or proprietor or a partner, in any of the three financial years immediately preceding the financial year in which he/she is proposed to be appointed, of â€” any legal or a consulting firm that has or had any transaction with the InvIT, its Holdco and/or SPV, parties to the InvIT, its holding company, subsidiary or associate amounting to ten per cent or more of the gross turnover of such firm.",
+          "title": "Securities and exchange board of india infrastructure i",
+          "effective_date": "2014-01-01",
+          "role": "public",
+          "coverage": 0.247,
+          "score": 0.04186046511627907
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067",
+          "section": "SEBI_2015_securities_and_exchange_board_of_india_listing_obligati_067#s87917",
+          "text": "The maximum time gap of one hundred and twenty days between any two consecutive board meetings shall apply to listed entities. A listed entity whose paid-up share capital exceeds rupees ten crore or net worth exceeds rupees twenty-five crore, as at the end of the previous financial year, shall comply with the requirement of having at least one woman director on the board of directors.",
+          "title": "Securities and exchange board of india listing obligati",
+          "effective_date": "2015-01-01",
+          "role": "public",
+          "coverage": 0.235,
+          "score": 0.04040404040404041
+        },
+        {
+          "id": "E5",
+          "doc_id": "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087",
+          "section": "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087#s88303",
+          "text": "Under the SEBI (Mutual Funds) Regulations, 1996, the minimum networth requirement for an asset management company was originally set at rupees ten crore. The SEBI (Mutual Funds) (Amendment) Regulations, 2014 (w.e.f. 06-05-2014) substituted this threshold with 'rupees fifty crore', raising the minimum networth requirement substantially. Existing AMCs that did not meet this higher threshold were given three years from the date of notification of the 2014 amendment to increase their networth to the revised limit.",
+          "title": "Securities and exchange board of india mutual funds reg",
+          "effective_date": "1996-01-01",
+          "role": "ops",
+          "coverage": 0.189,
+          "score": 0.03905437352245863
+        },
+        {
+          "id": "E6",
+          "doc_id": "SEBI_2014_securities_and_exchange_board_of_india_infrastructure_i_091",
+          "section": "SEBI_2014_securities_and_exchange_board_of_india_infrastructure_i_091#s39539",
+          "text": "\"SPV\" or \"special purpose vehicle\" means any company or LLP â€” a. in which either the InvIT or the holdco holds or proposes to hold controlling interest and not less than fifty one per cent of the equity share capital or interest... b. which holds not less than ninety per cent of its assets directly in infrastructure projects and does not invest in other SPVs.",
+          "title": "Securities and exchange board of india infrastructure i",
+          "effective_date": "2014-01-01",
+          "role": "public",
+          "coverage": 0.156,
+          "score": 0.03811188811188811
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1224,
+        "output_tokens": 261,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0009072
+      }
+    },
+    {
+      "id": "indiafinbench_CON_062",
+      "input": {
+        "id": "indiafinbench_CON_062",
+        "question": "Does the original definition of 'large value fund for accredited investors' and the November 2025-amended definition impose the same minimum investment threshold per investor?",
+        "role": "public",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "The original definition (before November 2025 amendment) of 'large value fund for accredited investors' imposed a minimum investment threshold of seventy crore rupees per investor.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "The definition as amended effective November 19, 2025, lowered the minimum investment threshold per investor to twenty-five crore rupees.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "Therefore, the original and November 2025-amended definitions do not impose the same minimum investment threshold per investor; the amended threshold is lower.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": []
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s79532",
+          "text": "Passage A:\nRegulation 2(1)(pa) (before November 2025 amendment): 'large value fund for accredited investors' means an Alternative Investment Fund or scheme of an Alternative Investment Fund in which each investor (other than the Manager, Sponsor, employees or directors of the Alternative Investment Fund or employees or directors of the Manager) is an accredited investor and invests not less than seventy crore rupees.\n\nPassage B:\nRegulation 2(1)(pa) (as amended w.e.f. 19-11-2025): 'large value fund for accredited investors' means an Alternative Investment Fund or scheme of an Alternative Investment Fund in which each investor (other than the Manager, Sponsor, employees or directors of the Alternative Investment Fund or employees or directors of the Manager) is an accredited investor and invests not less than twenty-five crore rupees.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.526,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2020_securities_and_exchange_board_of_india_portfolio_manage_059",
+          "section": "SEBI_2020_securities_and_exchange_board_of_india_portfolio_manage_059#s93406",
+          "text": "\"large value accredited investor\" means an accredited investor who has entered into an agreement with the portfolio manager for a minimum investment amount of ten crore rupees.",
+          "title": "Securities and exchange board of india portfolio manage",
+          "effective_date": "2020-01-01",
+          "role": "public",
+          "coverage": 0.331,
+          "score": 0.04285714285714286
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s68393",
+          "text": "Regulation 2(1)(pa) (inserted by SEBI (AIF) (Third Amendment) Regulations, 2021, w.e.f. 03-08-2021): 'large value fund for accredited investors' means an Alternative Investment Fund or scheme in which each investor is an accredited investor and invests not less than seventy crore rupees. [Renamed to 'Accredited Investors only fund' and updated by SEBI (AIF) (Third Amendment) Regulations, 2025, w.e.f. 19-11-2025.]",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.376,
+          "score": 0.04186046511627907
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s85569",
+          "text": "Regulation 10(f) (as amended by SEBI (AIF) (Third Amendment) Regulations, 2025, w.e.f. 19-11-2025): no scheme of the Alternative Investment Fund shall have more than one thousand investors: Provided that accredited investors shall be excluded while computing the number of investors in a scheme of an Alternative Investment Fund. [Prior to this amendment, all investors including accredited investors were counted toward the 1,000 cap.]",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.301,
+          "score": 0.04090909090909091
+        },
+        {
+          "id": "E5",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s94379",
+          "text": "Regulation 10(c): the Alternative Investment Fund shall not accept from an investor, an investment of value less than one crore rupees: Provided that in case of investors who are employees or directors of the Alternative Investment Fund or employees or directors of the Manager, the minimum value of investment shall be twenty five lakh rupees: Provided further that this clause shall not apply to an accredited investor.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.269,
+          "score": 0.04
+        },
+        {
+          "id": "E6",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s10438",
+          "text": "Regulation 15(1)(d): Category III Alternative Investment Funds shall invest not more than ten per cent of the investable funds in an Investee Company, directly or through investment in units of other Alternative Investment Funds and the large value funds for accredited investors of Category III Alternative Investment Funds may invest up to twenty per cent of the investable funds in an Investee Company, directly or through investment in units of other Alternative Investment Funds.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.31,
+          "score": 0.03866790009250694
+        }
+      ],
+      "error": null,
+      "usage": {
+        "input_tokens": 1257,
+        "output_tokens": 133,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0007156
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_132",
+      "input": {
+        "id": "indiafinbench_NUM_132",
+        "question": "An acquirer holds 28% voting rights in a listed company with 10 crore total shares outstanding. What is the maximum number of additional shares they can acquire in financial year 2024-25 without triggering a mandatory open offer under Regulation 3(2)?",
+        "role": "legal",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "As per Regulation 3(2), an acquirer holding 25% or more but less than the maximum permissible non-public shareholding can acquire additional shares within any financial year only up to 5% of the voting rights without triggering an open offer.",
+            "evidence_ids": [
+              "E1",
+              "E2",
+              "E4"
+            ]
+          },
+          {
+            "text": "The acquirer currently holds 28% voting rights, which is above 25%, so the maximum additional voting rights they can acquire without triggering an open offer in financial year 2024-25 is 5%.",
+            "evidence_ids": [
+              "E1",
+              "E2",
+              "E4"
+            ]
+          },
+          {
+            "text": "With a total of 10 crore shares outstanding, 5% corresponds to 0.5 crore shares.",
+            "evidence_ids": [
+              "E1",
+              "E2",
+              "E4"
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "operands": [
+              {
+                "value": "100000000",
+                "source": "question"
+              },
+              {
+                "value": "0.05",
+                "source": "E1"
+              }
+            ],
+            "unit": "shares"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073",
+          "section": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s52663",
+          "text": "Regulation 3(2): No acquirer who together with persons acting in concert holds 25% or more but less than the maximum permissible non-public shareholding, shall acquire within any financial year additional shares or voting rights entitling them to exercise more than five per cent of the voting rights, unless an open offer is made.",
+          "title": "Securities and exchange board of india substantial acqu",
+          "effective_date": "2011-01-01",
+          "role": "legal",
+          "coverage": 0.442,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073",
+          "section": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s55853",
+          "text": "Regulation 3(2): No acquirer who together with persons acting in concert has acquired and holds in accordance with these regulations shares or voting rights entitling them to exercise twenty-five per cent or more but less than the maximum permissible non-public shareholding, shall acquire within any financial year additional shares or voting rights entitling them to exercise more than five per cent of the voting rights, unless the acquirer makes a public announcement of an open offer.",
+          "title": "Securities and exchange board of india substantial acqu",
+          "effective_date": "2011-01-01",
+          "role": "legal",
+          "coverage": 0.409,
+          "score": 0.04285714285714286
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073",
+          "section": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s71138",
+          "text": "Passage A:\nRegulation 3(2): No acquirer who together with persons acting in concert holds 25% or more but less than the maximum permissible non-public shareholding shall acquire within any financial year additional shares or voting rights entitling them to exercise more than five per cent of the voting rights, unless an open offer is made.\n\nPassage B:\nRegulation 3(2) proviso (inserted by Amendment Regulations, 2020, w.e.f. 16-06-2020): Provided that the acquisition beyond five per cent but upto ten per cent of the voting rights in the target company shall be permitted for the financial year 2020-21 only in respect of acquisition by a promoter pursuant to preferential issue of equity shares by the target company.",
+          "title": "Securities and exchange board of india substantial acqu",
+          "effective_date": "2011-01-01",
+          "role": "legal",
+          "coverage": 0.459,
+          "score": 0.04143763213530656
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073",
+          "section": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s94103",
+          "text": "No acquirer, who together with persons acting in concert with him, has acquired and holds shares or voting rights entitling him to exercise twenty-five per cent or more but less than the maximum permissible non-public shareholding in the target company, shall acquire within any financial year additional shares or voting rights in such target company entitling them to exercise more than five per cent of the voting rights, unless the acquirer makes a public announcement of an open offer for acquiring shares.",
+          "title": "Securities and exchange board of india substantial acqu",
+          "effective_date": "2011-01-01",
+          "role": "legal",
+          "coverage": 0.373,
+          "score": 0.041331923890063425
+        },
+        {
+          "id": "E5",
+          "doc_id": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073",
+          "section": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s60914",
+          "text": "Passage A:\nRegulation 7(1): The open offer for acquiring shares to be made by the acquirer and persons acting in concert under regulation 3 and regulation 4 shall be for at least twenty six per cent of total shares of the target company.\n\nPassage B:\nRegulation 7(2): The open offer made under regulation 6 (voluntary offer) shall be for acquisition of at least such number of shares as would entitle the holder thereof to exercise an additional ten per cent of the voting rights in the target company.",
+          "title": "Securities and exchange board of india substantial acqu",
+          "effective_date": "2011-01-01",
+          "role": "legal",
+          "coverage": 0.353,
+          "score": 0.04
+        },
+        {
+          "id": "E6",
+          "doc_id": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073",
+          "section": "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s06233",
+          "text": "Regulation 3(1): No acquirer shall acquire shares or voting rights in a target company which taken together with shares or voting rights held by him and by persons acting in concert entitle them to exercise twenty-five per cent or more of the voting rights in such target company unless the acquirer makes a public announcement of an open offer.",
+          "title": "Securities and exchange board of india substantial acqu",
+          "effective_date": "2011-01-01",
+          "role": "legal",
+          "coverage": 0.257,
+          "score": 0.03913043478260869
+        }
+      ],
+      "error": "Calculation operand is absent from its source.",
+      "usage": {
+        "input_tokens": 1297,
+        "output_tokens": 214,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0008612
+      }
+    }
+  ]
+}

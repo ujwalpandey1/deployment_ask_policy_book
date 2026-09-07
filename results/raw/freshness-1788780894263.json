@@ -1,0 +1,674 @@
+{
+  "timestamp": "2026-09-07T11:34:54.262Z",
+  "synthetic": true,
+  "interface": "Actual service processes stopped/restarted against the same CORPUS_DIR and PORT, checked via HTTP healthz and ask",
+  "passed": true,
+  "index_before": {
+    "indexing_ms": 9.398,
+    "startup_ms": 59.737375,
+    "fingerprint": "48a77a72ede84d833c53955ad543dacedf4cbb65ae96fe2ef07beb8567f1b21e",
+    "index_cost_usd": 0
+  },
+  "index_after": {
+    "indexing_ms": 14.211417,
+    "startup_ms": 56.320750000000004,
+    "fingerprint": "619308efda27de4cdda7957d6b642feb9a0285020a3f301b29647f2aa0b3d3c0",
+    "index_cost_usd": 0
+  },
+  "before": {
+    "status": "answered",
+    "answer": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+    "citations": [
+      {
+        "doc_id": "DEMO_payment_v1",
+        "section": "DEMO_payment_v1#s1",
+        "quote": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+        "evidence_id": "E1",
+        "title": "Example payment scheduling policy",
+        "effective_date": "2025-01-01",
+        "source_url": "https://example.com/synthetic-policy",
+        "source_sha256": "3a449a5a109889fbf5020f6ff61aa8e915104dfdf52a5827cc6b3c07f16fabca",
+        "quote_sha256": "3fc1d93c2beab97e6c1848ce2fd4e71985d415849f78c57869981c6e371f1285",
+        "verified": true
+      }
+    ],
+    "statements": [
+      {
+        "text": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+        "evidence_ids": [
+          "E1"
+        ]
+      }
+    ],
+    "calculations": [],
+    "meta": {
+      "mode": "extractive",
+      "as_of": "2026-09-07",
+      "corpus_version": "48a77a72ede84d833c53955ad543dacedf4cbb65ae96fe2ef07beb8567f1b21e",
+      "refusal_reason": null,
+      "retrieval": {
+        "method": "lexical",
+        "sections": [
+          "DEMO_payment_v1#s1"
+        ],
+        "packed_sections": [
+          "DEMO_payment_v1#s1"
+        ]
+      },
+      "checks": {
+        "quotes_verbatim": true,
+        "sections_valid": true,
+        "role_allowed": true,
+        "valid_on_date": true,
+        "arithmetic_verified": null,
+        "arithmetic_receipts_withheld": 0,
+        "semantic_support": "extractive_only"
+      },
+      "trace": [
+        {
+          "stage": "Scope & date",
+          "detail": "Access checked for ops; effective on 2026-09-07.",
+          "ms": 0
+        },
+        {
+          "stage": "Evidence retrieval",
+          "detail": "1 permitted passages selected.",
+          "ms": 1
+        },
+        {
+          "stage": "Evidence verification",
+          "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+          "ms": 1
+        }
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      },
+      "indexing_ms": 10.111292000000002,
+      "cache_hit": false,
+      "trace_id": "23127399-9530-4391-9339-48c85043a179",
+      "receipt": {
+        "sequence": 1,
+        "hash": "77d2bc11f3542c6c498d6c83ea8547a4567c75b3ea105f71f00a9e20f332032a"
+      }
+    },
+    "id": "restart-payment",
+    "latency_ms": 0.85,
+    "cost_usd": 0
+  },
+  "after": {
+    "status": "answered",
+    "answer": "One-off payments may be scheduled no more than 45 days ahead. Customer identity must be verified before scheduling a payment.",
+    "citations": [
+      {
+        "doc_id": "DEMO_payment_v2",
+        "section": "DEMO_payment_v2#s1",
+        "quote": "One-off payments may be scheduled no more than 45 days ahead. Customer identity must be verified before scheduling a payment.",
+        "evidence_id": "E1",
+        "title": "Example payment scheduling policy, version 2",
+        "effective_date": "2026-06-01",
+        "source_url": "https://example.com/synthetic-policy",
+        "source_sha256": "fec5e5624d956c68c8a20b2c6d17fe65280d7eec535bfda7913fffa1417ec9be",
+        "quote_sha256": "3c167769db117ac8e146d5dac3b25fd9c20185928c2ac5c6259b4a48f9708072",
+        "verified": true
+      }
+    ],
+    "statements": [
+      {
+        "text": "One-off payments may be scheduled no more than 45 days ahead. Customer identity must be verified before scheduling a payment.",
+        "evidence_ids": [
+          "E1"
+        ]
+      }
+    ],
+    "calculations": [],
+    "meta": {
+      "mode": "extractive",
+      "as_of": "2026-09-07",
+      "corpus_version": "619308efda27de4cdda7957d6b642feb9a0285020a3f301b29647f2aa0b3d3c0",
+      "refusal_reason": null,
+      "retrieval": {
+        "method": "lexical",
+        "sections": [
+          "DEMO_payment_v2#s1"
+        ],
+        "packed_sections": [
+          "DEMO_payment_v2#s1"
+        ]
+      },
+      "checks": {
+        "quotes_verbatim": true,
+        "sections_valid": true,
+        "role_allowed": true,
+        "valid_on_date": true,
+        "arithmetic_verified": null,
+        "arithmetic_receipts_withheld": 0,
+        "semantic_support": "extractive_only"
+      },
+      "trace": [
+        {
+          "stage": "Scope & date",
+          "detail": "Access checked for ops; effective on 2026-09-07.",
+          "ms": 0
+        },
+        {
+          "stage": "Evidence retrieval",
+          "detail": "1 permitted passages selected.",
+          "ms": 0
+        },
+        {
+          "stage": "Evidence verification",
+          "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+          "ms": 1
+        }
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      },
+      "indexing_ms": 15.074834,
+      "cache_hit": false,
+      "trace_id": "964c6067-9f2e-4a79-9853-2a811e766719",
+      "receipt": {
+        "sequence": 2,
+        "hash": "dd4830e70106bc7183eaa241175afa405ea16d134cabc21ce0960044236a60b7"
+      }
+    },
+    "id": "restart-payment",
+    "latency_ms": 0.75,
+    "cost_usd": 0
+  },
+  "historical": {
+    "status": "answered",
+    "answer": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+    "citations": [
+      {
+        "doc_id": "DEMO_payment_v1",
+        "section": "DEMO_payment_v1#s1",
+        "quote": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+        "evidence_id": "E1",
+        "title": "Example payment scheduling policy",
+        "effective_date": "2025-01-01",
+        "source_url": "https://example.com/synthetic-policy",
+        "source_sha256": "3a449a5a109889fbf5020f6ff61aa8e915104dfdf52a5827cc6b3c07f16fabca",
+        "quote_sha256": "3fc1d93c2beab97e6c1848ce2fd4e71985d415849f78c57869981c6e371f1285",
+        "verified": true
+      }
+    ],
+    "statements": [
+      {
+        "text": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+        "evidence_ids": [
+          "E1"
+        ]
+      }
+    ],
+    "calculations": [],
+    "meta": {
+      "mode": "extractive",
+      "as_of": "2025-09-07",
+      "corpus_version": "619308efda27de4cdda7957d6b642feb9a0285020a3f301b29647f2aa0b3d3c0",
+      "refusal_reason": null,
+      "retrieval": {
+        "method": "lexical",
+        "sections": [
+          "DEMO_payment_v1#s1"
+        ],
+        "packed_sections": [
+          "DEMO_payment_v1#s1"
+        ]
+      },
+      "checks": {
+        "quotes_verbatim": true,
+        "sections_valid": true,
+        "role_allowed": true,
+        "valid_on_date": true,
+        "arithmetic_verified": null,
+        "arithmetic_receipts_withheld": 0,
+        "semantic_support": "extractive_only"
+      },
+      "trace": [
+        {
+          "stage": "Scope & date",
+          "detail": "Access checked for ops; effective on 2025-09-07.",
+          "ms": 0
+        },
+        {
+          "stage": "Evidence retrieval",
+          "detail": "1 permitted passages selected.",
+          "ms": 0
+        },
+        {
+          "stage": "Evidence verification",
+          "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+          "ms": 0
+        }
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      },
+      "indexing_ms": 15.074834,
+      "cache_hit": false,
+      "trace_id": "588f3024-b3d1-4fac-8540-0fbfe02725c3",
+      "receipt": {
+        "sequence": 3,
+        "hash": "b758b25ed533fa48a8320bfc43bc487452e5433e04a7d6b40b7829585a8ac2a2"
+      }
+    },
+    "id": "historical",
+    "latency_ms": 0.21,
+    "cost_usd": 0
+  },
+  "role_change": {
+    "status": "not_permitted",
+    "answer": "You are not permitted to access the information needed to answer this question. Please contact an authorized colleague.",
+    "citations": [],
+    "statements": [],
+    "calculations": [],
+    "meta": {
+      "mode": "extractive",
+      "as_of": "2026-09-07",
+      "corpus_version": "619308efda27de4cdda7957d6b642feb9a0285020a3f301b29647f2aa0b3d3c0",
+      "refusal_reason": "access_restricted",
+      "retrieval": {
+        "method": "lexical",
+        "sections": [],
+        "packed_sections": []
+      },
+      "checks": null,
+      "trace": [
+        {
+          "stage": "Scope & date",
+          "detail": "Access checked for ops; effective on 2026-09-07.",
+          "ms": 0
+        },
+        {
+          "stage": "Answer boundary",
+          "detail": "Access is required; no source content disclosed.",
+          "ms": 0
+        }
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      },
+      "indexing_ms": 15.074834,
+      "cache_hit": false,
+      "trace_id": "06837aaa-8f97-4dfe-8c52-07147b8fcf19",
+      "receipt": {
+        "sequence": 4,
+        "hash": "dbceb74d0acc0fe6a70ab9fab2359f129e081c23c9dc6aa6a3341fb363636598"
+      }
+    },
+    "id": "access-change",
+    "latency_ms": 0.08,
+    "cost_usd": 0
+  },
+  "lab": {
+    "synthetic": true,
+    "note": "Local synthetic rehearsal. These are not the private update-pack results.",
+    "passed": 6,
+    "total": 6,
+    "cases": [
+      {
+        "name": "Superseding version",
+        "question": "How many days ahead may one-off payments be scheduled?",
+        "as_of": "2026-09-07",
+        "before": {
+          "status": "answered",
+          "answer": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+          "citations": [
+            {
+              "doc_id": "DEMO_payment_v1",
+              "section": "DEMO_payment_v1#s1",
+              "quote": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+              "evidence_id": "E1",
+              "title": "Example payment scheduling policy",
+              "effective_date": "2025-01-01",
+              "source_url": "https://example.com/synthetic-policy",
+              "source_sha256": "3a449a5a109889fbf5020f6ff61aa8e915104dfdf52a5827cc6b3c07f16fabca",
+              "quote_sha256": "3fc1d93c2beab97e6c1848ce2fd4e71985d415849f78c57869981c6e371f1285",
+              "verified": true
+            }
+          ],
+          "statements": [
+            {
+              "text": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+              "evidence_ids": [
+                "E1"
+              ]
+            }
+          ],
+          "calculations": [],
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "extractive_only"
+          }
+        },
+        "after": {
+          "status": "answered",
+          "answer": "One-off payments may be scheduled no more than 45 days ahead. Customer identity must be verified before scheduling a payment.",
+          "citations": [
+            {
+              "doc_id": "DEMO_payment_v2",
+              "section": "DEMO_payment_v2#s1",
+              "quote": "One-off payments may be scheduled no more than 45 days ahead. Customer identity must be verified before scheduling a payment.",
+              "evidence_id": "E1",
+              "title": "Example payment scheduling policy, version 2",
+              "effective_date": "2026-06-01",
+              "source_url": "https://example.com/synthetic-policy",
+              "source_sha256": "fec5e5624d956c68c8a20b2c6d17fe65280d7eec535bfda7913fffa1417ec9be",
+              "quote_sha256": "3c167769db117ac8e146d5dac3b25fd9c20185928c2ac5c6259b4a48f9708072",
+              "verified": true
+            }
+          ],
+          "statements": [
+            {
+              "text": "One-off payments may be scheduled no more than 45 days ahead. Customer identity must be verified before scheduling a payment.",
+              "evidence_ids": [
+                "E1"
+              ]
+            }
+          ],
+          "calculations": [],
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "extractive_only"
+          }
+        },
+        "passed": true
+      },
+      {
+        "name": "Amended deadline",
+        "question": "Within how many days must customer payment disputes be resolved?",
+        "as_of": "2026-09-07",
+        "before": {
+          "status": "answered",
+          "answer": "Customer payment disputes must be resolved within 20 days of being raised. Acknowledge the dispute immediately.",
+          "citations": [
+            {
+              "doc_id": "DEMO_dispute_v1",
+              "section": "DEMO_dispute_v1#s1",
+              "quote": "Customer payment disputes must be resolved within 20 days of being raised. Acknowledge the dispute immediately.",
+              "evidence_id": "E1",
+              "title": "Example dispute resolution policy",
+              "effective_date": "2025-01-01",
+              "source_url": "https://example.com/synthetic-policy",
+              "source_sha256": "3f5e901b84b1d0690e12af8ee998efd0421534ea5dba7078b7751e2d6c847753",
+              "quote_sha256": "bb69adc73cb8582326acc52ef4c7d9cb14c0827077096b542030fec6153e85a4",
+              "verified": true
+            }
+          ],
+          "statements": [
+            {
+              "text": "Customer payment disputes must be resolved within 20 days of being raised. Acknowledge the dispute immediately.",
+              "evidence_ids": [
+                "E1"
+              ]
+            }
+          ],
+          "calculations": [],
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "extractive_only"
+          }
+        },
+        "after": {
+          "status": "answered",
+          "answer": "This amendment replaces the dispute resolution rule: customer payment disputes must be resolved within 10 days of being raised. Acknowledge the dispute immediately.",
+          "citations": [
+            {
+              "doc_id": "DEMO_dispute_amendment",
+              "section": "DEMO_dispute_amendment#s1",
+              "quote": "This amendment replaces the dispute resolution rule: customer payment disputes must be resolved within 10 days of being raised. Acknowledge the dispute immediately.",
+              "evidence_id": "E1",
+              "title": "Example dispute resolution amendment",
+              "effective_date": "2026-06-01",
+              "source_url": "https://example.com/synthetic-policy",
+              "source_sha256": "1eecb5c2138be13f1ed5444036ce756f0dda6cd4a6a716f681e75b4d8f3d343d",
+              "quote_sha256": "9da1ce299fb6cf0b86860466923d61954124a9e8ceba1e4ea46e50a26a8d03af",
+              "verified": true
+            }
+          ],
+          "statements": [
+            {
+              "text": "This amendment replaces the dispute resolution rule: customer payment disputes must be resolved within 10 days of being raised. Acknowledge the dispute immediately.",
+              "evidence_ids": [
+                "E1"
+              ]
+            }
+          ],
+          "calculations": [],
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "extractive_only"
+          }
+        },
+        "passed": true
+      },
+      {
+        "name": "Withdrawn permission",
+        "question": "What is the automated goodwill fee waiver rule?",
+        "as_of": "2026-09-07",
+        "before": {
+          "status": "answered",
+          "answer": "An automated agent may approve a goodwill fee waiver up to 500 rupees. Larger goodwill fee waivers require manual review.",
+          "citations": [
+            {
+              "doc_id": "DEMO_waiver_v1",
+              "section": "DEMO_waiver_v1#s1",
+              "quote": "An automated agent may approve a goodwill fee waiver up to 500 rupees. Larger goodwill fee waivers require manual review.",
+              "evidence_id": "E1",
+              "title": "Example goodwill fee waiver policy",
+              "effective_date": "2025-01-01",
+              "source_url": "https://example.com/synthetic-policy",
+              "source_sha256": "deef811d899d0613dcbdeb39010bfd54c73f5f38f6b8b0bf2d688ab6b403ab1a",
+              "quote_sha256": "b604c80fb4446e1fde7a53d82493557dbd01f0b98a78d3df8f24f73867ebdb76",
+              "verified": true
+            }
+          ],
+          "statements": [
+            {
+              "text": "An automated agent may approve a goodwill fee waiver up to 500 rupees. Larger goodwill fee waivers require manual review.",
+              "evidence_ids": [
+                "E1"
+              ]
+            }
+          ],
+          "calculations": [],
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "extractive_only"
+          }
+        },
+        "after": {
+          "status": "answered",
+          "answer": "Automated goodwill fee waivers are withdrawn. All goodwill fee waiver requests now require manual review.",
+          "citations": [
+            {
+              "doc_id": "DEMO_waiver_withdrawal",
+              "section": "DEMO_waiver_withdrawal#s1",
+              "quote": "Automated goodwill fee waivers are withdrawn. All goodwill fee waiver requests now require manual review.",
+              "evidence_id": "E1",
+              "title": "Example goodwill fee waiver withdrawal notice",
+              "effective_date": "2026-06-01",
+              "source_url": "https://example.com/synthetic-policy",
+              "source_sha256": "62e13a2341f8d117052de2daf774e6d8ecd9a422ab92b652b4c0db6bb45841f8",
+              "quote_sha256": "637dd92b8026a9ef8962442a338c1611c9c98915916779fe07afd5d4b10f104b",
+              "verified": true
+            }
+          ],
+          "statements": [
+            {
+              "text": "Automated goodwill fee waivers are withdrawn. All goodwill fee waiver requests now require manual review.",
+              "evidence_ids": [
+                "E1"
+              ]
+            }
+          ],
+          "calculations": [],
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "extractive_only"
+          }
+        },
+        "passed": true
+      },
+      {
+        "name": "Historical answer",
+        "question": "How many days ahead may one-off payments be scheduled?",
+        "as_of": "2025-09-07",
+        "before": {
+          "status": "answered",
+          "answer": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+          "citations": [
+            {
+              "doc_id": "DEMO_payment_v1",
+              "section": "DEMO_payment_v1#s1",
+              "quote": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+              "evidence_id": "E1",
+              "title": "Example payment scheduling policy",
+              "effective_date": "2025-01-01",
+              "source_url": "https://example.com/synthetic-policy",
+              "source_sha256": "3a449a5a109889fbf5020f6ff61aa8e915104dfdf52a5827cc6b3c07f16fabca",
+              "quote_sha256": "3fc1d93c2beab97e6c1848ce2fd4e71985d415849f78c57869981c6e371f1285",
+              "verified": true
+            }
+          ],
+          "statements": [
+            {
+              "text": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+              "evidence_ids": [
+                "E1"
+              ]
+            }
+          ],
+          "calculations": [],
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "extractive_only"
+          }
+        },
+        "after": {
+          "status": "answered",
+          "answer": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+          "citations": [
+            {
+              "doc_id": "DEMO_payment_v1",
+              "section": "DEMO_payment_v1#s1",
+              "quote": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+              "evidence_id": "E1",
+              "title": "Example payment scheduling policy",
+              "effective_date": "2025-01-01",
+              "source_url": "https://example.com/synthetic-policy",
+              "source_sha256": "3a449a5a109889fbf5020f6ff61aa8e915104dfdf52a5827cc6b3c07f16fabca",
+              "quote_sha256": "3fc1d93c2beab97e6c1848ce2fd4e71985d415849f78c57869981c6e371f1285",
+              "verified": true
+            }
+          ],
+          "statements": [
+            {
+              "text": "One-off payments may be scheduled no more than 30 days ahead. Customer identity must be verified before scheduling a payment.",
+              "evidence_ids": [
+                "E1"
+              ]
+            }
+          ],
+          "calculations": [],
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "extractive_only"
+          }
+        },
+        "passed": true
+      },
+      {
+        "name": "Access change",
+        "question": "What is the specialist oversight escalation queue review frequency?",
+        "as_of": "2026-09-07",
+        "before": {
+          "status": "answered",
+          "answer": "Answer available to the original role.",
+          "citations": []
+        },
+        "after": {
+          "status": "not_permitted",
+          "answer": "Access required.",
+          "citations": []
+        },
+        "passed": true
+      },
+      {
+        "name": "Outside the book",
+        "question": "How far away is the Andromeda galaxy?",
+        "as_of": "2026-09-07",
+        "before": {
+          "status": "not_in_corpus",
+          "answer": "Insufficient evidence.",
+          "citations": []
+        },
+        "after": {
+          "status": "not_in_corpus",
+          "answer": "Insufficient evidence.",
+          "citations": []
+        },
+        "passed": true
+      }
+    ]
+  },
+  "fixture_directory": "/var/folders/rz/p05rbmbs6h38d0yjvsr9kh10f2cm08/T/policy-atlas-restart-F8hzAv"
+}

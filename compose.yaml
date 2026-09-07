@@ -1,0 +1,24 @@
+services:
+  policy-atlas:
+    build: .
+    ports:
+      - "127.0.0.1:4600:4600"
+    environment:
+      AUTH_MODE: runner
+      RUNNER_TOKEN: ${RUNNER_TOKEN:?Set a runner token with at least 20 characters}
+      GENERATION_MODE: ${GENERATION_MODE:-extractive}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://api.openai.com/v1}
+      LLM_MODEL: ${LLM_MODEL:-gpt-4.1-mini-2025-04-14}
+    volumes:
+      - atlas-runtime:/app/runtime
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: unless-stopped
+volumes:
+  atlas-runtime:

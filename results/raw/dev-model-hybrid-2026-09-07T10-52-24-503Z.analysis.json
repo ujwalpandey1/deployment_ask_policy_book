@@ -1,0 +1,2375 @@
+{
+  "run_id": "dev-model-hybrid-2026-09-07T10-52-24-503Z",
+  "interpretation": "Development retrieval diagnostics, not semantic correctness. Baseline uses TF-IDF cosine with the same permission/date/citation boundaries.",
+  "overall": {
+    "n": 119,
+    "recall_at_1": 0.6807,
+    "recall_at_6": 0.9412,
+    "coverage": 0.7983
+  },
+  "slices": {
+    "contradiction_detection": {
+      "n": 8,
+      "recall_at_1": 0.75,
+      "recall_at_6": 1,
+      "coverage": 0.875
+    },
+    "temporal_reasoning": {
+      "n": 19,
+      "recall_at_1": 0.8947,
+      "recall_at_6": 1,
+      "coverage": 0.8421
+    },
+    "numerical_reasoning": {
+      "n": 27,
+      "recall_at_1": 0.6296,
+      "recall_at_6": 0.963,
+      "coverage": 0.4074
+    },
+    "regulatory_interpretation": {
+      "n": 63,
+      "recall_at_1": 0.6508,
+      "recall_at_6": 0.9365,
+      "coverage": 0.9365
+    },
+    "internal_policy": {
+      "n": 2,
+      "recall_at_1": 0,
+      "recall_at_6": 0,
+      "coverage": 1
+    }
+  },
+  "failure_taxonomy": {
+    "wrong_first_passage": 27,
+    "unsupported_answer": 1,
+    "missed_access_refusal": 3,
+    "evidence_verification_failed": 15,
+    "false_refusal": 9
+  },
+  "cases": [
+    {
+      "id": "indiafinbench_REG_004",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5860810302656905,
+      "top_cosine": 0.48897394407986106,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_084",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 1,
+      "top_cosine": 0.8901634897395767,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_142",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.42332114766119894,
+      "top_cosine": 0.22690010949726644,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_012",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_098",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.46234737522669817,
+      "top_cosine": 0.28514380936135825,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_111",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.3312083511375311,
+      "top_cosine": 0.17478004419929624,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "ooc-009",
+      "tags": [
+        "out_of_corpus"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "answered",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": 0.296525165418276,
+      "top_cosine": 0.18019051880443607,
+      "failure": "unsupported_answer"
+    },
+    {
+      "id": "indiafinbench_NUM_131",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_061",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.6462499432970074,
+      "top_cosine": 0.5402433270589387,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_136",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_in_corpus",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": 0.17916669359111295,
+      "top_cosine": 0.2284238808286172,
+      "failure": "missed_access_refusal"
+    },
+    {
+      "id": "ooc-014",
+      "tags": [
+        "out_of_corpus"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": 0.195878653442272,
+      "top_cosine": 0.061275705275082186,
+      "failure": null
+    },
+    {
+      "id": "ooc-006",
+      "tags": [
+        "out_of_corpus"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": 0.26943739759104157,
+      "top_cosine": 0.16479110398051253,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_CON_072",
+      "tags": [
+        "contradiction_detection",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_103",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.3997168187437815,
+      "top_cosine": 0.3078074885937637,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_174",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.6322445485218356,
+      "top_cosine": 0.4841725800087532,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_169",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.36394217470807466,
+      "top_cosine": 0.3621283574461667,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_073",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4812568678570055,
+      "top_cosine": 0.3741531056096891,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_CON_061",
+      "tags": [
+        "contradiction_detection",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.43498628015323537,
+      "top_cosine": 0.24343846587331988,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_115",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.41345237342334074,
+      "top_cosine": 0.40853259321566787,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_REG_188",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5092710951672923,
+      "top_cosine": 0.2770286236105106,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_009",
+      "tags": [
+        "numerical_reasoning",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4042002298538993,
+      "top_cosine": 0.4215713984667081,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_TMP_013",
+      "tags": [
+        "temporal_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "answered",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": 0.24692221940236334,
+      "top_cosine": 0.13138491503563635,
+      "failure": "missed_access_refusal"
+    },
+    {
+      "id": "indiafinbench_CON_059",
+      "tags": [
+        "contradiction_detection",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.569751750084899,
+      "top_cosine": 0.2623182976888169,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_CON_043",
+      "tags": [
+        "contradiction_detection",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.3737123832642761,
+      "top_cosine": 0.3216960712269057,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_034",
+      "tags": [
+        "temporal_reasoning",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4702551854761607,
+      "top_cosine": 0.278803594481152,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_058",
+      "tags": [
+        "temporal_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.8865273337654389,
+      "top_cosine": 0.6356351058840369,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_130",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5350932462706505,
+      "top_cosine": 0.3038501845358229,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_104",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_079",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.47179874403891053,
+      "top_cosine": 0.47586303946322606,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_153",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.582342543219916,
+      "top_cosine": 0.4537330240246388,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_178",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5894984671922381,
+      "top_cosine": 0.5346296594730673,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_040",
+      "tags": [
+        "temporal_reasoning",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "not_in_corpus",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.20817272441469029,
+      "top_cosine": 0.18900267845205793,
+      "failure": "false_refusal"
+    },
+    {
+      "id": "indiafinbench_NUM_080",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.33935875587787717,
+      "top_cosine": 0.32915350903663965,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_CON_036",
+      "tags": [
+        "contradiction_detection",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.2966725135920146,
+      "top_cosine": 0.24730702187519937,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_095",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.43734175076972603,
+      "top_cosine": 0.29821139890425385,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_114",
+      "tags": [
+        "numerical_reasoning",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.3493647903888836,
+      "top_cosine": 0.3092475210491432,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_002",
+      "tags": [
+        "temporal_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.6408819244406045,
+      "top_cosine": 0.39965957965521737,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_065",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.36256678121687813,
+      "top_cosine": 0.3926950555434778,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_184",
+      "tags": [
+        "regulatory_interpretation",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.616403145413529,
+      "top_cosine": 0.4326352312536737,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_137",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.2930617081654475,
+      "top_cosine": 0.21836186092059168,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_114",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5690655452279252,
+      "top_cosine": 0.4387985014680207,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_068",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5016765783747137,
+      "top_cosine": 0.45988361603758965,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_REG_180",
+      "tags": [
+        "regulatory_interpretation",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.49598628628386887,
+      "top_cosine": 0.36097246435288616,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_176",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.38901992121224926,
+      "top_cosine": 0.22623082774072006,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_NUM_113",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.3477991836926902,
+      "top_cosine": 0.2854246938496841,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_REG_181",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5216202102640982,
+      "top_cosine": 0.48208803963491753,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_177",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "not_in_corpus",
+      "retrieval_at_1": false,
+      "retrieval_at_6": false,
+      "all_gold_at_6": false,
+      "top_coverage": 0.45706740467966145,
+      "top_cosine": 0.28207619102444037,
+      "failure": "false_refusal"
+    },
+    {
+      "id": "indiafinbench_NUM_124",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.27458459339537766,
+      "top_cosine": 0.2912126744104279,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_067",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4897846820001773,
+      "top_cosine": 0.3357713307805993,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_NUM_108",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.2556786721512882,
+      "top_cosine": 0.21302295473794977,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_REG_106",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_074",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5056717041485441,
+      "top_cosine": 0.47661057075117075,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_064",
+      "tags": [
+        "temporal_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "not_in_corpus",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4364730885362308,
+      "top_cosine": 0.37884738709886645,
+      "failure": "false_refusal"
+    },
+    {
+      "id": "indiafinbench_CON_069",
+      "tags": [
+        "contradiction_detection",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.36810575154081143,
+      "top_cosine": 0.24384403214524455,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_007",
+      "tags": [
+        "temporal_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5920551775988065,
+      "top_cosine": 0.5249252488596142,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_094",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.561306411164658,
+      "top_cosine": 0.5495297805427666,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_127",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "internal-004",
+      "tags": [
+        "internal_policy",
+        "medium",
+        "internal"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": false,
+      "all_gold_at_6": false,
+      "top_coverage": 0.5321032434760635,
+      "top_cosine": 0.30012573341253473,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_118",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_006",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5349642892740204,
+      "top_cosine": 0.3699509450743057,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_023",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.38032721651270557,
+      "top_cosine": 0.3041163831369735,
+      "failure": null
+    },
+    {
+      "id": "ooc-010",
+      "tags": [
+        "out_of_corpus"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": 0.3569799927746361,
+      "top_cosine": 0.33105658959792994,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_112",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.3614182340433251,
+      "top_cosine": 0.19138444261907198,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_TMP_071",
+      "tags": [
+        "temporal_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.7148905409757638,
+      "top_cosine": 0.4530154748637315,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_183",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.2907223335283168,
+      "top_cosine": 0.30886568300249295,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_078",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.48057242147293877,
+      "top_cosine": 0.40271702799629144,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_070",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.6591350366407858,
+      "top_cosine": 0.5427183584521079,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_047",
+      "tags": [
+        "temporal_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_102",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.45526058481769444,
+      "top_cosine": 0.38365415852664647,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_086",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": false,
+      "all_gold_at_6": false,
+      "top_coverage": 0.3971096408723446,
+      "top_cosine": 0.2996665361118921,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_NUM_007",
+      "tags": [
+        "numerical_reasoning",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5732479630829861,
+      "top_cosine": 0.5255633643178977,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_NUM_074",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5370549820948057,
+      "top_cosine": 0.42733841112468696,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_REG_154",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": false,
+      "all_gold_at_6": false,
+      "top_coverage": 0.5662719338193781,
+      "top_cosine": 0.25797795473814966,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "ooc-011",
+      "tags": [
+        "out_of_corpus"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": 0.5253848293485383,
+      "top_cosine": 0.20928378022988842,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_077",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_135",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_058",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.731378379658282,
+      "top_cosine": 0.5344813972910792,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_186",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5250015214419943,
+      "top_cosine": 0.4107902377148946,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_CON_030",
+      "tags": [
+        "contradiction_detection",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.6793286277203223,
+      "top_cosine": 0.5609038321025884,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_NUM_119",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.3607917423284579,
+      "top_cosine": 0.35005348398452885,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_REG_151",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "not_in_corpus",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.22404369767921029,
+      "top_cosine": 0.1746714377338286,
+      "failure": "false_refusal"
+    },
+    {
+      "id": "indiafinbench_CON_052",
+      "tags": [
+        "contradiction_detection",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_007",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4491313285477779,
+      "top_cosine": 0.32258993805071673,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_164",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.7049401016966947,
+      "top_cosine": 0.5980460816575063,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_173",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.6649209647729141,
+      "top_cosine": 0.33097358762624146,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_101",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5878781582430951,
+      "top_cosine": 0.5494284988852505,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_109",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.42901248250372565,
+      "top_cosine": 0.21172491912344635,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_018",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.6815091529074747,
+      "top_cosine": 0.42522747380270126,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_120",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.42511928170034374,
+      "top_cosine": 0.2939126959166414,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_087",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_085",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_029",
+      "tags": [
+        "temporal_reasoning",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.3979775797968715,
+      "top_cosine": 0.3064955319314752,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_NUM_089",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4466592894225202,
+      "top_cosine": 0.3252223550830441,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_128",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4912946873677207,
+      "top_cosine": 0.2130076058035746,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_016",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.28133549017373954,
+      "top_cosine": 0.24431739147731948,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_008",
+      "tags": [
+        "temporal_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5034991218499618,
+      "top_cosine": 0.3972172162678886,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_197",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.32702918010311427,
+      "top_cosine": 0.2231079638931174,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_CON_077",
+      "tags": [
+        "contradiction_detection",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_082",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.7548420995953253,
+      "top_cosine": 0.5801701914145062,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_REG_097",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.44711462332799495,
+      "top_cosine": 0.2658057248123794,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_004",
+      "tags": [
+        "temporal_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_035",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4574637457062336,
+      "top_cosine": 0.5441070405310641,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_NUM_093",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.41801455622287653,
+      "top_cosine": 0.33199678699755886,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_NUM_040",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "not_in_corpus",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.2242658873220313,
+      "top_cosine": 0.24859010920187524,
+      "failure": "false_refusal"
+    },
+    {
+      "id": "indiafinbench_REG_165",
+      "tags": [
+        "regulatory_interpretation",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.44862812442740413,
+      "top_cosine": 0.24278583750069552,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_138",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4870822967431989,
+      "top_cosine": 0.47706306771945195,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_063",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.48338716689004996,
+      "top_cosine": 0.4719717382748899,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_194",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_033",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.42295789110189963,
+      "top_cosine": 0.35808078752095585,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_REG_090",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.41801455622287653,
+      "top_cosine": 0.33199678699755886,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_010",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.3172333864260933,
+      "top_cosine": 0.29165276392206024,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_TMP_003",
+      "tags": [
+        "temporal_reasoning",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4652477864479821,
+      "top_cosine": 0.3502486365624833,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_069",
+      "tags": [
+        "temporal_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "not_in_corpus",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.526557612103196,
+      "top_cosine": 0.34050133212988726,
+      "failure": "false_refusal"
+    },
+    {
+      "id": "indiafinbench_CON_062",
+      "tags": [
+        "contradiction_detection",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5264621583048605,
+      "top_cosine": 0.37681691155079283,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_TMP_010",
+      "tags": [
+        "temporal_reasoning",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5154093254589477,
+      "top_cosine": 0.3247822953055754,
+      "failure": null
+    },
+    {
+      "id": "internal-006",
+      "tags": [
+        "internal_policy",
+        "medium",
+        "internal"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_in_corpus",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": 0.38801833245754047,
+      "top_cosine": 0.13023910919065193,
+      "failure": "missed_access_refusal"
+    },
+    {
+      "id": "internal-009",
+      "tags": [
+        "internal_policy",
+        "medium",
+        "internal"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": false,
+      "all_gold_at_6": false,
+      "top_coverage": 1,
+      "top_cosine": 0.39858920186860036,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_089",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.46976994647065007,
+      "top_cosine": 0.43412848986732033,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_038",
+      "tags": [
+        "temporal_reasoning",
+        "easy",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.7551480937983505,
+      "top_cosine": 0.4759613026643491,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_168",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.3757784651581806,
+      "top_cosine": 0.33119040206459477,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_NUM_107",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "not_in_corpus",
+      "retrieval_at_1": false,
+      "retrieval_at_6": false,
+      "all_gold_at_6": false,
+      "top_coverage": 0.224888188638592,
+      "top_cosine": 0.21113936652765497,
+      "failure": "false_refusal"
+    },
+    {
+      "id": "indiafinbench_TMP_086",
+      "tags": [
+        "temporal_reasoning",
+        "hard",
+        "SEBI"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_132",
+      "tags": [
+        "numerical_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "error",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4424436773887569,
+      "top_cosine": 0.3878159676788827,
+      "failure": "evidence_verification_failed"
+    },
+    {
+      "id": "indiafinbench_REG_134",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4242718190239219,
+      "top_cosine": 0.4783361538760331,
+      "failure": null
+    },
+    {
+      "id": "ooc-000",
+      "tags": [
+        "out_of_corpus"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": 0.3213125521263198,
+      "top_cosine": 0.2115128876282483,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_167",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "not_in_corpus",
+      "retrieval_at_1": false,
+      "retrieval_at_6": false,
+      "all_gold_at_6": false,
+      "top_coverage": 0.608851804750857,
+      "top_cosine": 0.43415901444354305,
+      "failure": "false_refusal"
+    },
+    {
+      "id": "indiafinbench_TMP_077",
+      "tags": [
+        "temporal_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.46199908754694313,
+      "top_cosine": 0.37789275277143375,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_156",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.6380473161571699,
+      "top_cosine": 0.490615969229984,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "indiafinbench_REG_017",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.7004166556585302,
+      "top_cosine": 0.5283115866675651,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_022",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5123411250505266,
+      "top_cosine": 0.39382820166917626,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_079",
+      "tags": [
+        "temporal_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.427661684372774,
+      "top_cosine": 0.3778187025928736,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_039",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "not_in_corpus",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.21725633657860127,
+      "top_cosine": 0.23726680121498106,
+      "failure": "false_refusal"
+    },
+    {
+      "id": "indiafinbench_TMP_049",
+      "tags": [
+        "temporal_reasoning",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.7204636093555773,
+      "top_cosine": 0.5281960056316226,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_080",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5740736106531666,
+      "top_cosine": 0.541842252892237,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_055",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5318515264292752,
+      "top_cosine": 0.3667905880771913,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_172",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": false,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.42955342522014806,
+      "top_cosine": 0.3276448004869358,
+      "failure": "wrong_first_passage"
+    },
+    {
+      "id": "internal-008",
+      "tags": [
+        "internal_policy",
+        "medium",
+        "internal"
+      ],
+      "expected_status": "not_permitted",
+      "status": "not_permitted",
+      "retrieval_at_1": null,
+      "retrieval_at_6": null,
+      "all_gold_at_6": null,
+      "top_coverage": null,
+      "top_cosine": null,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_066",
+      "tags": [
+        "temporal_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.4032862100046872,
+      "top_cosine": 0.30147757947168907,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_096",
+      "tags": [
+        "numerical_reasoning",
+        "hard",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.8946291968278067,
+      "top_cosine": 0.6031555071513416,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_161",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5840650552417327,
+      "top_cosine": 0.41099866470423685,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_NUM_098",
+      "tags": [
+        "numerical_reasoning",
+        "medium",
+        "RBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.532523077720818,
+      "top_cosine": 0.4843545815811342,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_009",
+      "tags": [
+        "temporal_reasoning",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 1,
+      "top_cosine": 0.7617670763873394,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_070",
+      "tags": [
+        "regulatory_interpretation",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5498088037773159,
+      "top_cosine": 0.5036192712333972,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_CON_070",
+      "tags": [
+        "contradiction_detection",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.5259790006585776,
+      "top_cosine": 0.3688312150097563,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_REG_148",
+      "tags": [
+        "regulatory_interpretation",
+        "medium",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.40822023535337915,
+      "top_cosine": 0.41735585525790786,
+      "failure": null
+    },
+    {
+      "id": "indiafinbench_TMP_078",
+      "tags": [
+        "temporal_reasoning",
+        "easy",
+        "SEBI"
+      ],
+      "expected_status": "answered",
+      "status": "answered",
+      "retrieval_at_1": true,
+      "retrieval_at_6": true,
+      "all_gold_at_6": true,
+      "top_coverage": 0.6550179661603744,
+      "top_cosine": 0.503280275447888,
+      "failure": null
+    }
+  ]
+}

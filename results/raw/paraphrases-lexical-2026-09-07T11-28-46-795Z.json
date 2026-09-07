@@ -1,0 +1,1896 @@
+{
+  "timestamp": "2026-09-07T11:28:46.795Z",
+  "mode": "lexical",
+  "scope": "Hand-authored paraphrase regression set; expected facts and sources checked, not an independent semantic rubric score. No held-out questions used.",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "embedding": null,
+  "corpus": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+  "indexing": {
+    "changed": true,
+    "added": 34,
+    "modified": 0,
+    "removed": 0,
+    "indexing_ms": 34.722916999999995,
+    "index_cost_usd": 0,
+    "semantic": null,
+    "reused_chunks": 0,
+    "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c"
+  },
+  "summary": {
+    "total": 41,
+    "passed": 7,
+    "answerable": {
+      "total": 30,
+      "passed": 0
+    },
+    "paraphrases": {
+      "total": 20,
+      "passed": 0
+    },
+    "boundaries": {
+      "total": 11,
+      "passed": 7
+    },
+    "p95_ms": 34.756833,
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null,
+      "calls": 24,
+      "model": "gpt-4.1-mini-2025-04-14"
+    }
+  },
+  "results": [
+    {
+      "id": "waiver-0",
+      "input": {
+        "question": "What is the maximum single fee that a Harbour agent may waive?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "waiver",
+      "variant": 0,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 44.443875000000006,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "waiver-1",
+      "input": {
+        "question": "At Harbour, what is the most an automated agent can forgive from one loan charge?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "waiver",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 25.167749999999998,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "waiver-2",
+      "input": {
+        "question": "How big a charge can I wipe off a Harbour loan without getting a human to approve the amount?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "waiver",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 35.17999999999999,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "payment-0",
+      "input": {
+        "question": "How many days ahead may a new one-off payment be scheduled at Harbour?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "payment",
+      "variant": 0,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 34.756833,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "payment-1",
+      "input": {
+        "question": "At Harbour, how far into the future can I book a fresh repayment?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "payment",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 1.9671670000000034,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "682f2b0b-fba2-46e9-a3f3-f56db8338138"
+        },
+        "id": "payment-1",
+        "latency_ms": 1.92,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "payment-2",
+      "input": {
+        "question": "Could Harbour set up a new debit three months from now, or is that too far away?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "payment",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 2.201750000000004,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "9a3ae0d1-7c40-4285-9719-058368bb0aa4"
+        },
+        "id": "payment-2",
+        "latency_ms": 2.16,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "identity-0",
+      "input": {
+        "question": "How is customer identity verified on the current contact at Harbour?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "identity",
+      "variant": 0,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 16.232250000000008,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "identity-1",
+      "input": {
+        "question": "At Harbour, which details should I ask for to prove I am speaking to the borrower?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "identity",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 1.7680409999999966,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "4de53bf4-9879-4f8b-ab1b-14e817151ed3"
+        },
+        "id": "identity-1",
+        "latency_ms": 1.73,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "identity-2",
+      "input": {
+        "question": "What does a caller need to confirm before Harbour lets me make changes involving their money?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "identity",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 15.658749999999998,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "hardship-age-0",
+      "input": {
+        "question": "What is the minimum loan age for a hardship plan at Harbour?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "hardship-age",
+      "variant": 0,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 14.919749999999993,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "hardship-age-1",
+      "input": {
+        "question": "How long must a Harbour loan have existed before the borrower can get temporary repayment relief?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "hardship-age",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 1.6037919999999986,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "5b977f11-ec57-4193-b2a4-e51e484ca1a5"
+        },
+        "id": "hardship-age-1",
+        "latency_ms": 1.56,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "hardship-age-2",
+      "input": {
+        "question": "A Harbour borrower wants a financial difficulty arrangement. How seasoned must their loan be?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "hardship-age",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 1.9035829999999976,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "9cd3bee4-7e88-4617-b569-29b7e356db97"
+        },
+        "id": "hardship-age-2",
+        "latency_ms": 1.86,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "dispute-resolution-0",
+      "input": {
+        "question": "What is the resolution deadline for a payment dispute at Harbour?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dispute-resolution",
+      "variant": 0,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 11.206541000000001,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "dispute-resolution-1",
+      "input": {
+        "question": "Once a borrower challenges a repayment, how long have we got to sort it out at Harbour?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dispute-resolution",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 1.704499999999996,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "960d7e0f-0a14-49b2-8506-ad72178e7654"
+        },
+        "id": "dispute-resolution-1",
+        "latency_ms": 1.67,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "dispute-resolution-2",
+      "input": {
+        "question": "How quickly does Harbour have to settle a disagreement about a payment after it is raised?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dispute-resolution",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 11.176541,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "statement-address-0",
+      "input": {
+        "question": "Where may Harbour send a loan statement?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "statement-address",
+      "variant": 0,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 10.219750000000005,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "statement-address-1",
+      "input": {
+        "question": "Can Harbour mail my loan statement somewhere other than the address in my customer details?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "statement-address",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 10.365667000000002,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "statement-address-2",
+      "input": {
+        "question": "I want Harbour to dispatch my account statement to a different destination. Is that allowed before updating my contact details?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "statement-address",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 1.5997500000000002,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "7ee40d2a-36f5-4446-b46a-b5b9bcde4444"
+        },
+        "id": "statement-address-2",
+        "latency_ms": 1.55,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "lei-required-0",
+      "input": {
+        "question": "Can an entity without an LEI transact in financial markets regulated by RBI?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "lei-required",
+      "variant": 0,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 8.516208000000006,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "lei-required-1",
+      "input": {
+        "question": "Is a firm missing its legal entity identifier allowed to trade in markets overseen by the Reserve Bank?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "lei-required",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 7.902958999999996,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "lei-required-2",
+      "input": {
+        "question": "Does the Reserve Bank let a company deal in its regulated markets before getting its LEI code?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "lei-required",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 7.9799580000000105,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "fx-threshold-0",
+      "input": {
+        "question": "What transaction amount triggers the LEI requirement for non-derivative foreign exchange clients?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "fx-threshold",
+      "variant": 0,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 7.685083000000006,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "fx-threshold-1",
+      "input": {
+        "question": "For ordinary currency trades that are not derivatives, at what deal size does RBI require a legal entity identifier?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "fx-threshold",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 7.72799999999998,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "fx-threshold-2",
+      "input": {
+        "question": "How large must a plain foreign-exchange transaction be before the customer needs an LEI under the Reserve Bank rules?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "fx-threshold",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 7.749167,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "dividend-report-0",
+      "input": {
+        "question": "What is the reporting deadline after a small finance bank declares a dividend?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dividend-report",
+      "variant": 0,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 7.430958000000004,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "dividend-report-1",
+      "input": {
+        "question": "After a small finance bank decides to pay its shareholders a dividend, when must it notify RBI supervisors?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dividend-report",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 7.469499999999982,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "dividend-report-2",
+      "input": {
+        "question": "How much time does a small finance lender have to tell the Reserve Bank about its dividend declaration?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dividend-report",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 7.296875,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "uti-start-0",
+      "input": {
+        "question": "When do the RBI Unique Transaction Identifier directions take effect?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "uti-start",
+      "variant": 0,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 17.974166999999994,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "uti-start-1",
+      "input": {
+        "question": "From what date must the RBI UTI rules for over-the-counter derivatives be followed?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "uti-start",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 21.443832999999984,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "uti-start-2",
+      "input": {
+        "question": "When does Section B on unique trade identifiers start applying under the Reserve Bank directions?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "uti-start",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": false
+      },
+      "passed": false,
+      "elapsed_ms": 19.793834000000004,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "blocked-waiver",
+      "input": {
+        "question": "How big a charge can I wipe off a Harbour loan without getting a human to approve the amount?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 1.5708329999999933,
+      "response": {
+        "status": "not_permitted",
+        "answer": "You are not permitted to access the information needed to answer this question. Please contact an authorized colleague.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "access_restricted",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Access is required; no source content disclosed.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "ee95c353-fed9-46ee-b0d4-2314b343d625"
+        },
+        "id": "blocked-waiver",
+        "latency_ms": 1.52,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "blocked-payment",
+      "input": {
+        "question": "Could Harbour set up a new debit three months from now, or is that too far away?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": false,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": false,
+      "elapsed_ms": 1.491500000000002,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 1
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "cad27c95-f904-417c-902f-6fd4bcb8e700"
+        },
+        "id": "blocked-payment",
+        "latency_ms": 1.45,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "blocked-identity",
+      "input": {
+        "question": "What does a caller need to confirm before Harbour lets me make changes involving their money?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 1.321708000000001,
+      "response": {
+        "status": "not_permitted",
+        "answer": "You are not permitted to access the information needed to answer this question. Please contact an authorized colleague.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "access_restricted",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Access is required; no source content disclosed.",
+              "ms": 1
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "89c766c4-26e6-41b5-b650-5f04da5eb5a2"
+        },
+        "id": "blocked-identity",
+        "latency_ms": 1.32,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "blocked-hardship-age",
+      "input": {
+        "question": "A Harbour borrower wants a financial difficulty arrangement. How seasoned must their loan be?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": false,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": false,
+      "elapsed_ms": 1.5381670000000156,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "1438a1a8-ca2b-4ed1-a60a-b2b4a8b0587c"
+        },
+        "id": "blocked-hardship-age",
+        "latency_ms": 1.53,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "blocked-dispute-resolution",
+      "input": {
+        "question": "How quickly does Harbour have to settle a disagreement about a payment after it is raised?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 1.2746670000000222,
+      "response": {
+        "status": "not_permitted",
+        "answer": "You are not permitted to access the information needed to answer this question. Please contact an authorized colleague.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "access_restricted",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Access is required; no source content disclosed.",
+              "ms": 1
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "3e85b072-0a59-4f46-8ed8-151f910d9ba2"
+        },
+        "id": "blocked-dispute-resolution",
+        "latency_ms": 1.27,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "blocked-statement-address",
+      "input": {
+        "question": "I want Harbour to dispatch my account statement to a different destination. Is that allowed before updating my contact details?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": false,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": false,
+      "elapsed_ms": 1.5163750000000107,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 1
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "b70e73df-c8e5-450e-87d2-1067f0c97e3e"
+        },
+        "id": "blocked-statement-address",
+        "latency_ms": 1.51,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "absent-0",
+      "input": {
+        "question": "How many days of annual leave do Harbour employees receive?",
+        "role": "legal",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_in_corpus",
+      "family": "absent",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 1.4327499999999986,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for legal; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 1
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "0474e85c-7f64-44b6-bdc3-e8764a7a4a6d"
+        },
+        "id": "absent-0",
+        "latency_ms": 1.43,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "absent-1",
+      "input": {
+        "question": "What is the minimum CCTV retention period required for NBFC branch offices?",
+        "role": "legal",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_in_corpus",
+      "family": "absent",
+      "variant": null,
+      "checks": {
+        "status": false,
+        "citation_integrity": false,
+        "no_disclosure": false
+      },
+      "passed": false,
+      "elapsed_ms": 7.818790999999976,
+      "response": null,
+      "error": "provider_unavailable",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost_usd": null,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "absent-2",
+      "input": {
+        "question": "Which medication should Harbour employees take for a headache?",
+        "role": "legal",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_in_corpus",
+      "family": "absent",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 2.157624999999996,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for legal; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "178bf8dd-d3fe-40b1-a23a-56bd27a19c48"
+        },
+        "id": "absent-2",
+        "latency_ms": 2.14,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "absent-3",
+      "input": {
+        "question": "What is the capital of France?",
+        "role": "legal",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_in_corpus",
+      "family": "absent",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 1.3459580000000244,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for legal; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 1
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "7f3a51c2-17c6-4e09-8b1e-9339f2b57261"
+        },
+        "id": "absent-3",
+        "latency_ms": 1.34,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "not-yet-effective",
+      "input": {
+        "question": "What was the maximum single fee that a Harbour agent could waive?",
+        "role": "ops",
+        "as_of": "2025-12-31"
+      },
+      "expected_status": "not_in_corpus",
+      "family": "date",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 1.389708000000013,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2025-12-31",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2025-12-31.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 1
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 34.722916999999995,
+          "cache_hit": false,
+          "trace_id": "8e6276e7-0bc1-4c9e-ae8d-c8523439841a"
+        },
+        "id": "not-yet-effective",
+        "latency_ms": 1.38,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "source_run": "results/raw/dev-model-hybrid-2026-09-07T10-56-09-135Z.jsonl",
+  "evidence_scope": "Development debugging, additional API calls; not a scoring run.",
+  "rows": [
+    {
+      "id": "indiafinbench_REG_120",
+      "input": {
+        "id": "indiafinbench_REG_120",
+        "question": "For what purpose may a mutual fund borrow under SEBI (Mutual Funds) Regulations, and what are the two quantitative limits on such borrowing?",
+        "role": "ops",
+        "as_of": "2020-01-01"
+      },
+      "draft": {
+        "decision": "answer",
+        "statements": [
+          {
+            "text": "A mutual fund may borrow only to meet temporary liquidity needs for the purpose of repurchase, redemption of units, or payment of interest or dividend to unitholders.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "The mutual fund shall not borrow more than 20% of the net asset of the scheme.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "The duration of such borrowing shall not exceed a period of six months.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": []
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "doc_id": "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087",
+          "section": "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087#s74405",
+          "text": "Investment, borrowing, restriction, etc. 44. (2) The mutual fund shall not borrow except to meet temporary liquidity needs of the mutual funds for the purpose of repurchase, redemption of units or payment of interest or dividend to the unitholders: Provided that the mutual fund shall not borrow more than 20 per cent of the net asset of the scheme and the duration of such a borrowing shall not exceed a period of six months.",
+          "title": "Securities and exchange board of india mutual funds reg",
+          "effective_date": "1996-01-01",
+          "role": "ops",
+          "coverage": 0.425,
+          "score": 0.04390243902439024
+        },
+        {
+          "id": "E2",
+          "doc_id": "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087",
+          "section": "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087#s16101",
+          "text": "Investment, borrowing, restriction, etc. 44. (2) The mutual fund shall not borrow except to meet temporary liquidity needs...Provided that the mutual fund shall not borrow more than 20 per cent of the net asset of the scheme and the duration of such a borrowing shall not exceed a period of six months.",
+          "title": "Securities and exchange board of india mutual funds reg",
+          "effective_date": "1996-01-01",
+          "role": "ops",
+          "coverage": 0.289,
+          "score": 0.04285714285714286
+        },
+        {
+          "id": "E3",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s43461",
+          "text": "Regulation 16(1)(c): Category I Alternative Investment Funds shall not borrow funds directly or indirectly or engage in any leverage for the purpose of making investments or otherwise, except for borrowing funds to meet temporary funding requirements and day-to-day operational requirements for not more than thirty days, on not more than four occasions in a year and not more than ten percent of the investable funds.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.372,
+          "score": 0.04186046511627907
+        },
+        {
+          "id": "E4",
+          "doc_id": "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087",
+          "section": "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087#s19340",
+          "text": "Restrictions on business activities of the asset management company. 25. (7)(a) An asset management company shall not through any broker associated with the sponsor, purchase or sell securities, which is average of 5 per cent or more of the aggregate purchases and sale of securities made by the mutual fund in all its schemes: Provided that for the purpose of this sub-regulation, the aggregate purchase and sale of securities shall exclude sale and distribution of units issued by the mutual fund: Provided further that the aforesaid limit of 5 per cent shall apply for a block of any three months.",
+          "title": "Securities and exchange board of india mutual funds reg",
+          "effective_date": "1996-01-01",
+          "role": "ops",
+          "coverage": 0.409,
+          "score": 0.04011857707509882
+        },
+        {
+          "id": "E5",
+          "doc_id": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072",
+          "section": "SEBI_2012_securities_and_exchange_board_of_india_alternative_inve_072#s54641",
+          "text": "Passage A:\nRegulation 16(1)(c) (pre-2024): Category I Alternative Investment Funds shall not borrow funds directly or indirectly or engage in any leverage except for meeting temporary funding requirements for not more than thirty days, on not more than four occasions in a year and not more than ten percent of the investable funds.\n\nPassage B:\nRegulation 16(1)(c) (as substituted w.e.f. 07-08-2024): Category I Alternative Investment Funds shall not borrow funds directly or indirectly or engage in any leverage for the purpose of making investments or otherwise, except for borrowing funds to meet temporary funding requirements and day-to-day operational requirements for not more than thirty days, on not more than four occasions in a year and not more than ten percent of the investable funds.",
+          "title": "Securities and exchange board of india alternative inve",
+          "effective_date": "2012-01-01",
+          "role": "public",
+          "coverage": 0.372,
+          "score": 0.039458413926499035
+        },
+        {
+          "id": "E6",
+          "doc_id": "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087",
+          "section": "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087#s88303",
+          "text": "Under the SEBI (Mutual Funds) Regulations, 1996, the minimum networth requirement for an asset management company was originally set at rupees ten crore. The SEBI (Mutual Funds) (Amendment) Regulations, 2014 (w.e.f. 06-05-2014) substituted this threshold with 'rupees fifty crore', raising the minimum networth requirement substantially. Existing AMCs that did not meet this higher threshold were given three years from the date of notification of the 2014 amendment to increase their networth to the revised limit.",
+          "title": "Securities and exchange board of india mutual funds reg",
+          "effective_date": "1996-01-01",
+          "role": "ops",
+          "coverage": 0.346,
+          "score": 0.038548752834467126
+        }
+      ],
+      "error": null,
+      "usage": {
+        "input_tokens": 1332,
+        "output_tokens": 110,
+        "model": "gpt-4.1-mini-2025-04-14",
+        "calls": 1,
+        "cost_usd": 0.0007088000000000001
+      }
+    }
+  ]
+}

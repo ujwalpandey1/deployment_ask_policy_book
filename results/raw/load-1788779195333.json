@@ -1,0 +1,2351 @@
+{
+  "timestamp": "2026-09-07T11:06:35.329Z",
+  "mode": "model",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "concurrency": 12,
+  "requests": 146,
+  "errors": 0,
+  "cache_hits": 0,
+  "p50_ms": 1583.9107079999994,
+  "p95_ms": 2684.5791249999997,
+  "total_ms": 19041.287708,
+  "evidence_scope": "Observed local HTTP including audit. Not independent Linux/gateway qualification.",
+  "rows": [
+    {
+      "id": "indiafinbench_NUM_012",
+      "question_sha256": "91e33bbcfd84a59557d5526e8ba735cd28125278afd9d5efefc5a181c5028ffb",
+      "http_status": 200,
+      "latency_ms": 48.724624999999996,
+      "error": null,
+      "trace_id": "1c960ab3-d43e-4139-bdd0-88e915747c48",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_131",
+      "question_sha256": "dde79d9e4fda72b06261ef783a071edf4d7296ec4fd05111b5922c5c1684bb9d",
+      "http_status": 200,
+      "latency_ms": 52.7885,
+      "error": null,
+      "trace_id": "e5de5b99-1b11-4827-8795-fed0f6700224",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_136",
+      "question_sha256": "6e73904c7c33fd4144d5fa612130fb22fae4e92244e622ccfcf70c5b6df932fd",
+      "http_status": 200,
+      "latency_ms": 56.867999999999995,
+      "error": null,
+      "trace_id": "ceb15e3d-76b9-4d53-8867-10ce01871f6a",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "ooc-014",
+      "question_sha256": "a9d304fd1ad12748e7eebbb803e5e2e7cfccf0028e15e452c8d4a1c8e186248f",
+      "http_status": 200,
+      "latency_ms": 63.970833000000006,
+      "error": null,
+      "trace_id": "941ff713-6b5c-4788-a1c8-4311f1ef577c",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_CON_072",
+      "question_sha256": "c09543d7156bf6e44480364537015f8a27dbc943234b4a89fabf21d7ae5220b7",
+      "http_status": 200,
+      "latency_ms": 19.55745800000001,
+      "error": null,
+      "trace_id": "43adb572-6b9c-42ec-ba61-3dc653db3337",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "ooc-006",
+      "question_sha256": "f82c40f6bd25f92ffa015e89d2928f132f2d0c43edc1a85f0b58b95b1026b48b",
+      "http_status": 200,
+      "latency_ms": 880.108875,
+      "error": null,
+      "trace_id": "f877e264-df45-497d-af27-df5ab50fbca8",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1166,
+        "output_tokens": 15,
+        "cost_usd": 0.0004904,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "ooc-009",
+      "question_sha256": "82874a9507e5d930b84df47d464d9dc6c54f223180972edb29f474895c5ddb82",
+      "http_status": 200,
+      "latency_ms": 952.220916,
+      "error": null,
+      "trace_id": "2d618618-f1b1-4d57-b4dd-bca45e2858f2",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1218,
+        "output_tokens": 15,
+        "cost_usd": 0.0005112000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_098",
+      "question_sha256": "a17c306247f8698887b1a206ae0b3609b5e9f494d3161bf2d65b26a8f7c9d36b",
+      "http_status": 200,
+      "latency_ms": 1217.795916,
+      "error": null,
+      "trace_id": "1cc310da-875f-47f4-81d7-36a6ddd13eb7",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1300,
+        "output_tokens": 43,
+        "cost_usd": 0.0005888,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_061",
+      "question_sha256": "6f312e27facc73dbe701e248edfff4b09383d1fc10e8c453bb676c8b6baf5c0e",
+      "http_status": 200,
+      "latency_ms": 1368.9367499999998,
+      "error": null,
+      "trace_id": "d1392c70-a969-4e59-bd77-ce1a486cbc66",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 640,
+        "output_tokens": 61,
+        "cost_usd": 0.00035360000000000003,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_004",
+      "question_sha256": "b02c7b701d9e3caa726e6749d9047b40e5b4e9ba24d7009401b61ed5d8a355ed",
+      "http_status": 200,
+      "latency_ms": 1386.964958,
+      "error": null,
+      "trace_id": "8c31bb1d-d11c-4be9-8164-ce7e6231df53",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1033,
+        "output_tokens": 56,
+        "cost_usd": 0.0005028000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_142",
+      "question_sha256": "622a337f3ef216292d673ed667d9904a79d269683d90ec8e4756c97b94f9163a",
+      "http_status": 200,
+      "latency_ms": 1457.54975,
+      "error": null,
+      "trace_id": "87efff91-5e3b-4f6d-938c-81bbeb267c6d",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1328,
+        "output_tokens": 78,
+        "cost_usd": 0.000656,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_084",
+      "question_sha256": "b77087264f3713de8a911ae841bf0ae43bcfdb10bde5bdf642a32867d45ddcd1",
+      "http_status": 200,
+      "latency_ms": 1489.709417,
+      "error": null,
+      "trace_id": "a8058b05-989a-4230-b6bc-c9b0857459aa",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1180,
+        "output_tokens": 72,
+        "cost_usd": 0.0005872000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_169",
+      "question_sha256": "f22d0af49c1da9c08198267fcd222fe9cd8184dca48354f671cf919c76c6aee1",
+      "http_status": 200,
+      "latency_ms": 1433.747042,
+      "error": null,
+      "trace_id": "4bf90cd8-c0fe-4776-94a3-3b20114ab88f",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1173,
+        "output_tokens": 60,
+        "cost_usd": 0.0005652000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_111",
+      "question_sha256": "0ed63395c845171a4bc8a1f1acfca80678e71e400989611a9c558f1d5fc3abd7",
+      "http_status": 200,
+      "latency_ms": 1508.8190419999999,
+      "error": null,
+      "trace_id": "c4201e01-0cf3-4c89-9008-348ec9c2fb0e",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1199,
+        "output_tokens": 61,
+        "cost_usd": 0.0005772,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_073",
+      "question_sha256": "a0968901eb3d1f942fd6824d7db7bb5aaa5af0298314216024c4774027676eb3",
+      "http_status": 200,
+      "latency_ms": 1516.634625,
+      "error": null,
+      "trace_id": "ed936ecf-1088-411a-acc7-5eb15bdbda18",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1209,
+        "output_tokens": 76,
+        "cost_usd": 0.0006052000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_174",
+      "question_sha256": "1de0ceeca6e4cfbb8ab2aafcf343bdd9343a4b5f73920ec1925710020815e9d1",
+      "http_status": 200,
+      "latency_ms": 1637.197291,
+      "error": null,
+      "trace_id": "496f02df-3f19-4dc0-83fd-afbaec31e423",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1175,
+        "output_tokens": 92,
+        "cost_usd": 0.0006172,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_104",
+      "question_sha256": "3237c55bce8ecc481614cf87401d720b6f2d32ad36259ce83bf97a2d27875c89",
+      "http_status": 200,
+      "latency_ms": 10.066291999999976,
+      "error": null,
+      "trace_id": "223d0513-c6cc-4b6c-b88b-d35b213d39b2",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_103",
+      "question_sha256": "9e5a281d60d5134bfa92b7ea24b936b7c3aeffe0a8f7345ac4b9ab4ac0a14852",
+      "http_status": 200,
+      "latency_ms": 2409.2165840000002,
+      "error": null,
+      "trace_id": "bff311f5-0978-41d2-b38b-85b1362511f2",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1207,
+        "output_tokens": 160,
+        "cost_usd": 0.0007388,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_013",
+      "question_sha256": "e5f6baa141641356537b4bb0a246df654033c9f5ff7ed8bd2d5ce640f915798a",
+      "http_status": 200,
+      "latency_ms": 1515.5785,
+      "error": null,
+      "trace_id": "71fe1e40-d66e-400e-8072-1ee5dbea8aab",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1269,
+        "output_tokens": 68,
+        "cost_usd": 0.0006164000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_058",
+      "question_sha256": "24a10b308dc1991076a3754e719ba4286955c7117875945118b3ce57d57235c3",
+      "http_status": 200,
+      "latency_ms": 1463.21125,
+      "error": null,
+      "trace_id": "2655f2e8-cc91-46cc-a053-7db80f6f3f15",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1428,
+        "output_tokens": 69,
+        "cost_usd": 0.0006816,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_188",
+      "question_sha256": "af5a49cba38bc873a16f04e65b22483abf814602465359b6da93f608a5c05141",
+      "http_status": 200,
+      "latency_ms": 1871.507542,
+      "error": null,
+      "trace_id": "f00d55ff-bb1e-414f-a1a4-40d0adec22e3",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1301,
+        "output_tokens": 113,
+        "cost_usd": 0.0007012,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_130",
+      "question_sha256": "7e835d20022259fa1cd3bbe312fc378483d519024ca0c21e95902e71e6a78936",
+      "http_status": 200,
+      "latency_ms": 1554.830292,
+      "error": null,
+      "trace_id": "0674a052-4fa2-45ef-9078-87982b6ffbd6",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1109,
+        "output_tokens": 82,
+        "cost_usd": 0.0005748000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_079",
+      "question_sha256": "3e89fef106825d5a8112f54b0de078cef3d5361cd19df2d8a75a7400f9c842df",
+      "http_status": 200,
+      "latency_ms": 1472.7622909999998,
+      "error": null,
+      "trace_id": "1e495597-f0b9-4150-b2ec-52f2e78b48fa",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1191,
+        "output_tokens": 73,
+        "cost_usd": 0.0005932,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_CON_061",
+      "question_sha256": "d97b6106b24ee4d9d47202f6aff9ff16948e4a149de1aee33ee57c1d4f0ee6aa",
+      "http_status": 200,
+      "latency_ms": 2397.6841249999998,
+      "error": null,
+      "trace_id": "90df9209-0f81-45b8-b2e3-bd8031ae070e",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1458,
+        "output_tokens": 143,
+        "cost_usd": 0.000812,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_034",
+      "question_sha256": "54e1681a17b488efd2cee398dd841010e271441d41ed99bbad14d84c52a4f99c",
+      "http_status": 200,
+      "latency_ms": 1990.057333,
+      "error": null,
+      "trace_id": "29b7b534-5914-4c66-ac8a-1a2e11a3f15e",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1159,
+        "output_tokens": 122,
+        "cost_usd": 0.0006588000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_CON_043",
+      "question_sha256": "9ac8f5351eabad112408682ecec879b891dc5084b7e11096c2e099e75c1db5a7",
+      "http_status": 200,
+      "latency_ms": 2016.9314170000002,
+      "error": null,
+      "trace_id": "f260570c-1963-4095-be38-abd1ba0653b6",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 717,
+        "output_tokens": 125,
+        "cost_usd": 0.0004868,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_115",
+      "question_sha256": "035e5cd7120b5001c4145e08cc783764dd366859a92b4883dfb0575fb0b71ca0",
+      "http_status": 200,
+      "latency_ms": 2722.185625,
+      "error": null,
+      "trace_id": "6d548105-d8b5-46dd-97ae-eabd89f941b3",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1134,
+        "output_tokens": 201,
+        "cost_usd": 0.0007752000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_009",
+      "question_sha256": "c36c182e2fe1e6bcdb86712dc9dff6ae21acd0f0b6e5a16069fb2a41b684a414",
+      "http_status": 200,
+      "latency_ms": 2618.303083,
+      "error": null,
+      "trace_id": "307826b0-dfd5-4865-95b4-e7a28dbb5f8b",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1297,
+        "output_tokens": 188,
+        "cost_usd": 0.0008196000000000002,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_153",
+      "question_sha256": "60fbe3735df46510757285bc4386d47765483b16514ac3050d4c5cf023bde2a4",
+      "http_status": 200,
+      "latency_ms": 1617.529458,
+      "error": null,
+      "trace_id": "d1b3b289-983d-4285-9dd4-11f3a53b8449",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1249,
+        "output_tokens": 81,
+        "cost_usd": 0.0006292,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_CON_059",
+      "question_sha256": "70125b628c0c480906317ebbb951e8a1fb316d4daececbb85c6eeba830a9e9c6",
+      "http_status": 200,
+      "latency_ms": 2717.3619580000004,
+      "error": null,
+      "trace_id": "f49e90b1-680f-4a30-9114-69a678e90603",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1331,
+        "output_tokens": 189,
+        "cost_usd": 0.0008347999999999999,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_178",
+      "question_sha256": "446b8d30920ba04bb8669c1eaba07fd3fe4c2714994a5f12620c21bf3a95768b",
+      "http_status": 200,
+      "latency_ms": 1467.3861670000001,
+      "error": null,
+      "trace_id": "704cb7e3-a841-4f17-9227-b18cb074c4fe",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1229,
+        "output_tokens": 65,
+        "cost_usd": 0.0005956000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_040",
+      "question_sha256": "07d23aa7c1456ff49d7db59b2e259280017a72b25fe72a39e4a4a46c4e4a6822",
+      "http_status": 200,
+      "latency_ms": 1758.6089169999996,
+      "error": null,
+      "trace_id": "3a4bd43e-ef78-4621-af36-8d816a3fbdd0",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1200,
+        "output_tokens": 94,
+        "cost_usd": 0.0006303999999999999,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_CON_036",
+      "question_sha256": "4991f5550988636297f149a0a1b0dea97b0426bd8c5cd03aceb45283abffad3d",
+      "http_status": 200,
+      "latency_ms": 1731.7694589999996,
+      "error": null,
+      "trace_id": "ef713bb4-d614-4aef-8632-ac6650852c10",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1203,
+        "output_tokens": 89,
+        "cost_usd": 0.0006236,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_080",
+      "question_sha256": "ca80c14112c133ed6e7f89cf8db8883b4d47c881d3f0bb905bb7ac854765c0d7",
+      "http_status": 200,
+      "latency_ms": 1912.676042,
+      "error": null,
+      "trace_id": "2c1f8610-1c21-40ea-bac6-6f9af2f134f0",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1199,
+        "output_tokens": 96,
+        "cost_usd": 0.0006332,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_002",
+      "question_sha256": "46ce8fcd881d9725d6cc5d3ea5667147aebb97bebfd0d9abb635471222a8b76b",
+      "http_status": 200,
+      "latency_ms": 1520.246791,
+      "error": null,
+      "trace_id": "96edf32e-5503-4587-a41f-ebdd05336f98",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 985,
+        "output_tokens": 59,
+        "cost_usd": 0.0004883999999999999,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_065",
+      "question_sha256": "5bf7f64e79aaf92a44ba2df1446e23b2be7e6d86d2fe531d14e6e370102803bd",
+      "http_status": 200,
+      "latency_ms": 1533.729084,
+      "error": null,
+      "trace_id": "c8173394-4153-47a8-b615-e37d31b51825",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 805,
+        "output_tokens": 73,
+        "cost_usd": 0.0004388,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_095",
+      "question_sha256": "7d7caf88eeed831f867738119be2c7891428761b30c77f563601fd4a084b74c9",
+      "http_status": 200,
+      "latency_ms": 2181.187083,
+      "error": null,
+      "trace_id": "c418cced-047a-44fe-afb9-d1ae2e32b680",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1277,
+        "output_tokens": 63,
+        "cost_usd": 0.0006116,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_184",
+      "question_sha256": "c918d7514eacaf1ac218fd49c44247edd1cbecef0073255542831ba4aeff4918",
+      "http_status": 200,
+      "latency_ms": 1830.2167919999997,
+      "error": null,
+      "trace_id": "5dab73cb-14f1-48f7-858a-343b42be3f7f",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1187,
+        "output_tokens": 111,
+        "cost_usd": 0.0006524000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_114",
+      "question_sha256": "e21b06379b8166dff724e8c93e6348ff95a974a49530cff0de7340d6fa3f9b09",
+      "http_status": 200,
+      "latency_ms": 1566.3101670000005,
+      "error": null,
+      "trace_id": "2c18ac91-f98a-405c-ae34-9b33b4462423",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1201,
+        "output_tokens": 83,
+        "cost_usd": 0.0006132,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_106",
+      "question_sha256": "d2c9fc786212249b5bbd259a4a5d5a8cb6e5965e7aa2eb0d46390832a032f00f",
+      "http_status": 200,
+      "latency_ms": 12.914958999999726,
+      "error": null,
+      "trace_id": "bd1a5119-0000-49aa-8864-820f0df0b179",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_114",
+      "question_sha256": "855eb111184ccbf1704377a83166c8d66df3ba632d32836740203d59801109c2",
+      "http_status": 200,
+      "latency_ms": 2684.5791249999997,
+      "error": null,
+      "trace_id": "56e20799-532d-4bb3-a223-8690a44bf2d9",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1287,
+        "output_tokens": 168,
+        "cost_usd": 0.0007836000000000002,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_177",
+      "question_sha256": "414f10a997cdd8523c3950b0ea4bbeafa50b348d49559961b5e41c21d2aa6fba",
+      "http_status": 200,
+      "latency_ms": 973.5597910000006,
+      "error": null,
+      "trace_id": "0a5d118a-0d54-4d2f-8981-e721c19fcb92",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1260,
+        "output_tokens": 15,
+        "cost_usd": 0.000528,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_137",
+      "question_sha256": "5612d499a1e18fb1e0ff9574920d558d3708211877acf1d1424b6b198f49cc1f",
+      "http_status": 200,
+      "latency_ms": 2038.68575,
+      "error": null,
+      "trace_id": "80afdd36-1ea0-48ba-87e9-273f3658ea68",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1373,
+        "output_tokens": 141,
+        "cost_usd": 0.0007748000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_180",
+      "question_sha256": "2cc4cd7c6f9bf01d94a7dedb557aab4bd2ce26b05f22fe7938950ff9d733540a",
+      "http_status": 200,
+      "latency_ms": 2234.696,
+      "error": null,
+      "trace_id": "ddfe39ae-0565-4e45-ade8-b50ed04ff604",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1152,
+        "output_tokens": 155,
+        "cost_usd": 0.0007088,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_181",
+      "question_sha256": "f57e789c5c4b58231cc35597018007555331203391f9eed2e13f43c597b301f3",
+      "http_status": 200,
+      "latency_ms": 1783.9043339999998,
+      "error": null,
+      "trace_id": "7f8f5473-29c9-43a3-8ee8-315270047884",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1158,
+        "output_tokens": 92,
+        "cost_usd": 0.0006104000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_127",
+      "question_sha256": "84be5304d9e85ab0c5b3f1be38338c8fc42a12a220a437aa8150bce256b264b5",
+      "http_status": 200,
+      "latency_ms": 12.027208999999857,
+      "error": null,
+      "trace_id": "3628b0ce-b988-498b-bf1a-f2c4ae0e71ce",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_068",
+      "question_sha256": "0153a2f8c13c75f40bd0458becc34ef3edc6265e016a1fdb92c6db1a28075608",
+      "http_status": 200,
+      "latency_ms": 2684.1840839999995,
+      "error": null,
+      "trace_id": "e4ad4cb0-e928-4955-aee9-5f62acaaa4b3",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1388,
+        "output_tokens": 195,
+        "cost_usd": 0.0008672,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_118",
+      "question_sha256": "a29d23f6b7ed752d6db91ed5a9cc16f6c9ce90188763c0f1f5af276a1767f7aa",
+      "http_status": 200,
+      "latency_ms": 9.870915999999852,
+      "error": null,
+      "trace_id": "351a2bc7-8bcc-43f4-9857-f03019166bfa",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_REG_176",
+      "question_sha256": "87e1720c3346553106fadfe01edb95c732c876b9b358457c09373e56d906ca06",
+      "http_status": 200,
+      "latency_ms": 2153.8656250000004,
+      "error": null,
+      "trace_id": "ca2375c8-7854-4c7f-97a2-a944f4a600ab",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1272,
+        "output_tokens": 127,
+        "cost_usd": 0.000712,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_074",
+      "question_sha256": "e70f8d39e79bce1089d271b60c3c6189b6668d50bd36238eff515188a124281d",
+      "http_status": 200,
+      "latency_ms": 1364.5416670000004,
+      "error": null,
+      "trace_id": "e3e7fdc6-d01b-4ecd-b3e6-a9b6de57f926",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1001,
+        "output_tokens": 66,
+        "cost_usd": 0.000506,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_113",
+      "question_sha256": "49409ebf2d0a83965cc27e4ef5fe2f08ce40b0f804d35201b44d459a483e3237",
+      "http_status": 200,
+      "latency_ms": 2585.477333,
+      "error": null,
+      "trace_id": "0160c644-e6b1-47ff-b274-f756ed1c14ab",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1267,
+        "output_tokens": 206,
+        "cost_usd": 0.0008364000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_067",
+      "question_sha256": "4fb6b6ce91115e5857c4ebba754ae3c08ba09a5fd6340c0f7b5f25afe86d7222",
+      "http_status": 200,
+      "latency_ms": 2105.3932919999997,
+      "error": null,
+      "trace_id": "01b7dc72-5e76-4f33-b96b-1ea6d2c95378",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1335,
+        "output_tokens": 129,
+        "cost_usd": 0.0007404,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_007",
+      "question_sha256": "fe0b7b6136e9dc09650ce56202dbd67c6b5d850d6f7775c26f43ee59bf17c527",
+      "http_status": 200,
+      "latency_ms": 1566.493958,
+      "error": null,
+      "trace_id": "52f10a59-0195-4ab0-a7e1-2162956a213e",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1040,
+        "output_tokens": 81,
+        "cost_usd": 0.0005456,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_124",
+      "question_sha256": "709c0a30cb207fdc0a1fbea6f880f8317954ef49e60bd4f7556dcb597e912e0a",
+      "http_status": 200,
+      "latency_ms": 2593.5929589999996,
+      "error": null,
+      "trace_id": "62f89279-371a-46eb-9ca3-a891b80b9653",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1267,
+        "output_tokens": 166,
+        "cost_usd": 0.0007724000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "ooc-010",
+      "question_sha256": "0e295c1249592d2d2e6eedccc708bc76fe0226033cf363e30d86e30ecb7a14bb",
+      "http_status": 200,
+      "latency_ms": 825.1644579999993,
+      "error": null,
+      "trace_id": "6130de9e-b0c5-4ed8-9868-1fbb6e1ec315",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1131,
+        "output_tokens": 16,
+        "cost_usd": 0.00047800000000000007,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "internal-004",
+      "question_sha256": "3724b090cd7c44c2c3d1771ba42f8e029d64b577891a11b8de251e9c6ff1f4a8",
+      "http_status": 200,
+      "latency_ms": 1102.7073329999994,
+      "error": null,
+      "trace_id": "cd8163cd-c143-4c5d-bdb7-49c537287f4e",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1223,
+        "output_tokens": 39,
+        "cost_usd": 0.0005516000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_047",
+      "question_sha256": "071dde5351fc38a81342bf63075573719f672d07080f7b2c2472ba6955fea0be",
+      "http_status": 200,
+      "latency_ms": 11.854332999999315,
+      "error": null,
+      "trace_id": "5cdbaeb7-cbb7-4544-ad93-a56dc5b2d2af",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_108",
+      "question_sha256": "dc7eff315e037638fb6751be3f8e36fdc1eb0c890143c1b9771854808bb8b6c3",
+      "http_status": 200,
+      "latency_ms": 2411.51425,
+      "error": null,
+      "trace_id": "57f3c8b4-0367-4084-b160-273860fcd1c8",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1193,
+        "output_tokens": 152,
+        "cost_usd": 0.0007204000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_094",
+      "question_sha256": "20fb4d934bc5ff2f8a5932de1ba84560c2089dcd8f0b741edda8e007750e1c70",
+      "http_status": 200,
+      "latency_ms": 1383.9325830000007,
+      "error": null,
+      "trace_id": "a11c313f-fb5e-4f3c-be3d-4ec0c9815d8f",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1070,
+        "output_tokens": 64,
+        "cost_usd": 0.0005304,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_006",
+      "question_sha256": "1abba79de31690de60dac585316867237490d4ef3317ca31a40a0d1e74c09d53",
+      "http_status": 200,
+      "latency_ms": 1236.2639170000002,
+      "error": null,
+      "trace_id": "306dcc88-77b2-4079-87a0-1fdf0ae2a68f",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1172,
+        "output_tokens": 63,
+        "cost_usd": 0.0005696000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_023",
+      "question_sha256": "404d4de206c1d6501d088391872819b452a1b8f30ad3adf6c7addf076697a071",
+      "http_status": 200,
+      "latency_ms": 1626.6749170000003,
+      "error": null,
+      "trace_id": "455d66f9-8d0b-4fb5-a4a5-7831cd94f804",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1190,
+        "output_tokens": 103,
+        "cost_usd": 0.0006408,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_064",
+      "question_sha256": "02006d379bc53c1265ddc38687c3dcf7e1f6c02075f1e137fec7ce3d3392b418",
+      "http_status": 200,
+      "latency_ms": 2618.5295829999995,
+      "error": null,
+      "trace_id": "ae57675a-1b39-469a-a248-81b67e1032d6",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1300,
+        "output_tokens": 151,
+        "cost_usd": 0.0007616,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_CON_069",
+      "question_sha256": "9f48853c35a23246f9f7ec00183d73a028861c68513898adb62a4de18141386a",
+      "http_status": 200,
+      "latency_ms": 2632.345708,
+      "error": null,
+      "trace_id": "769d7401-1d12-4b32-ac13-9ac00ea61fd5",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1252,
+        "output_tokens": 173,
+        "cost_usd": 0.0007776,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_077",
+      "question_sha256": "1d8611bf9f457b6d2fd0c8817a9f2453a751b95bb3f4674658ecae954a1c97e6",
+      "http_status": 200,
+      "latency_ms": 8.762416000001394,
+      "error": null,
+      "trace_id": "1e5439ae-cad8-4a2c-9e34-e00920a479cc",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_135",
+      "question_sha256": "13009a95a168de35b4b0232e6986385f06131286cfd13ec17c8928d9d05cd87c",
+      "http_status": 200,
+      "latency_ms": 6.804292000000714,
+      "error": null,
+      "trace_id": "e842e99e-f724-45d7-b015-0d930f2681b6",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_071",
+      "question_sha256": "7cf1231e6a67d2e14f7afffb24104050f7b69f46b695b1e5488d3f8397ffe7ec",
+      "http_status": 200,
+      "latency_ms": 1425.068542,
+      "error": null,
+      "trace_id": "8b931f23-55c6-49df-a381-f33393891fbe",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1369,
+        "output_tokens": 65,
+        "cost_usd": 0.0006516,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_070",
+      "question_sha256": "3d239b413b4ef655f0f7d2ab253179b58ff713949d8124e2a8db7edf95b08de5",
+      "http_status": 200,
+      "latency_ms": 1206.3124160000007,
+      "error": null,
+      "trace_id": "81151e60-398a-41fb-b94e-e5088704b6c3",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1387,
+        "output_tokens": 45,
+        "cost_usd": 0.0006268000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_086",
+      "question_sha256": "79f80a846eda34448c4d13a8f501c91963e3b88a9dbdb297fb8b9b819651624d",
+      "http_status": 200,
+      "latency_ms": 1348.3340000000007,
+      "error": null,
+      "trace_id": "b0085915-4e04-41ff-94b7-4c0105acd962",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1234,
+        "output_tokens": 61,
+        "cost_usd": 0.0005912000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_078",
+      "question_sha256": "c03726b23cfa0c588442e954997e4513abc2e759a4d22983bdccd836dfc5eec5",
+      "http_status": 200,
+      "latency_ms": 1674.4759589999994,
+      "error": null,
+      "trace_id": "fd2f26c7-be88-4321-8548-79189caaba89",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1112,
+        "output_tokens": 96,
+        "cost_usd": 0.0005984000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_112",
+      "question_sha256": "55324e7a209f3a42f8276f99815cefbf407c50864b31d9e4ebdb9222926c8e3a",
+      "http_status": 200,
+      "latency_ms": 1890.8395830000009,
+      "error": null,
+      "trace_id": "d3e6d380-165a-4e8b-87ef-029145a16069",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1220,
+        "output_tokens": 98,
+        "cost_usd": 0.0006448,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_CON_052",
+      "question_sha256": "aa0a778d3f1e89fda8d706adcbe25c0c0c184240f993ca4888c0454fab87fd26",
+      "http_status": 200,
+      "latency_ms": 11.23174999999901,
+      "error": null,
+      "trace_id": "a56c7dbd-3d66-48ef-bf99-cd9d7708b809",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "ooc-011",
+      "question_sha256": "33fd64c86732b4356fe6fa5f4246abf143cb78cbecc706c30363186688daa5b4",
+      "http_status": 200,
+      "latency_ms": 821.6410830000004,
+      "error": null,
+      "trace_id": "3eb88e9c-3da7-4ada-8b15-93c0fb6edb68",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1348,
+        "output_tokens": 16,
+        "cost_usd": 0.0005648000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_183",
+      "question_sha256": "312a49f5cb578bf30a160222db3d709e42a625f4892b565942de371d4def01b6",
+      "http_status": 200,
+      "latency_ms": 2087.5446250000005,
+      "error": null,
+      "trace_id": "64d32682-8146-4845-95da-b194530af2ca",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1234,
+        "output_tokens": 133,
+        "cost_usd": 0.0007064,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_074",
+      "question_sha256": "dfb8958669c7d862adbb4b82c01158d0d668bb280708a0953717831034e07fb7",
+      "http_status": 200,
+      "latency_ms": 1667.126542,
+      "error": null,
+      "trace_id": "9188f006-d802-4295-8100-54d42911eb7d",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1230,
+        "output_tokens": 86,
+        "cost_usd": 0.0006296,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_102",
+      "question_sha256": "a057241783fc96a686d61d083f1ad02b8a077fc279037232c83cb47bc026a9ee",
+      "http_status": 200,
+      "latency_ms": 1863.0052909999995,
+      "error": null,
+      "trace_id": "abb2bba3-709f-47fe-a170-f849bf25e58b",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1282,
+        "output_tokens": 112,
+        "cost_usd": 0.0006920000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_058",
+      "question_sha256": "d4f9c048de5a7ec89c2b7f28d1cfe1f56c86b8574e343ad3237f5825ccbb8f4a",
+      "http_status": 200,
+      "latency_ms": 1276.493957999999,
+      "error": null,
+      "trace_id": "43af2403-d4d2-4d54-a3fa-f17402ff6a97",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 976,
+        "output_tokens": 59,
+        "cost_usd": 0.0004848000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_154",
+      "question_sha256": "fcc352763e7fa591753a22be4042fe65cdb24c8689b0bcb890c524dfc8b4f1df",
+      "http_status": 200,
+      "latency_ms": 1838.0509170000005,
+      "error": null,
+      "trace_id": "db3c7cc9-ddec-4763-bcce-e7ff362732d9",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1166,
+        "output_tokens": 108,
+        "cost_usd": 0.0006392,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_151",
+      "question_sha256": "db539a4597a8b8aea52e33cf985667377ed6f496942279a12c0eb86d8202069b",
+      "http_status": 200,
+      "latency_ms": 1406.7137079999993,
+      "error": null,
+      "trace_id": "0c525b7b-9e65-4d7d-853f-67f9a7b64e08",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1404,
+        "output_tokens": 61,
+        "cost_usd": 0.0006592000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_007",
+      "question_sha256": "0e114aa3d9ef1d98ff889afddcbd4ba4ff3e18f5844c79711c1184fd483fbdec",
+      "http_status": 200,
+      "latency_ms": 2733.447292,
+      "error": null,
+      "trace_id": "fb672806-7e99-470c-9891-66432feff557",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 724,
+        "output_tokens": 184,
+        "cost_usd": 0.000584,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_087",
+      "question_sha256": "da06aa0831ccb2701aee8f8c4a0772c6168feea03f7e25deca493a93e59601bc",
+      "http_status": 200,
+      "latency_ms": 10.826375000000553,
+      "error": null,
+      "trace_id": "fe0c4856-570e-463f-98c1-1a29abf1bd96",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_085",
+      "question_sha256": "e948d31874fdcf47f563665efe26fae87f604e9334df195810aff1e06764bfb8",
+      "http_status": 200,
+      "latency_ms": 8.726000000000568,
+      "error": null,
+      "trace_id": "e5b76c8e-ca64-44f4-8359-00272852a759",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_REG_007",
+      "question_sha256": "9b8e700beb918d38dd9acd8a94aa95e54b341bed9209bf8525de627153f949c0",
+      "http_status": 200,
+      "latency_ms": 1583.9107079999994,
+      "error": null,
+      "trace_id": "a1efaad5-af42-41a0-b46d-9470a2dd8073",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1133,
+        "output_tokens": 79,
+        "cost_usd": 0.0005796,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_186",
+      "question_sha256": "01b9aa2a56a501fdcdb9fedf5a80163b6b5c7fea5a8e3b02e7ea5e2287070e8b",
+      "http_status": 200,
+      "latency_ms": 2099.739584000001,
+      "error": null,
+      "trace_id": "2dcc17c4-7af5-408d-8327-191223d594ef",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1227,
+        "output_tokens": 121,
+        "cost_usd": 0.0006844,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_164",
+      "question_sha256": "a5b5542ba1a35267a503ad92dc0b583f7945e10a12bc9832946add199b2f9c52",
+      "http_status": 200,
+      "latency_ms": 1776.2924590000002,
+      "error": null,
+      "trace_id": "f4171e95-ccf1-459e-8bd5-002fb46d3672",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1340,
+        "output_tokens": 85,
+        "cost_usd": 0.000672,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_018",
+      "question_sha256": "91d5e008297c32a05714d0d46be7872a236b970260a17fbcdb970127a4bbd538",
+      "http_status": 200,
+      "latency_ms": 1409.9517919999998,
+      "error": null,
+      "trace_id": "5df66c27-de2d-4750-ba4e-6bec084e6898",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1266,
+        "output_tokens": 62,
+        "cost_usd": 0.0006056,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_173",
+      "question_sha256": "2c94e242ed4c93a5afefa764d91d99845bc61a34a84f19c20dada939e23cddfd",
+      "http_status": 200,
+      "latency_ms": 1712.2880409999998,
+      "error": null,
+      "trace_id": "6dda1c5d-0c17-45cb-a616-f2d98c1e6f7e",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1235,
+        "output_tokens": 101,
+        "cost_usd": 0.0006556,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_CON_077",
+      "question_sha256": "905e03c4983e711c6f4d30be8210736096756489c2b45f7bfa3afed4cf4c3159",
+      "http_status": 200,
+      "latency_ms": 15.328416999998808,
+      "error": null,
+      "trace_id": "cab4df3b-6b66-4473-a92d-cc1ee442ab25",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_101",
+      "question_sha256": "f759127b56b5634c81f3ce5a9a1bdd54ed0754962913b4f4128175df79786b05",
+      "http_status": 200,
+      "latency_ms": 1642.1636670000007,
+      "error": null,
+      "trace_id": "4e902017-2fdf-4418-998c-d014854e62ee",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1130,
+        "output_tokens": 94,
+        "cost_usd": 0.0006024,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_CON_030",
+      "question_sha256": "7f0b76b8a9013ce07d48212353711eef61cff5d997adac44422685b428816e07",
+      "http_status": 200,
+      "latency_ms": 2367.8507500000014,
+      "error": null,
+      "trace_id": "3c6ce572-8c49-42da-82a4-a3c4c28bf260",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1165,
+        "output_tokens": 123,
+        "cost_usd": 0.0006628,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_004",
+      "question_sha256": "a94bf32856627434865a20cfc5254daeb038b38acdafa8d2213f8673b08eb06a",
+      "http_status": 200,
+      "latency_ms": 6.975458000000799,
+      "error": null,
+      "trace_id": "5622e084-d269-4a80-baa6-5cd9749fd5a4",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_REG_120",
+      "question_sha256": "48705fd1a1856803e29508e25efd8004d86c4cc11e115761c69d9445a47db58f",
+      "http_status": 200,
+      "latency_ms": 1836.1918330000008,
+      "error": null,
+      "trace_id": "14ff01aa-c0fe-473d-9ad6-b6974b67193a",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1303,
+        "output_tokens": 106,
+        "cost_usd": 0.0006908000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_029",
+      "question_sha256": "888950298ca14c8427d81595de35de4a92496a515b2cd9cd2c9abff94818d681",
+      "http_status": 200,
+      "latency_ms": 1472.1619589999991,
+      "error": null,
+      "trace_id": "a829e4a0-e03a-4434-ba3c-26bf25b19b28",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1274,
+        "output_tokens": 67,
+        "cost_usd": 0.0006168,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_109",
+      "question_sha256": "0ca1c653b93b051e7616065ccb91a3b324335b0bcd734195fd280bd42eac7c6c",
+      "http_status": 200,
+      "latency_ms": 2427.6068749999995,
+      "error": null,
+      "trace_id": "985c0f48-d41c-424f-a72c-f46165aafbe2",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1122,
+        "output_tokens": 140,
+        "cost_usd": 0.0006728,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_119",
+      "question_sha256": "5275a0aa01a1b631ed0d07524698e9478b69acdfd110dc0044e83e44f4fe5127",
+      "http_status": 200,
+      "latency_ms": 3031.9252080000006,
+      "error": null,
+      "trace_id": "430b502d-ac57-4702-bbbf-6a3d32018827",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1198,
+        "output_tokens": 159,
+        "cost_usd": 0.0007336,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_016",
+      "question_sha256": "aef876fd7009634ec1938f7afce394716a9b3addd5125f04f4a8c23dca817dba",
+      "http_status": 200,
+      "latency_ms": 1375.9942500000016,
+      "error": null,
+      "trace_id": "c3194d62-211b-42e5-8b96-3c835f4359cd",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1176,
+        "output_tokens": 69,
+        "cost_usd": 0.0005808,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_089",
+      "question_sha256": "73bd205df52bcbc035553b781baa42ad8e239d0dbb96d960b5dc8e1a9daa50ac",
+      "http_status": 200,
+      "latency_ms": 1758.0747499999998,
+      "error": null,
+      "trace_id": "1709dfcb-d697-48e4-ba99-e336442625fb",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1211,
+        "output_tokens": 87,
+        "cost_usd": 0.0006236,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_194",
+      "question_sha256": "5ef847fb1e1e21e5898cca3e8e5aaaea527789447ac116ddd3172ccf3d0f59bb",
+      "http_status": 200,
+      "latency_ms": 11.629625000001397,
+      "error": null,
+      "trace_id": "68bfc7a0-bc33-4e32-8ae9-1f170decc456",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_REG_128",
+      "question_sha256": "da29778e7b59da5d1e41882bc2a0fefcba2ae688157a039ec3645a690c55d28b",
+      "http_status": 200,
+      "latency_ms": 1924.1610419999997,
+      "error": null,
+      "trace_id": "fb0e9e69-9ffc-458b-a0b0-4a811f788e7d",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1296,
+        "output_tokens": 114,
+        "cost_usd": 0.0007007999999999999,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_097",
+      "question_sha256": "0a09418bffe6ceb67b263c264a2013955d6877b859c058da3a3405a60f267e13",
+      "http_status": 200,
+      "latency_ms": 1467.177917000001,
+      "error": null,
+      "trace_id": "6986b716-6bd8-4f62-afae-a3529a8b0d00",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1227,
+        "output_tokens": 54,
+        "cost_usd": 0.0005772,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_197",
+      "question_sha256": "f555f571cf3492a00265f2b3f280ac9473efe7b2d3736c841671b703aa760f30",
+      "http_status": 200,
+      "latency_ms": 1607.5459579999988,
+      "error": null,
+      "trace_id": "3684f98b-595a-459a-ba9a-ff3b7cc68c5c",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1358,
+        "output_tokens": 78,
+        "cost_usd": 0.000668,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_008",
+      "question_sha256": "899ee973ee100e48fdf44ead6a316ebdb3d1d4833fa8a848a4b38dfe038e1c1f",
+      "http_status": 200,
+      "latency_ms": 1873.2123339999998,
+      "error": null,
+      "trace_id": "692cc773-92b8-404d-b597-931b634d0267",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1353,
+        "output_tokens": 114,
+        "cost_usd": 0.0007236,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_082",
+      "question_sha256": "907f6b63b3ff20d43860dee01bad42b155f9be4b51d73b4f6292b342c78350d8",
+      "http_status": 200,
+      "latency_ms": 1746.6344169999993,
+      "error": null,
+      "trace_id": "6a2f29c0-a77e-4f11-9892-259632358098",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 766,
+        "output_tokens": 101,
+        "cost_usd": 0.00046800000000000005,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_035",
+      "question_sha256": "73c7b60a26137d29438ecc530fa9e9aaba03aba5804d762c5d4cde8475d802f7",
+      "http_status": 200,
+      "latency_ms": 2046.636457999999,
+      "error": null,
+      "trace_id": "94e78a3b-f8c4-4e04-b6e3-70e769c07d59",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 745,
+        "output_tokens": 132,
+        "cost_usd": 0.0005092,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_138",
+      "question_sha256": "2cb673e3e2c30fc08a42ee69f02c6be3ca2868e105f6286935534c83c328073c",
+      "http_status": 200,
+      "latency_ms": 1264.2227079999993,
+      "error": null,
+      "trace_id": "65cd1495-233d-4611-a3a4-47da4c25c0b7",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1227,
+        "output_tokens": 47,
+        "cost_usd": 0.000566,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "internal-006",
+      "question_sha256": "66729785993e3f269d39e314dd6d2326579977784e9c5a44bcd5945aa0899507",
+      "http_status": 200,
+      "latency_ms": 8.781458999999813,
+      "error": null,
+      "trace_id": "6c2bfac5-fe19-4651-8f1b-1d7a14db963a",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_REG_063",
+      "question_sha256": "67ff4f7ef9405e273156141ff0746573b546e596224f2d12e7a91a614e2934fd",
+      "http_status": 200,
+      "latency_ms": 1372.90675,
+      "error": null,
+      "trace_id": "622e7563-6a40-4b92-906e-cfbdac632183",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1000,
+        "output_tokens": 54,
+        "cost_usd": 0.00048639999999999995,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_093",
+      "question_sha256": "76f981ae02556be89186a32d9bf45b62d2d7cdfb4110c7212e54d977050bc52a",
+      "http_status": 200,
+      "latency_ms": 1675.1291669999991,
+      "error": null,
+      "trace_id": "adbe64b3-b251-46e2-94cd-98a53379fd4c",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1181,
+        "output_tokens": 85,
+        "cost_usd": 0.0006084,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_069",
+      "question_sha256": "4af6690292f510dd111918aafbad04fe41248e42fbc5f043a51eb78644e8d2fe",
+      "http_status": 200,
+      "latency_ms": 845.2263750000002,
+      "error": null,
+      "trace_id": "b1690bae-9139-4be6-b598-119956a9a1d8",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1304,
+        "output_tokens": 15,
+        "cost_usd": 0.0005456,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_165",
+      "question_sha256": "651c88f77ad1adc6b7a9bc465c36790e2207972bfc2c6a1765f030486aeb758d",
+      "http_status": 200,
+      "latency_ms": 2002.1110829999998,
+      "error": null,
+      "trace_id": "ee71b431-f5b7-48b3-b0c5-46d350d24c9e",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1316,
+        "output_tokens": 98,
+        "cost_usd": 0.0006832,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_090",
+      "question_sha256": "eb359e7312f97c476fd5c0b9670803b65dc8c8222a978a4fa96609bdefbefed7",
+      "http_status": 200,
+      "latency_ms": 1590.0181249999987,
+      "error": null,
+      "trace_id": "a93e2f80-5e0a-458d-801e-caff4546cdf6",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1180,
+        "output_tokens": 85,
+        "cost_usd": 0.000608,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_086",
+      "question_sha256": "c2b2bee0ba3555a20a3fde5aea3f725e43001347baf7ee660720efb66ed9e8d9",
+      "http_status": 200,
+      "latency_ms": 11.455832999999984,
+      "error": null,
+      "trace_id": "508aed4d-d11a-4c9c-a9ba-108384216e46",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_003",
+      "question_sha256": "6eacc67b3d6d38bdf9f3f6d333b7f50d4a8191defe7413aedd8e1c18d6df9148",
+      "http_status": 200,
+      "latency_ms": 1586.5773329999993,
+      "error": null,
+      "trace_id": "9ef20432-cb62-41ce-a786-9703c13eb5e3",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1160,
+        "output_tokens": 74,
+        "cost_usd": 0.0005824,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_010",
+      "question_sha256": "22d96287d9a4d44f8a967686af02ebb73d2210b77148ca16e1653022fd0ab477",
+      "http_status": 200,
+      "latency_ms": 1410.5442500000008,
+      "error": null,
+      "trace_id": "73f53648-2a4f-4ace-bada-713530bd2115",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1037,
+        "output_tokens": 76,
+        "cost_usd": 0.0005364,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_089",
+      "question_sha256": "f400489709e3c6ab2e474e5948f31c4ade3da5270b874c111e1ac25117485f08",
+      "http_status": 200,
+      "latency_ms": 1257.7997080000005,
+      "error": null,
+      "trace_id": "47497e45-62be-47b4-b042-cbbf54a84a2c",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1177,
+        "output_tokens": 59,
+        "cost_usd": 0.0005652000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_040",
+      "question_sha256": "fa7865c999423b83ae3d8e731357c6b9aecaedcfc48ad1731bd868d2ca91c507",
+      "http_status": 200,
+      "latency_ms": 2818.0210000000006,
+      "error": null,
+      "trace_id": "b0d46aa3-f114-48a2-8b04-fbfb04c6a0e2",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1270,
+        "output_tokens": 159,
+        "cost_usd": 0.0007624,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "internal-009",
+      "question_sha256": "f1207815913e5c5fdafa5b814a9b547a4c3ef9d6d63f608c64075ab6433f31f5",
+      "http_status": 200,
+      "latency_ms": 1450.7801249999993,
+      "error": null,
+      "trace_id": "01ca8bf8-1db2-4a39-898c-f07897dd7cb3",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1358,
+        "output_tokens": 59,
+        "cost_usd": 0.0006376,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_010",
+      "question_sha256": "d4c9508bc30b0fcbae54c7987895cdc976ffcae6715f943a673962b07049a37e",
+      "http_status": 200,
+      "latency_ms": 2203.1219170000004,
+      "error": null,
+      "trace_id": "2edfe433-af8f-4619-98b6-fbf375ded6ba",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1257,
+        "output_tokens": 131,
+        "cost_usd": 0.0007124000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_107",
+      "question_sha256": "68b56b70ccf455fd2e4719a5ff9ce08deddf46dad6f7eb857038f9ce3075fab4",
+      "http_status": 200,
+      "latency_ms": 956.0193749999999,
+      "error": null,
+      "trace_id": "b989a204-db60-48b9-8e63-8dbc53d23061",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1415,
+        "output_tokens": 16,
+        "cost_usd": 0.0005916000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_CON_062",
+      "question_sha256": "7636f34d895402a3baea72d7d3ebe1a1a763ce76e73a943aef9d4822429cd735",
+      "http_status": 200,
+      "latency_ms": 2042.1977499999994,
+      "error": null,
+      "trace_id": "8b6e7346-227d-41ab-ae26-88dedeab7b02",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1250,
+        "output_tokens": 121,
+        "cost_usd": 0.0006936,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_033",
+      "question_sha256": "20576911e3d43c6998d4ab4ae21e37c6b6a814d3878091053716ed91641644e9",
+      "http_status": 200,
+      "latency_ms": 2913.5168749999993,
+      "error": null,
+      "trace_id": "c2ff760a-ac87-4f0a-8f7b-4000dd9e6dd9",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1217,
+        "output_tokens": 205,
+        "cost_usd": 0.0008148,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_038",
+      "question_sha256": "6dc0a2aa6b47fa86de498fd1e2a3380f6ccf4e4578fe6e8efe8526cabbff9d45",
+      "http_status": 200,
+      "latency_ms": 1684.5601669999996,
+      "error": null,
+      "trace_id": "d9b28792-b369-4c9f-9559-6fa0598eed51",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1374,
+        "output_tokens": 64,
+        "cost_usd": 0.000652,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_167",
+      "question_sha256": "9e9e229998f472614a898a92c0a2cec8dc9d931502ae76b7a0638e67dc49609d",
+      "http_status": 200,
+      "latency_ms": 785.1167079999996,
+      "error": null,
+      "trace_id": "0f2c5176-93c0-4d1c-81d2-948422b71f1a",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1133,
+        "output_tokens": 15,
+        "cost_usd": 0.00047720000000000005,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "ooc-000",
+      "question_sha256": "6b2599e8b18bbcb9fe5bb6a8036a3df4489aff522afcbdfe689e6e457ea58387",
+      "http_status": 200,
+      "latency_ms": 957.8576670000002,
+      "error": null,
+      "trace_id": "3e166966-b53a-4b3c-9b7b-68eef3761859",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1165,
+        "output_tokens": 15,
+        "cost_usd": 0.00049,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_168",
+      "question_sha256": "fe68ef8331dc5d8d259b7a9ecdff2d15b05e42a8d1256ab0bbaf1e52087e7711",
+      "http_status": 200,
+      "latency_ms": 2037.8867500000015,
+      "error": null,
+      "trace_id": "049ccfea-6a6a-4510-9ebd-ef11c9e04711",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1199,
+        "output_tokens": 108,
+        "cost_usd": 0.0006524000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_077",
+      "question_sha256": "c02e88ae2ccff1738214ac2480afffe973cdeea816427487e927d201f488ed85",
+      "http_status": 200,
+      "latency_ms": 1530.0814580000024,
+      "error": null,
+      "trace_id": "3149bb62-b84f-49ef-b7ec-40a7fff6f8d1",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1159,
+        "output_tokens": 78,
+        "cost_usd": 0.0005884000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_134",
+      "question_sha256": "790c25777fea2bf5cd08e0e245c3b0190a549a1f1ef2fbfdd9ca93bde44baa9a",
+      "http_status": 200,
+      "latency_ms": 2039.2073329999985,
+      "error": null,
+      "trace_id": "fada0895-bfa3-41ec-af01-ce6612bf3da8",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1380,
+        "output_tokens": 122,
+        "cost_usd": 0.0007472000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "internal-008",
+      "question_sha256": "295d06061d45755b87b90365f7d5a8102e1648c965f730cc2880d2612d736ae2",
+      "http_status": 200,
+      "latency_ms": 10.507291999998415,
+      "error": null,
+      "trace_id": "92629f7e-1876-464b-bd57-ac7989c9cfe4",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "indiafinbench_REG_022",
+      "question_sha256": "1803d594d148a85641423e2994ea0c37ab17732b1af9e5e2a23fd2891e7e7c1e",
+      "http_status": 200,
+      "latency_ms": 1533.6597500000007,
+      "error": null,
+      "trace_id": "0de98ce8-398d-4010-b555-5aebb1606348",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 551,
+        "output_tokens": 61,
+        "cost_usd": 0.000318,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_055",
+      "question_sha256": "99fdbc59a053ae5f8a6f89b2c43477faadbb2a631d761cdf73eacf1dcf550f09",
+      "http_status": 200,
+      "latency_ms": 1105.3545000000013,
+      "error": null,
+      "trace_id": "220b9427-c899-41d9-9ae5-b8ca68897ae8",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 783,
+        "output_tokens": 40,
+        "cost_usd": 0.00037720000000000006,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_079",
+      "question_sha256": "9f69b250168ea77a50169b2957bf2ccb9c8429b68377fc7f94cb19d8643025cf",
+      "http_status": 200,
+      "latency_ms": 1769.1733330000006,
+      "error": null,
+      "trace_id": "958b4efc-3508-4627-86fe-c9743ae30de1",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1187,
+        "output_tokens": 85,
+        "cost_usd": 0.0006108,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_156",
+      "question_sha256": "9ee1759879f417a8d115c1446cccba11bd3ab90c86ca94fa5e786b63185daceb",
+      "http_status": 200,
+      "latency_ms": 2059.549624999998,
+      "error": null,
+      "trace_id": "3430b1ba-9bd8-4c77-a8ab-ff213deb3d00",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1205,
+        "output_tokens": 101,
+        "cost_usd": 0.0006436,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_017",
+      "question_sha256": "31b4db91bd05ff5a951357763787651648d35548bf6bc926e2bd6ba41f9e9d8a",
+      "http_status": 200,
+      "latency_ms": 2017.7667079999992,
+      "error": null,
+      "trace_id": "2172ea59-bdbe-40dc-b7d2-7f8471030026",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1215,
+        "output_tokens": 49,
+        "cost_usd": 0.0005644,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_039",
+      "question_sha256": "7f01b822358aa5089c98d75ad082a5117e1fece2666fe86b8e97cea5c837da95",
+      "http_status": 200,
+      "latency_ms": 1812.9057909999992,
+      "error": null,
+      "trace_id": "8efdf7f7-ab34-4907-a07a-5bc5b26c91a6",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1173,
+        "output_tokens": 89,
+        "cost_usd": 0.0006116,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_080",
+      "question_sha256": "4f8e4a90c18de2dbdc740ef4f83736ca004ba0cc75db2cad9583a2cda617e5ef",
+      "http_status": 200,
+      "latency_ms": 1590.0171249999985,
+      "error": null,
+      "trace_id": "dd329324-edf1-4666-928f-83846b92200c",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 577,
+        "output_tokens": 69,
+        "cost_usd": 0.00034120000000000005,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_132",
+      "question_sha256": "77e44b2851a79409c15af78210951e2bc973a7644f613b1f1da8528ef73d3bcb",
+      "http_status": 200,
+      "latency_ms": 3331.7739999999994,
+      "error": null,
+      "trace_id": "666b3987-7bb6-41d1-85cb-816e70467503",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1290,
+        "output_tokens": 201,
+        "cost_usd": 0.0008376,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_172",
+      "question_sha256": "6b401cdf15a8bef0376cd024303c3b9525ff8b94042a58fa2583ba697301f091",
+      "http_status": 200,
+      "latency_ms": 1928.5249579999982,
+      "error": null,
+      "trace_id": "71ea96a6-ad79-4c4f-b040-17b8ed65c21a",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1303,
+        "output_tokens": 107,
+        "cost_usd": 0.0006924000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_049",
+      "question_sha256": "8a9211ad76f8ab7e1ca9c0146f79e5b3c778f00893e1c82d67dcb39af2a3eb40",
+      "http_status": 200,
+      "latency_ms": 2416.297292000001,
+      "error": null,
+      "trace_id": "3bb4493a-3903-4eef-a175-064a1dd2c142",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1165,
+        "output_tokens": 144,
+        "cost_usd": 0.0006964,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_096",
+      "question_sha256": "70b90714aa2d86b0683539a2896e9db0797801ed1874e45e20dac699b806da2f",
+      "http_status": 200,
+      "latency_ms": 1568.0789579999982,
+      "error": null,
+      "trace_id": "5d6b1abf-7cdd-44a8-a229-28fbf438f081",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1536,
+        "output_tokens": 77,
+        "cost_usd": 0.0007376000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_009",
+      "question_sha256": "7a76395818ce71e9fb5293f84e584fbc63f3d086445e71981272d9a306fd2e13",
+      "http_status": 200,
+      "latency_ms": 1337.0868330000012,
+      "error": null,
+      "trace_id": "c4b1b17c-2654-411c-baf7-328f0e3cae1c",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1298,
+        "output_tokens": 52,
+        "cost_usd": 0.0006024000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_070",
+      "question_sha256": "e8d3b3f5b3380b44a5064e1e1c2db51b5b7136275008dcb35c6b5827f724fdc6",
+      "http_status": 200,
+      "latency_ms": 1244.2464590000018,
+      "error": null,
+      "trace_id": "e3df5d32-bf3b-4d86-bd3a-3f91d3e71786",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 656,
+        "output_tokens": 57,
+        "cost_usd": 0.00035360000000000003,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_161",
+      "question_sha256": "5bcea16a7dcfed9f1b96fd2c3227dd311314a8eec9506f8e62ff509dd955e206",
+      "http_status": 200,
+      "latency_ms": 1634.2517920000028,
+      "error": null,
+      "trace_id": "d7a845ed-e49a-46fd-889f-4d01bc6b8314",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1258,
+        "output_tokens": 79,
+        "cost_usd": 0.0006296,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_066",
+      "question_sha256": "9f6c77b99bd42d481451bc0a38f1d0f680ca5662a587d3ec10d3c0be0ebf4e25",
+      "http_status": 200,
+      "latency_ms": 1996.7027080000007,
+      "error": null,
+      "trace_id": "2a1f2df9-74ba-4a4b-a685-f5d5f46776b2",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1268,
+        "output_tokens": 106,
+        "cost_usd": 0.0006768000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_TMP_078",
+      "question_sha256": "9cfae84de45a71c5c28fdb2d8f6c4722072bbfa65964ea8c4ae4cbd3afc8ea5f",
+      "http_status": 200,
+      "latency_ms": 1234.2655000000013,
+      "error": null,
+      "trace_id": "5920b1cf-d7f5-45c2-a008-9fbb791788d9",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1137,
+        "output_tokens": 64,
+        "cost_usd": 0.0005572,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_CON_070",
+      "question_sha256": "ec1a2541260440dc270cce9554ead3ef61b842ce64aa5db84e4b894604ed0b82",
+      "http_status": 200,
+      "latency_ms": 1679.9597499999982,
+      "error": null,
+      "trace_id": "ad4a38b3-2551-4b78-aaad-6a639e30627d",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1440,
+        "output_tokens": 108,
+        "cost_usd": 0.0007488,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_NUM_098",
+      "question_sha256": "5328fa33ba39912d5ccdc97746ca9a13730aea379ebd4892a61e2cb7b77c2c61",
+      "http_status": 200,
+      "latency_ms": 1902.7082919999993,
+      "error": null,
+      "trace_id": "a11a1639-4a66-4d89-b76e-caae7b0bde55",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1295,
+        "output_tokens": 102,
+        "cost_usd": 0.0006812000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "indiafinbench_REG_148",
+      "question_sha256": "1e4e5208c1d48ead45a05ddcf18c9683085c7a0502c988a7a289c9acd1a0cb29",
+      "http_status": 200,
+      "latency_ms": 1810.5423330000012,
+      "error": null,
+      "trace_id": "2314bb12-7e1e-46ec-982e-9d7e7b0e1e72",
+      "cache_hit": false,
+      "usage": {
+        "input_tokens": 1339,
+        "output_tokens": 99,
+        "cost_usd": 0.000694,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    }
+  ]
+}

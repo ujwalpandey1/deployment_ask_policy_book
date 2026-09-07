@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-09-07T10:29:09.644Z",
+  "source": "Development split only. No held-out inputs or labels used for threshold selection.",
+  "selection": "0.55 for conservative extractive preview. This fails qualification coverage. Model mode uses a separate semantic abstention decision; it is unmeasured.",
+  "curve": [
+    {
+      "floor": 0.23,
+      "coverage": 0.958,
+      "ooc_refusal": 0.1667,
+      "role_refusal": 0.8571
+    },
+    {
+      "floor": 0.3,
+      "coverage": 0.9076,
+      "ooc_refusal": 0.5,
+      "role_refusal": 0.8571
+    },
+    {
+      "floor": 0.4,
+      "coverage": 0.7563,
+      "ooc_refusal": 0.8333,
+      "role_refusal": 0.8571
+    },
+    {
+      "floor": 0.5,
+      "coverage": 0.4454,
+      "ooc_refusal": 0.8333,
+      "role_refusal": 0.8571
+    },
+    {
+      "floor": 0.55,
+      "coverage": 0.2941,
+      "ooc_refusal": 1,
+      "role_refusal": 0.8571
+    },
+    {
+      "floor": 0.6,
+      "coverage": 0.1933,
+      "ooc_refusal": 1,
+      "role_refusal": 0.8571
+    }
+  ]
+}

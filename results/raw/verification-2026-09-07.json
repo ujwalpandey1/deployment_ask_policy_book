@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-07",
+  "scope": "Local implementation verification, reconstructed from observed tool results; not independent qualification evidence",
+  "implementation_checks": "pass",
+  "checks": [
+    { "command": "npm test", "status": "pass", "tests": 21, "failed": 0 },
+    { "command": "npm run test:e2e", "status": "pass", "tests": 3, "failed": 0, "browser": "Chromium", "viewports": ["1440x1000", "390x844"] },
+    { "command": "npm run verify:data", "status": "pass", "verified_files": 51, "upstream_commit": "d87699bb97de6504b33f681eed66918a4d433ba0" },
+    { "command": "npm run rehearse", "status": "pass", "kind": "Actual HTTP process restart plus six synthetic cases", "artifact": "results/freshness_rehearsal.json" },
+    { "command": "npm run benchmark", "status": "pass", "mode": "extractive", "requests": 146, "concurrency": 12, "errors": 0, "cache_hits": 0, "p95_ms": 53.275292, "artifact": "results/latency_bench.json" },
+    { "command": "docker compose config --quiet", "status": "pass", "note": "Validated with a dummy local runner token, not a live container" },
+    { "command": "bash -n scripts/reproduce.sh", "status": "pass" },
+    { "command": "Local Markdown link check", "status": "pass", "files": 9, "broken_links": 0 },
+    { "command": "POST http://localhost:4600/ask", "status": "pass", "request_id": "handoff-smoke", "response_status": "answered", "verified_section": "HARBOUR_internal_servicing_policy#s00003" }
+  ],
+  "fixed_during_verification": [
+    "Reload report key collision",
+    "Role-override text diluting the restricted-match gate",
+    "Shared failed provider calls double-counting spend",
+    "Audit directory ownership across processes",
+    "Model extra-field projection and calculation-unit disclosure checks",
+    "Raw HTTP Host-header test initially used Fetch, which owns Host",
+    "Playwright force-stop left a stale owner file; test runs now have separate data directories and graceful SIGTERM"
+  ],
+  "unverified": [
+    "Live budget-model generation and semantic judge: credentials not configured",
+    "Semantic access isolation review",
+    "Private held-out correctness and private freshness update pack",
+    "Independent gateway-metered cost and matched-load Linux model latency",
+    "Docker build/runtime: daemon not running"
+  ],
+  "qualification": "not_established",
+  "known_failed_bars": {
+    "extractive_coverage": 0.2941,
+    "correct_role_refusal": 0.8571
+  }
+}

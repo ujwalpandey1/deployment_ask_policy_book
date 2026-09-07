@@ -1,0 +1,1040 @@
+{
+  "problem": "OP-05",
+  "claimed": {
+    "coverage": 0.9832,
+    "citation_verbatim_rate": 1,
+    "ooc_refusal_rate": 1,
+    "detected_role_violations": 0
+  },
+  "qualification": "not_established",
+  "pending": [
+    "Qualification bar review and independent reproduction",
+    "Semantic role review",
+    "Private held-out label grading",
+    "Private freshness update pack",
+    "Gateway-attested complete cost and matched-load Linux latency"
+  ],
+  "runs": [
+    {
+      "run_id": "dev-extractive-baseline-2026-09-07T10-19-02-860Z",
+      "seed": 42,
+      "timestamp": "2026-09-07T10:19:02.860Z",
+      "status": "completed",
+      "model": "none-extractive",
+      "mode": "extractive",
+      "retrieval": "baseline",
+      "split": "dev",
+      "concurrency": 12,
+      "provider": null,
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-extractive-baseline-2026-09-07T10-19-02-860Z.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 25.107832999999996,
+        "index_cost_usd": 0,
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "local CPU, no API calls"
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "api_calls": 0,
+        "rate_source": null,
+        "rate_provenance": "No generation API calls"
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 39.83670900000001,
+        "total_ms": 1974.094834
+      },
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 0,
+        "judge_enabled": false,
+        "judge_errors": 0,
+        "schema_valid_rate": 1,
+        "answer_accuracy": null,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": null,
+        "answered_rate_on_answerable": 0.9412,
+        "ooc_refusal_rate": 0.1667,
+        "fabricated_count": 5,
+        "fabrication_review_complete": false,
+        "not_permitted_rate": 0.7619,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": null
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": null
+          }
+        }
+      }
+    },
+    {
+      "run_id": "dev-extractive-hybrid-2026-09-07T10-19-15-458Z",
+      "seed": 42,
+      "timestamp": "2026-09-07T10:19:15.458Z",
+      "status": "completed",
+      "model": "none-extractive",
+      "mode": "extractive",
+      "retrieval": "hybrid",
+      "split": "dev",
+      "concurrency": 12,
+      "provider": null,
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-extractive-hybrid-2026-09-07T10-19-15-458Z.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 26.139999999999997,
+        "index_cost_usd": 0,
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "local CPU, no API calls"
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "api_calls": 0,
+        "rate_source": null,
+        "rate_provenance": "No generation API calls"
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 41.88612500000001,
+        "total_ms": 651.81175
+      },
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 0,
+        "judge_enabled": false,
+        "judge_errors": 0,
+        "schema_valid_rate": 1,
+        "answer_accuracy": null,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": null,
+        "answered_rate_on_answerable": 0.958,
+        "ooc_refusal_rate": 0.1667,
+        "fabricated_count": 5,
+        "fabrication_review_complete": false,
+        "not_permitted_rate": 0.8095,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": null
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": null
+          }
+        }
+      }
+    },
+    {
+      "run_id": "dev-extractive-hybrid-2026-09-07T10-22-28-238Z",
+      "seed": 42,
+      "timestamp": "2026-09-07T10:22:28.238Z",
+      "status": "completed",
+      "model": "none-extractive",
+      "mode": "extractive",
+      "retrieval": "hybrid",
+      "split": "dev",
+      "concurrency": 12,
+      "configuration": {
+        "context_chars": 3600,
+        "output_token_cap": 650,
+        "extractive_coverage_floor": 0.55,
+        "cache_size": 0
+      },
+      "provider": null,
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-extractive-hybrid-2026-09-07T10-22-28-238Z.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 22.379416,
+        "index_cost_usd": 0,
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "local CPU, no API calls"
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "api_calls": 0,
+        "rate_source": null,
+        "rate_provenance": "No generation API calls"
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 38.016791999999995,
+        "total_ms": 565.6303750000001
+      },
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 0,
+        "judge_enabled": false,
+        "judge_errors": 0,
+        "schema_valid_rate": 1,
+        "answer_accuracy": null,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": null,
+        "answered_rate_on_answerable": 0.2941,
+        "ooc_refusal_rate": 1,
+        "fabricated_count": 0,
+        "fabrication_review_complete": false,
+        "not_permitted_rate": 0.8095,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": null
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": null
+          }
+        }
+      }
+    },
+    {
+      "run_id": "dev-extractive-hybrid-2026-09-07T10-23-47-549Z",
+      "seed": 42,
+      "timestamp": "2026-09-07T10:23:47.549Z",
+      "status": "completed",
+      "model": "none-extractive",
+      "mode": "extractive",
+      "retrieval": "hybrid",
+      "split": "dev",
+      "concurrency": 12,
+      "configuration": {
+        "context_chars": 3600,
+        "output_token_cap": 650,
+        "extractive_coverage_floor": 0.55,
+        "cache_size": 0
+      },
+      "provider": null,
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-extractive-hybrid-2026-09-07T10-23-47-549Z.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 31.991291999999998,
+        "index_cost_usd": 0,
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "local CPU, no API calls"
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "api_calls": 0,
+        "rate_source": null,
+        "rate_provenance": "No generation API calls"
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 38.555082999999996,
+        "total_ms": 605.036166
+      },
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 0,
+        "judge_enabled": false,
+        "judge_errors": 0,
+        "schema_valid_rate": 1,
+        "answer_accuracy": null,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": null,
+        "answered_rate_on_answerable": 0.2941,
+        "ooc_refusal_rate": 1,
+        "fabricated_count": 0,
+        "fabrication_review_complete": false,
+        "not_permitted_rate": 0.8571,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": null
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": null
+          }
+        }
+      }
+    },
+    {
+      "run_id": "dev-model-hybrid-2026-09-07T10-48-43-615Z",
+      "seed": 42,
+      "timestamp": "2026-09-07T10:48:43.615Z",
+      "status": "completed_with_errors",
+      "model": "gpt-4.1-mini-2025-04-14",
+      "mode": "model",
+      "retrieval": "hybrid",
+      "split": "dev",
+      "concurrency": 12,
+      "configuration": {
+        "context_chars": 3600,
+        "output_token_cap": 650,
+        "extractive_coverage_floor": 0.55,
+        "cache_size": 0
+      },
+      "provider": "api.openai.com",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-model-hybrid-2026-09-07T10-48-43-615Z.jsonl",
+      "questions": 146,
+      "errors": 19,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 38.840208000000004,
+        "index_cost_usd": 0,
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "local CPU, no API calls"
+      },
+      "usage": {
+        "input_tokens": 133266,
+        "output_tokens": 12312,
+        "cost_usd": 0.0730056,
+        "api_calls": 120,
+        "rate_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "rate_provenance": "Season 1 fixed rates; vendor/upstream/MODELS.md, verified upstream 2026-09-06"
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 3059.4374590000007,
+        "total_ms": 21202.242833
+      },
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 0,
+        "judge_enabled": false,
+        "judge_errors": 0,
+        "schema_valid_rate": 0.8699,
+        "answer_accuracy": null,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": null,
+        "answered_rate_on_answerable": 0.7647,
+        "ooc_refusal_rate": 1,
+        "fabricated_count": 0,
+        "fabrication_review_complete": false,
+        "not_permitted_rate": 0.8571,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": null
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": null
+          }
+        }
+      }
+    },
+    {
+      "run_id": "dev-model-hybrid-2026-09-07T10-52-24-503Z",
+      "seed": 42,
+      "timestamp": "2026-09-07T10:52:24.503Z",
+      "status": "completed_with_errors",
+      "model": "gpt-4.1-mini-2025-04-14",
+      "mode": "model",
+      "retrieval": "hybrid",
+      "split": "dev",
+      "concurrency": 12,
+      "configuration": {
+        "context_chars": 3600,
+        "output_token_cap": 650,
+        "extractive_coverage_floor": 0.55,
+        "cache_size": 0
+      },
+      "provider": "api.openai.com",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-model-hybrid-2026-09-07T10-52-24-503Z.jsonl",
+      "questions": 146,
+      "errors": 15,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 28.634125000000004,
+        "index_cost_usd": 0,
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "local CPU, no API calls"
+      },
+      "usage": {
+        "input_tokens": 143466,
+        "output_tokens": 13075,
+        "cost_usd": 0.0783064,
+        "api_calls": 120,
+        "rate_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "rate_provenance": "Season 1 fixed rates; vendor/upstream/MODELS.md, verified upstream 2026-09-06"
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 2609.3932919999997,
+        "total_ms": 19430.575542
+      },
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 0,
+        "judge_enabled": false,
+        "judge_errors": 0,
+        "schema_valid_rate": 0.8973,
+        "answer_accuracy": null,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": null,
+        "answered_rate_on_answerable": 0.7983,
+        "ooc_refusal_rate": 0.8333,
+        "fabricated_count": 1,
+        "fabrication_review_complete": false,
+        "not_permitted_rate": 0.8571,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": null
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": null
+          }
+        }
+      }
+    },
+    {
+      "run_id": "dev-model-hybrid-2026-09-07T10-56-09-135Z",
+      "seed": 42,
+      "timestamp": "2026-09-07T10:56:09.135Z",
+      "status": "completed",
+      "model": "gpt-4.1-mini-2025-04-14",
+      "mode": "model",
+      "retrieval": "hybrid",
+      "split": "dev",
+      "concurrency": 12,
+      "configuration": {
+        "context_chars": 3600,
+        "output_token_cap": 650,
+        "extractive_coverage_floor": 0.55,
+        "cache_size": 0
+      },
+      "provider": "api.openai.com",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-model-hybrid-2026-09-07T10-56-09-135Z.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 31.004417,
+        "index_cost_usd": 0,
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "local CPU, no API calls"
+      },
+      "usage": {
+        "input_tokens": 146106,
+        "output_tokens": 12806,
+        "cost_usd": 0.078932,
+        "api_calls": 120,
+        "rate_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "rate_provenance": "Season 1 fixed rates; vendor/upstream/MODELS.md, verified upstream 2026-09-06"
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 2920.6258749999997,
+        "total_ms": 258551.358583
+      },
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 276,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1,
+        "answer_accuracy": 0.8151,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": 0.8882,
+        "answered_rate_on_answerable": 0.916,
+        "ooc_refusal_rate": 1,
+        "fabricated_count": 0,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": 0.8571,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": 0.875
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": 0.7368
+          }
+        }
+      }
+    },
+    {
+      "run_id": "dev-model-hybrid-2026-09-07T11-02-31-140Z",
+      "seed": null,
+      "sampling_note": "No provider seed is set; repeated model runs may differ.",
+      "timestamp": "2026-09-07T11:02:31.140Z",
+      "status": "completed",
+      "model": "gpt-4.1-mini-2025-04-14",
+      "mode": "model",
+      "retrieval": "hybrid",
+      "split": "dev",
+      "concurrency": 12,
+      "configuration": {
+        "context_chars": 3600,
+        "output_token_cap": 650,
+        "extractive_coverage_floor": 0.55,
+        "cache_size": 0
+      },
+      "provider": "api.openai.com",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-model-hybrid-2026-09-07T11-02-31-140Z.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 31.810875,
+        "index_cost_usd": 0,
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "local CPU, no API calls"
+      },
+      "usage": {
+        "input_tokens": 148734,
+        "output_tokens": 11774,
+        "cost_usd": 0.078332,
+        "api_calls": 125,
+        "rate_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "rate_provenance": "Season 1 fixed rates; vendor/upstream/MODELS.md, verified upstream 2026-09-06"
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 2949.4680839999996,
+        "total_ms": 20590.822958
+      },
+      "evaluation_wall_ms": 273115.322625,
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 292,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1,
+        "answer_accuracy": 0.8824,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": 0.9181,
+        "answered_rate_on_answerable": 0.9664,
+        "ooc_refusal_rate": 1,
+        "fabricated_count": 0,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": 0.8571,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": 0.875
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": 0.8947
+          }
+        }
+      }
+    },
+    {
+      "run_id": "heldout-model-hybrid-2026-09-07T11-08-37-017Z",
+      "seed": null,
+      "sampling_note": "No provider seed is set; repeated model runs may differ.",
+      "timestamp": "2026-09-07T11:08:37.017Z",
+      "status": "completed",
+      "model": "gpt-4.1-mini-2025-04-14",
+      "mode": "model",
+      "retrieval": "hybrid",
+      "split": "heldout",
+      "concurrency": 12,
+      "configuration": {
+        "context_chars": 3600,
+        "output_token_cap": 650,
+        "extractive_coverage_floor": 0.55,
+        "cache_size": 0
+      },
+      "provider": "api.openai.com",
+      "input_sha256": "bd580141775127ebc8fef2aa5f30660ed3bb3913b7100589aa08b9ed765fe737",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/heldout-model-hybrid-2026-09-07T11-08-37-017Z.jsonl",
+      "questions": 272,
+      "errors": 0,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 35.969917,
+        "index_cost_usd": 0,
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "local CPU, no API calls"
+      },
+      "usage": {
+        "input_tokens": 245573,
+        "output_tokens": 21012,
+        "cost_usd": 0.13184839999999995,
+        "api_calls": 209,
+        "rate_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "rate_provenance": "Season 1 fixed rates; vendor/upstream/MODELS.md, verified upstream 2026-09-06"
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 2917.614916999999,
+        "total_ms": 34064.786292000004
+      },
+      "evaluation_wall_ms": 34097.98975,
+      "summary": null
+    },
+    {
+      "run_id": "dev-model-hybrid-2026-09-07T11-33-31-458Z",
+      "seed": null,
+      "sampling_note": "No provider seed is set; repeated model runs may differ.",
+      "timestamp": "2026-09-07T11:33:31.458Z",
+      "status": "completed",
+      "model": "gpt-4.1-mini-2025-04-14",
+      "mode": "model",
+      "retrieval": "hybrid",
+      "split": "dev",
+      "concurrency": 12,
+      "configuration": {
+        "context_chars": 3600,
+        "output_token_cap": 650,
+        "extractive_coverage_floor": 0.55,
+        "cache_size": 0
+      },
+      "provider": "api.openai.com",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-model-hybrid-2026-09-07T11-33-31-458Z.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 102.356834,
+        "index_cost_usd": 0,
+        "semantic": {
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "cache_hit": true,
+          "reused_chunks": 391,
+          "artifact_build_usage": {
+            "input_tokens": 39828,
+            "output_tokens": 0,
+            "cost_usd": 0.00079656,
+            "calls": 7,
+            "model": "text-embedding-3-small",
+            "embeddings": {
+              "input_tokens": 39828,
+              "output_tokens": 0,
+              "cost_usd": 0.00079656,
+              "calls": 7,
+              "model": "text-embedding-3-small"
+            }
+          }
+        },
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "Local CPU plus separately metered corpus embeddings; persistent cache and incremental reuse"
+      },
+      "embeddings": {
+        "model": "text-embedding-3-small",
+        "dimensions": 512,
+        "input": 0.02,
+        "source": "https://developers.openai.com/api/docs/models/text-embedding-3-small",
+        "verified": "2026-09-07",
+        "reproducibility": "Provider identifier has no dated immutable snapshot; independently verified pricing/pinning remains pending."
+      },
+      "usage": {
+        "input_tokens": 165864,
+        "output_tokens": 11970,
+        "cost_usd": 0.08355694000000002,
+        "api_calls": 272,
+        "embeddings": {
+          "input_tokens": 5107,
+          "api_calls": 146,
+          "cost_usd": 0.00010214000000000005
+        },
+        "rate_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "rate_provenance": "Generation: Season 1 fixed rates, vendor/upstream/MODELS.md. Embeddings when enabled: official rate verified 2026-09-07, disclosed separately. Totals include query embeddings; corpus indexing is separate."
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 4069.4617910000006,
+        "total_ms": 31287.760875
+      },
+      "evaluation_wall_ms": 297658.904416,
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 298,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1,
+        "answer_accuracy": 0.8403,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": 0.9261,
+        "answered_rate_on_answerable": 0.9748,
+        "ooc_refusal_rate": 1,
+        "fabricated_count": 0,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": 0.9524,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": 0.875
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": 0.8421
+          }
+        }
+      }
+    },
+    {
+      "run_id": "dev-model-hybrid-2026-09-07T11-41-34-085Z",
+      "seed": null,
+      "sampling_note": "No provider seed is set; repeated model runs may differ.",
+      "timestamp": "2026-09-07T11:41:34.085Z",
+      "status": "completed",
+      "model": "gpt-4.1-mini-2025-04-14",
+      "mode": "model",
+      "retrieval": "hybrid",
+      "split": "dev",
+      "concurrency": 12,
+      "configuration": {
+        "context_chars": 3600,
+        "output_token_cap": 650,
+        "extractive_coverage_floor": 0.55,
+        "cache_size": 0
+      },
+      "provider": "api.openai.com",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-model-hybrid-2026-09-07T11-41-34-085Z.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 105.74725,
+        "index_cost_usd": 0,
+        "semantic": {
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "cache_hit": true,
+          "reused_chunks": 391,
+          "artifact_build_usage": {
+            "input_tokens": 39828,
+            "output_tokens": 0,
+            "cost_usd": 0.00079656,
+            "calls": 7,
+            "model": "text-embedding-3-small",
+            "embeddings": {
+              "input_tokens": 39828,
+              "output_tokens": 0,
+              "cost_usd": 0.00079656,
+              "calls": 7,
+              "model": "text-embedding-3-small"
+            }
+          }
+        },
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "Local CPU plus separately metered corpus embeddings; persistent cache and incremental reuse"
+      },
+      "embeddings": {
+        "model": "text-embedding-3-small",
+        "dimensions": 512,
+        "input": 0.02,
+        "source": "https://developers.openai.com/api/docs/models/text-embedding-3-small",
+        "verified": "2026-09-07",
+        "reproducibility": "Provider identifier has no dated immutable snapshot; independently verified pricing/pinning remains pending."
+      },
+      "usage": {
+        "input_tokens": 155945,
+        "output_tokens": 12165,
+        "cost_usd": 0.07990133999999999,
+        "api_calls": 278,
+        "embeddings": {
+          "input_tokens": 5107,
+          "api_calls": 146,
+          "cost_usd": 0.00010214000000000005
+        },
+        "rate_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "rate_provenance": "Generation: Season 1 fixed rates, vendor/upstream/MODELS.md. Embeddings when enabled: official rate verified 2026-09-07, disclosed separately. Totals include query embeddings; corpus indexing is separate."
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 3172.483082999999,
+        "total_ms": 26286.557208000002
+      },
+      "evaluation_wall_ms": 288002.257791,
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 290,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1,
+        "answer_accuracy": 0.8571,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": 0.9405,
+        "answered_rate_on_answerable": 0.9832,
+        "ooc_refusal_rate": 0.8333,
+        "fabricated_count": 1,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": 0.9524,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": 1
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": 0.8421
+          }
+        }
+      }
+    },
+    {
+      "run_id": "dev-model-hybrid-2026-09-07T11-47-56-410Z",
+      "seed": null,
+      "sampling_note": "No provider seed is set; repeated model runs may differ.",
+      "timestamp": "2026-09-07T11:47:56.410Z",
+      "status": "completed",
+      "model": "gpt-4.1-mini-2025-04-14",
+      "mode": "model",
+      "retrieval": "hybrid",
+      "split": "dev",
+      "concurrency": 12,
+      "configuration": {
+        "context_chars": 3600,
+        "output_token_cap": 650,
+        "extractive_coverage_floor": 0.55,
+        "cache_size": 0,
+        "semantic_search": true,
+        "evidence_strategy": "lexical-primary with bounded semantic recovery",
+        "source_metadata": "per-excerpt"
+      },
+      "provider": "api.openai.com",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "corpus_sha256": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+      "raw_path": "results/raw/dev-model-hybrid-2026-09-07T11-47-56-410Z.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "indexing": {
+        "changed": true,
+        "added": 34,
+        "modified": 0,
+        "removed": 0,
+        "indexing_ms": 104.295042,
+        "index_cost_usd": 0,
+        "semantic": {
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "cache_hit": true,
+          "reused_chunks": 391,
+          "artifact_build_usage": {
+            "input_tokens": 39828,
+            "output_tokens": 0,
+            "cost_usd": 0.00079656,
+            "calls": 7,
+            "model": "text-embedding-3-small",
+            "embeddings": {
+              "input_tokens": 39828,
+              "output_tokens": 0,
+              "cost_usd": 0.00079656,
+              "calls": 7,
+              "model": "text-embedding-3-small"
+            }
+          }
+        },
+        "reused_chunks": 0,
+        "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+        "scope": "Local CPU plus separately metered corpus embeddings; persistent cache and incremental reuse"
+      },
+      "embeddings": {
+        "model": "text-embedding-3-small",
+        "dimensions": 512,
+        "input": 0.02,
+        "source": "https://developers.openai.com/api/docs/models/text-embedding-3-small",
+        "verified": "2026-09-07",
+        "reproducibility": "Provider identifier has no dated immutable snapshot; independently verified pricing/pinning remains pending."
+      },
+      "usage": {
+        "input_tokens": 166337,
+        "output_tokens": 12065,
+        "cost_usd": 0.08389813999999993,
+        "api_calls": 281,
+        "embeddings": {
+          "input_tokens": 5107,
+          "api_calls": 146,
+          "cost_usd": 0.00010214000000000005
+        },
+        "rate_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "rate_provenance": "Generation: Season 1 fixed rates, vendor/upstream/MODELS.md. Embeddings when enabled: official rate verified 2026-09-07, disclosed separately. Totals include query embeddings; corpus indexing is separate."
+      },
+      "latency": {
+        "scope": "in-process, excludes HTTP and audit",
+        "p95_ms": 3104.0002920000006,
+        "total_ms": 24644.944125
+      },
+      "evaluation_wall_ms": 285536.939709,
+      "summary": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 297,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1,
+        "answer_accuracy": 0.8655,
+        "citation_verbatim_rate": 1,
+        "citation_support_rate": 0.9425,
+        "answered_rate_on_answerable": 0.9832,
+        "ooc_refusal_rate": 1,
+        "fabricated_count": 0,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": 0.9524,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": 1
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": 0.9474
+          }
+        }
+      }
+    }
+  ]
+}

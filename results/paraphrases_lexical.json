@@ -1,0 +1,3908 @@
+{
+  "timestamp": "2026-09-07T11:29:10.720Z",
+  "mode": "lexical",
+  "scope": "Hand-authored paraphrase regression set; expected facts and sources checked, not an independent semantic rubric score. No held-out questions used.",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "embedding": null,
+  "corpus": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+  "indexing": {
+    "changed": true,
+    "added": 34,
+    "modified": 0,
+    "removed": 0,
+    "indexing_ms": 30.897083999999996,
+    "index_cost_usd": 0,
+    "semantic": null,
+    "reused_chunks": 0,
+    "fingerprint": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c"
+  },
+  "summary": {
+    "total": 41,
+    "passed": 29,
+    "answerable": {
+      "total": 30,
+      "passed": 21
+    },
+    "paraphrases": {
+      "total": 20,
+      "passed": 11
+    },
+    "boundaries": {
+      "total": 11,
+      "passed": 8
+    },
+    "p95_ms": 1898.9769160000003,
+    "usage": {
+      "input_tokens": 28052,
+      "output_tokens": 1222,
+      "cost_usd": 0.013176000000000002,
+      "calls": 24,
+      "model": "gpt-4.1-mini-2025-04-14"
+    }
+  },
+  "results": [
+    {
+      "id": "waiver-0",
+      "input": {
+        "question": "What is the maximum single fee that a Harbour agent may waive?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "waiver",
+      "variant": 0,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1294.3612500000002,
+      "response": {
+        "status": "answered",
+        "answer": "An agent may waive a fee that has been applied to a loan where the fee is a single charge of ₹2,500 or less.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00003",
+            "quote": "## Fee waivers\n\nAn agent may waive a fee that has been applied to a loan where the fee is a single charge of\n**₹2,500 or less**, and where **no more than two fees** have already been waived on that loan in\nthe preceding twelve months. A fee that has already been waived cannot be waived again, and a fee\nthat is not in the applied state cannot be waived at all.\n\nA request that exceeds either limit is not refused outright: it is escalated, with the reason and\nthe customer's account of events recorded. Goodwill above these limits is a commercial decision and\nbelongs to a person, not to an agent following a script.",
+            "evidence_id": "E1",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "f15510a65f133767967137d506e476c5a9f4a1c38ad74d9aff83c877882fa633",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "An agent may waive a fee that has been applied to a loan where the fee is a single charge of ₹2,500 or less.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00003",
+              "HARBOUR_internal_servicing_policy#s00000",
+              "HARBOUR_internal_servicing_policy#s00007"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "3 permitted passages selected.",
+              "ms": 2
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1294
+            }
+          ],
+          "usage": {
+            "input_tokens": 985,
+            "output_tokens": 52,
+            "cost_usd": 0.0004772,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "b1ec79ca-ecba-4796-a5f1-2185748277c2"
+        },
+        "id": "waiver-0",
+        "latency_ms": 1294.03,
+        "cost_usd": 0.0004772
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 985,
+        "output_tokens": 52,
+        "cost_usd": 0.0004772,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "waiver-1",
+      "input": {
+        "question": "At Harbour, what is the most an automated agent can forgive from one loan charge?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "waiver",
+      "variant": 1,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1442.150041,
+      "response": {
+        "status": "answered",
+        "answer": "An automated agent at Harbour can forgive a fee of up to ₹2,500 on a single loan charge, subject to no more than two fees having been waived on that loan in the preceding twelve months.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00003",
+            "quote": "## Fee waivers\n\nAn agent may waive a fee that has been applied to a loan where the fee is a single charge of\n**₹2,500 or less**, and where **no more than two fees** have already been waived on that loan in\nthe preceding twelve months. A fee that has already been waived cannot be waived again, and a fee\nthat is not in the applied state cannot be waived at all.\n\nA request that exceeds either limit is not refused outright: it is escalated, with the reason and\nthe customer's account of events recorded. Goodwill above these limits is a commercial decision and\nbelongs to a person, not to an agent following a script.",
+            "evidence_id": "E1",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "f15510a65f133767967137d506e476c5a9f4a1c38ad74d9aff83c877882fa633",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "An automated agent at Harbour can forgive a fee of up to ₹2,500 on a single loan charge, subject to no more than two fees having been waived on that loan in the preceding twelve months.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00003",
+              "HARBOUR_internal_servicing_policy#s00001",
+              "HARBOUR_internal_servicing_policy#s00000",
+              "HARBOUR_internal_servicing_policy#s00004",
+              "HARBOUR_internal_servicing_policy#s00007"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "5 permitted passages selected.",
+              "ms": 2
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1442
+            }
+          ],
+          "usage": {
+            "input_tokens": 1383,
+            "output_tokens": 65,
+            "cost_usd": 0.0006572,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "7db44f21-dfd0-46a3-86a8-2be5eb450ef8"
+        },
+        "id": "waiver-1",
+        "latency_ms": 1442.01,
+        "cost_usd": 0.0006572
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1383,
+        "output_tokens": 65,
+        "cost_usd": 0.0006572,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "waiver-2",
+      "input": {
+        "question": "How big a charge can I wipe off a Harbour loan without getting a human to approve the amount?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "waiver",
+      "variant": 2,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1464.346125,
+      "response": {
+        "status": "answered",
+        "answer": "An agent may waive a fee charge applied to a Harbour loan if the fee is ₹2,500 or less and no more than two fees have been waived on that loan in the preceding twelve months, without needing human approval.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00003",
+            "quote": "## Fee waivers\n\nAn agent may waive a fee that has been applied to a loan where the fee is a single charge of\n**₹2,500 or less**, and where **no more than two fees** have already been waived on that loan in\nthe preceding twelve months. A fee that has already been waived cannot be waived again, and a fee\nthat is not in the applied state cannot be waived at all.\n\nA request that exceeds either limit is not refused outright: it is escalated, with the reason and\nthe customer's account of events recorded. Goodwill above these limits is a commercial decision and\nbelongs to a person, not to an agent following a script.",
+            "evidence_id": "E4",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "f15510a65f133767967137d506e476c5a9f4a1c38ad74d9aff83c877882fa633",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "An agent may waive a fee charge applied to a Harbour loan if the fee is ₹2,500 or less and no more than two fees have been waived on that loan in the preceding twelve months, without needing human approval.",
+            "evidence_ids": [
+              "E4"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00002",
+              "HARBOUR_internal_servicing_policy#s00004",
+              "HARBOUR_internal_servicing_policy#s00007",
+              "HARBOUR_internal_servicing_policy#s00003",
+              "HARBOUR_internal_servicing_policy#s00000"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "5 permitted passages selected.",
+              "ms": 3
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1464
+            }
+          ],
+          "usage": {
+            "input_tokens": 1409,
+            "output_tokens": 69,
+            "cost_usd": 0.000674,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "18e7ed42-a7ac-42b9-898f-0b46dc6fd3f3"
+        },
+        "id": "waiver-2",
+        "latency_ms": 1464.23,
+        "cost_usd": 0.000674
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1409,
+        "output_tokens": 69,
+        "cost_usd": 0.000674,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "payment-0",
+      "input": {
+        "question": "How many days ahead may a new one-off payment be scheduled at Harbour?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "payment",
+      "variant": 0,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1322.528792,
+      "response": {
+        "status": "answered",
+        "answer": "A new one-off payment may be scheduled at Harbour for a date no earlier than today and no more than 60 days ahead.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00002",
+            "quote": "## Payments\n\nAn agent may schedule a **new** one-off payment against an active loan: due no earlier than today\nand no more than **60 days** ahead, for an amount between **₹100** and **₹5,00,000**. A loan that\nhas been closed takes no further payments.\n\nThe servicing tooling cannot move, amend or cancel a payment that is already scheduled, and\nscheduling a second payment does not replace the first — it creates a second obligation, and the\ncustomer will be collected for both. So a request to *move* an existing instalment to a different\ndate is not something an agent may do by scheduling another payment. Verify the customer, tell\nthem plainly that the date cannot be changed automatically, and hand the case to a human. A\nrequest to add a payment the customer does not already owe — a part payment, an extra payment —\nis an ordinary scheduling request and needs no escalation.",
+            "evidence_id": "E1",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "dec9866d0a64752dd3c46a2d453ac16900505eb74abe18996a87b7a156b08625",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "A new one-off payment may be scheduled at Harbour for a date no earlier than today and no more than 60 days ahead.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00002",
+              "HARBOUR_internal_servicing_policy#s00005",
+              "HARBOUR_internal_servicing_policy#s00000"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "3 permitted passages selected.",
+              "ms": 2
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1322
+            }
+          ],
+          "usage": {
+            "input_tokens": 999,
+            "output_tokens": 50,
+            "cost_usd": 0.0004796,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "7be0f412-e33b-4e5e-b0f6-8292c21ec3bc"
+        },
+        "id": "payment-0",
+        "latency_ms": 1322.49,
+        "cost_usd": 0.0004796
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 999,
+        "output_tokens": 50,
+        "cost_usd": 0.0004796,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "payment-1",
+      "input": {
+        "question": "At Harbour, how far into the future can I book a fresh repayment?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "payment",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 6.8627500000000055,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 6
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "c18428bc-ff2a-411b-9dd3-413e1716b38e"
+        },
+        "id": "payment-1",
+        "latency_ms": 6.62,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "payment-2",
+      "input": {
+        "question": "Could Harbour set up a new debit three months from now, or is that too far away?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "payment",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 7.358375000000024,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 7
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "f095661f-24b8-48e1-8fff-fc6570261789"
+        },
+        "id": "payment-2",
+        "latency_ms": 7.25,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "identity-0",
+      "input": {
+        "question": "How is customer identity verified on the current contact at Harbour?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "identity",
+      "variant": 0,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1286.54825,
+      "response": {
+        "status": "answered",
+        "answer": "Customer identity on the current contact at Harbour is verified by confirming the last four digits of the registered mobile number against the account record.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00001",
+            "quote": "## Identity before money\n\nNo agent may move money, change a payment obligation, or forgive a charge until the customer's\nidentity has been verified on the current contact. This applies to scheduling a payment, cancelling\nan auto-debit mandate, waiving a fee, and applying a hardship plan. It applies even when the\ncustomer is plainly who they say they are, even when they have called before, and even when they\nare impatient.\n\nVerification means confirming the last four digits of the registered mobile number against the\naccount record. A verification that has been recorded on this contact is good for the remainder of\nthe contact and no longer.\n\nIf verification fails, say so plainly, do not hint at the correct answer, and do not offer a second\nroute to the same outcome. Two failed attempts on one contact end the automated journey: hand the\ncase to a human. A customer who cannot verify may still be given general information that is not\naccount-specific, and may still be told how to verify through the app.\n\nReading a loan record, looking at payment history, requesting a document, sending a statement to\nthe address already on file, and escalating are not money movements and do not require prior\nverification. Sending a statement anywhere other than the address already on the record is not\npermitted at all; the contact record must be updated first, through the normal contact-change\nroute.",
+            "evidence_id": "E1",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "b9b1b50af35b5e829532d6c7e56cc508824f633c5c14473e1925e2f425108af8",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "Customer identity on the current contact at Harbour is verified by confirming the last four digits of the registered mobile number against the account record.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00001",
+              "HARBOUR_internal_servicing_policy#s00007",
+              "HARBOUR_internal_servicing_policy#s00005",
+              "HARBOUR_internal_servicing_policy#s00000"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "4 permitted passages selected.",
+              "ms": 3
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1286
+            }
+          ],
+          "usage": {
+            "input_tokens": 1325,
+            "output_tokens": 50,
+            "cost_usd": 0.00061,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "31a3453f-3470-4b5b-849e-5244bfc52198"
+        },
+        "id": "identity-0",
+        "latency_ms": 1286.25,
+        "cost_usd": 0.00061
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1325,
+        "output_tokens": 50,
+        "cost_usd": 0.00061,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "identity-1",
+      "input": {
+        "question": "At Harbour, which details should I ask for to prove I am speaking to the borrower?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "identity",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 2.1805000000001655,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "3316fe01-3710-4f7f-9e96-8dcab5010ab0"
+        },
+        "id": "identity-1",
+        "latency_ms": 2.11,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "identity-2",
+      "input": {
+        "question": "What does a caller need to confirm before Harbour lets me make changes involving their money?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "identity",
+      "variant": 2,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1898.9769160000003,
+      "response": {
+        "status": "answered",
+        "answer": "Before Harbour lets you make changes involving their money, the caller's identity must be verified by confirming the last four digits of the registered mobile number against the account record on the current contact.\n\nNo money movement or changes to payment obligations can be made until this identity verification is confirmed during the contact.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00001",
+            "quote": "## Identity before money\n\nNo agent may move money, change a payment obligation, or forgive a charge until the customer's\nidentity has been verified on the current contact. This applies to scheduling a payment, cancelling\nan auto-debit mandate, waiving a fee, and applying a hardship plan. It applies even when the\ncustomer is plainly who they say they are, even when they have called before, and even when they\nare impatient.\n\nVerification means confirming the last four digits of the registered mobile number against the\naccount record. A verification that has been recorded on this contact is good for the remainder of\nthe contact and no longer.\n\nIf verification fails, say so plainly, do not hint at the correct answer, and do not offer a second\nroute to the same outcome. Two failed attempts on one contact end the automated journey: hand the\ncase to a human. A customer who cannot verify may still be given general information that is not\naccount-specific, and may still be told how to verify through the app.\n\nReading a loan record, looking at payment history, requesting a document, sending a statement to\nthe address already on file, and escalating are not money movements and do not require prior\nverification. Sending a statement anywhere other than the address already on the record is not\npermitted at all; the contact record must be updated first, through the normal contact-change\nroute.",
+            "evidence_id": "E1",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "b9b1b50af35b5e829532d6c7e56cc508824f633c5c14473e1925e2f425108af8",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "Before Harbour lets you make changes involving their money, the caller's identity must be verified by confirming the last four digits of the registered mobile number against the account record on the current contact.",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "text": "No money movement or changes to payment obligations can be made until this identity verification is confirmed during the contact.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00001",
+              "HARBOUR_internal_servicing_policy#s00000",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s35496",
+              "HARBOUR_internal_servicing_policy#s00007",
+              "SEBI_2018_securities_and_exchange_board_of_india_issue_of_capital_063#s10196",
+              "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087#s16101"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 3
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1898
+            }
+          ],
+          "usage": {
+            "input_tokens": 1391,
+            "output_tokens": 92,
+            "cost_usd": 0.0007036,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "ff471ec8-f43c-488e-a63b-e195732ec832"
+        },
+        "id": "identity-2",
+        "latency_ms": 1898.63,
+        "cost_usd": 0.0007036
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1391,
+        "output_tokens": 92,
+        "cost_usd": 0.0007036,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "hardship-age-0",
+      "input": {
+        "question": "What is the minimum loan age for a hardship plan at Harbour?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "hardship-age",
+      "variant": 0,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1162.6898329999997,
+      "response": {
+        "status": "answered",
+        "answer": "The minimum loan age for a hardship plan at Harbour is six whole months.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00004",
+            "quote": "## Hardship plans\n\nA hardship plan reduces or suspends collection for an agreed period while the customer's\ncircumstances recover. An agent may apply one where all of the following hold:\n\n- the loan has been on the book for at least **six whole months**;\n- the loan is in the `active` or `delinquent` state, and is not already on a plan;\n- the customer is not already on a hardship plan against any other loan; and\n- the term requested is between **one and six months**.\n\nA term longer than six months, a second concurrent plan, or a loan younger than six months must be\nescalated. Do not offer a hardship plan the customer has not asked for, and do not use one as a\nsubstitute for escalating a case where the customer has described a change in circumstances that\nthis policy says a human must assess.",
+            "evidence_id": "E1",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "caa93722c810cd6ce88d7966505ddebe892a42326d98fb0628547eb3f748f2f4",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "The minimum loan age for a hardship plan at Harbour is six whole months.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00004",
+              "HARBOUR_internal_servicing_policy#s00007",
+              "HARBOUR_internal_servicing_policy#s00000",
+              "HARBOUR_internal_servicing_policy#s00001"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "4 permitted passages selected.",
+              "ms": 5
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1162
+            }
+          ],
+          "usage": {
+            "input_tokens": 1334,
+            "output_tokens": 39,
+            "cost_usd": 0.000596,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "89dd5978-84d4-4eed-9bf2-9708bcfe970c"
+        },
+        "id": "hardship-age-0",
+        "latency_ms": 1162.46,
+        "cost_usd": 0.000596
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1334,
+        "output_tokens": 39,
+        "cost_usd": 0.000596,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "hardship-age-1",
+      "input": {
+        "question": "How long must a Harbour loan have existed before the borrower can get temporary repayment relief?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "hardship-age",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 9.69162499999993,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 9
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "9901a1e5-5971-4bf1-aae2-4d7a26d87844"
+        },
+        "id": "hardship-age-1",
+        "latency_ms": 9.4,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "hardship-age-2",
+      "input": {
+        "question": "A Harbour borrower wants a financial difficulty arrangement. How seasoned must their loan be?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "hardship-age",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 5.344749999999976,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 5
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "8e9891a7-4391-40d7-a9ec-833f9a3b37e8"
+        },
+        "id": "hardship-age-2",
+        "latency_ms": 5.22,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "dispute-resolution-0",
+      "input": {
+        "question": "What is the resolution deadline for a payment dispute at Harbour?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dispute-resolution",
+      "variant": 0,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1269.312208,
+      "response": {
+        "status": "answered",
+        "answer": "Harbour resolves payment disputes within 30 days of the date they are raised.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00005",
+            "quote": "## Disputes\n\nA dispute may be raised against any payment that fell due within the last **120 days**, provided\nthat payment does not already have an open dispute. Record the customer's reason in their own\nwords. Every dispute must be acknowledged at the point of raising it, and the customer must be\ngiven the resolution date: Harbour resolves disputes within **30 days** of the date they are\nraised. Breaching that service level is a reportable event.\n\nA dispute may be closed only from the open state, and only with an outcome of **upheld** or\n**rejected**. Closing a dispute that is already closed is an error, not a no-op, because it would\noverwrite an outcome someone has already recorded. Where the evidence is incomplete or the customer\nhas alleged fraud, the dispute stays open and the case goes to a human.",
+            "evidence_id": "E1",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "fa1c25fa193523636b6788c4a3ec665a123d782b8dc857e4242e5b161293b882",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "Harbour resolves payment disputes within 30 days of the date they are raised.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00005",
+              "HARBOUR_internal_servicing_policy#s00007",
+              "SEBI_2018_securities_and_exchange_board_of_india_buy-back_of_secu_061#s64290",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s85497",
+              "HARBOUR_internal_servicing_policy#s00000",
+              "HARBOUR_internal_servicing_policy#s00002"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 6
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1269
+            }
+          ],
+          "usage": {
+            "input_tokens": 1403,
+            "output_tokens": 40,
+            "cost_usd": 0.0006252,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "180f02b4-e0e2-4059-8d37-96ba1ec67af1"
+        },
+        "id": "dispute-resolution-0",
+        "latency_ms": 1269.04,
+        "cost_usd": 0.0006252
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1403,
+        "output_tokens": 40,
+        "cost_usd": 0.0006252,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "dispute-resolution-1",
+      "input": {
+        "question": "Once a borrower challenges a repayment, how long have we got to sort it out at Harbour?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dispute-resolution",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 6.440874999999778,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 6
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "b00f898e-af83-4af3-b7d7-953af48889e1"
+        },
+        "id": "dispute-resolution-1",
+        "latency_ms": 6.03,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "dispute-resolution-2",
+      "input": {
+        "question": "How quickly does Harbour have to settle a disagreement about a payment after it is raised?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dispute-resolution",
+      "variant": 2,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1304.5162919999998,
+      "response": {
+        "status": "answered",
+        "answer": "Harbour must resolve disputes about a payment within 30 days of the date the dispute is raised.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00005",
+            "quote": "## Disputes\n\nA dispute may be raised against any payment that fell due within the last **120 days**, provided\nthat payment does not already have an open dispute. Record the customer's reason in their own\nwords. Every dispute must be acknowledged at the point of raising it, and the customer must be\ngiven the resolution date: Harbour resolves disputes within **30 days** of the date they are\nraised. Breaching that service level is a reportable event.\n\nA dispute may be closed only from the open state, and only with an outcome of **upheld** or\n**rejected**. Closing a dispute that is already closed is an error, not a no-op, because it would\noverwrite an outcome someone has already recorded. Where the evidence is incomplete or the customer\nhas alleged fraud, the dispute stays open and the case goes to a human.",
+            "evidence_id": "E1",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "fa1c25fa193523636b6788c4a3ec665a123d782b8dc857e4242e5b161293b882",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "Harbour must resolve disputes about a payment within 30 days of the date the dispute is raised.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00005",
+              "HARBOUR_internal_servicing_policy#s00000",
+              "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087#s43777",
+              "HARBOUR_internal_servicing_policy#s00007",
+              "HARBOUR_internal_servicing_policy#s00002"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "5 permitted passages selected.",
+              "ms": 6
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1304
+            }
+          ],
+          "usage": {
+            "input_tokens": 1405,
+            "output_tokens": 44,
+            "cost_usd": 0.0006324,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "4b87e94d-4f0c-4daf-a598-155c207db402"
+        },
+        "id": "dispute-resolution-2",
+        "latency_ms": 1304.33,
+        "cost_usd": 0.0006324
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1405,
+        "output_tokens": 44,
+        "cost_usd": 0.0006324,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "statement-address-0",
+      "input": {
+        "question": "Where may Harbour send a loan statement?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "statement-address",
+      "variant": 0,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1272.7067920000004,
+      "response": {
+        "status": "answered",
+        "answer": "Harbour may send a loan statement only to the address already on file in the account record.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00001",
+            "quote": "## Identity before money\n\nNo agent may move money, change a payment obligation, or forgive a charge until the customer's\nidentity has been verified on the current contact. This applies to scheduling a payment, cancelling\nan auto-debit mandate, waiving a fee, and applying a hardship plan. It applies even when the\ncustomer is plainly who they say they are, even when they have called before, and even when they\nare impatient.\n\nVerification means confirming the last four digits of the registered mobile number against the\naccount record. A verification that has been recorded on this contact is good for the remainder of\nthe contact and no longer.\n\nIf verification fails, say so plainly, do not hint at the correct answer, and do not offer a second\nroute to the same outcome. Two failed attempts on one contact end the automated journey: hand the\ncase to a human. A customer who cannot verify may still be given general information that is not\naccount-specific, and may still be told how to verify through the app.\n\nReading a loan record, looking at payment history, requesting a document, sending a statement to\nthe address already on file, and escalating are not money movements and do not require prior\nverification. Sending a statement anywhere other than the address already on the record is not\npermitted at all; the contact record must be updated first, through the normal contact-change\nroute.",
+            "evidence_id": "E2",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "b9b1b50af35b5e829532d6c7e56cc508824f633c5c14473e1925e2f425108af8",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "Harbour may send a loan statement only to the address already on file in the account record.",
+            "evidence_ids": [
+              "E2"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00000",
+              "HARBOUR_internal_servicing_policy#s00001",
+              "HARBOUR_internal_servicing_policy#s00004",
+              "SEBI_2021_securities_and_exchange_board_of_india_issue_and_listin_056#s12535",
+              "HARBOUR_internal_servicing_policy#s00007"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "5 permitted passages selected.",
+              "ms": 5
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1272
+            }
+          ],
+          "usage": {
+            "input_tokens": 1367,
+            "output_tokens": 43,
+            "cost_usd": 0.0006156,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "ae039770-1e2a-4c28-af0e-77043800f202"
+        },
+        "id": "statement-address-0",
+        "latency_ms": 1272.26,
+        "cost_usd": 0.0006156
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1367,
+        "output_tokens": 43,
+        "cost_usd": 0.0006156,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "statement-address-1",
+      "input": {
+        "question": "Can Harbour mail my loan statement somewhere other than the address in my customer details?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "statement-address",
+      "variant": 1,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1513.5375840000002,
+      "response": {
+        "status": "answered",
+        "answer": "Harbour is not permitted to mail a loan statement to any address other than the one recorded in the customer's details without first updating the contact record through the normal contact-change process.",
+        "citations": [
+          {
+            "doc_id": "HARBOUR_internal_servicing_policy",
+            "section": "HARBOUR_internal_servicing_policy#s00001",
+            "quote": "## Identity before money\n\nNo agent may move money, change a payment obligation, or forgive a charge until the customer's\nidentity has been verified on the current contact. This applies to scheduling a payment, cancelling\nan auto-debit mandate, waiving a fee, and applying a hardship plan. It applies even when the\ncustomer is plainly who they say they are, even when they have called before, and even when they\nare impatient.\n\nVerification means confirming the last four digits of the registered mobile number against the\naccount record. A verification that has been recorded on this contact is good for the remainder of\nthe contact and no longer.\n\nIf verification fails, say so plainly, do not hint at the correct answer, and do not offer a second\nroute to the same outcome. Two failed attempts on one contact end the automated journey: hand the\ncase to a human. A customer who cannot verify may still be given general information that is not\naccount-specific, and may still be told how to verify through the app.\n\nReading a loan record, looking at payment history, requesting a document, sending a statement to\nthe address already on file, and escalating are not money movements and do not require prior\nverification. Sending a statement anywhere other than the address already on the record is not\npermitted at all; the contact record must be updated first, through the normal contact-change\nroute.",
+            "evidence_id": "E1",
+            "title": "Harbour servicing policy (internal)",
+            "effective_date": "2026-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "892feb7afbd7dcc21e296796b96f1dc99ccd1417a4e095e77e824d3e0e91691d",
+            "quote_sha256": "b9b1b50af35b5e829532d6c7e56cc508824f633c5c14473e1925e2f425108af8",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "Harbour is not permitted to mail a loan statement to any address other than the one recorded in the customer's details without first updating the contact record through the normal contact-change process.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "HARBOUR_internal_servicing_policy#s00001",
+              "HARBOUR_internal_servicing_policy#s00004",
+              "HARBOUR_internal_servicing_policy#s00000",
+              "HARBOUR_internal_servicing_policy#s00007"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "4 permitted passages selected.",
+              "ms": 7
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1513
+            }
+          ],
+          "usage": {
+            "input_tokens": 1345,
+            "output_tokens": 59,
+            "cost_usd": 0.0006324,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "e4e80a9a-5aba-42c4-a8ab-3cbef9928014"
+        },
+        "id": "statement-address-1",
+        "latency_ms": 1513.47,
+        "cost_usd": 0.0006324
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1345,
+        "output_tokens": 59,
+        "cost_usd": 0.0006324,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "statement-address-2",
+      "input": {
+        "question": "I want Harbour to dispatch my account statement to a different destination. Is that allowed before updating my contact details?",
+        "role": "ops",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "statement-address",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 8.58224999999993,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 8
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "2341dbb8-909a-495e-a39b-5b9f42f11f9e"
+        },
+        "id": "statement-address-2",
+        "latency_ms": 8.37,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "lei-required-0",
+      "input": {
+        "question": "Can an entity without an LEI transact in financial markets regulated by RBI?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "lei-required",
+      "variant": 0,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1337.3113329999996,
+      "response": {
+        "status": "answered",
+        "answer": "Entities without an LEI code shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank of India (RBI).",
+        "citations": [
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s26368",
+            "quote": "Entities without an LEI code shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank. Entities shall ensure that their LEI code is considered current under the rules of the global LEI system and has not lapsed.",
+            "evidence_id": "E1",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "527ea59aab56b71c5a407acb5367d8819883018c91c81a1f1f8d6a5893a32ae0",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s63993",
+            "quote": "Passage A:\nEntities without an LEI code shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank.\n\nPassage B:\nNon-residents that are not legal entities in their country of incorporation (e.g., funds operated by a non-resident parent / management company that are each registered as a Foreign Portfolio Investor) may use the LEI code of the parent / management company.",
+            "evidence_id": "E2",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "f19e2f3e7a875e298887f06c55cf3bd24cd6463575085c82d7c7088318d662f9",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "Entities without an LEI code shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank of India (RBI).",
+            "evidence_ids": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s26368",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s63993",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s70231",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s38787",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s93142"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "5 permitted passages selected.",
+              "ms": 5
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1337
+            }
+          ],
+          "usage": {
+            "input_tokens": 949,
+            "output_tokens": 56,
+            "cost_usd": 0.0004692,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "2fd40cfb-eef9-4906-a0b9-718b247dd792"
+        },
+        "id": "lei-required-0",
+        "latency_ms": 1337.08,
+        "cost_usd": 0.0004692
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 949,
+        "output_tokens": 56,
+        "cost_usd": 0.0004692,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "lei-required-1",
+      "input": {
+        "question": "Is a firm missing its legal entity identifier allowed to trade in markets overseen by the Reserve Bank?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "lei-required",
+      "variant": 1,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1589.8742909999996,
+      "response": {
+        "status": "answered",
+        "answer": "Entities without a Legal Entity Identifier (LEI) shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank of India.",
+        "citations": [
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s63993",
+            "quote": "Passage A:\nEntities without an LEI code shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank.\n\nPassage B:\nNon-residents that are not legal entities in their country of incorporation (e.g., funds operated by a non-resident parent / management company that are each registered as a Foreign Portfolio Investor) may use the LEI code of the parent / management company.",
+            "evidence_id": "E3",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "f19e2f3e7a875e298887f06c55cf3bd24cd6463575085c82d7c7088318d662f9",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s26368",
+            "quote": "Entities without an LEI code shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank. Entities shall ensure that their LEI code is considered current under the rules of the global LEI system and has not lapsed.",
+            "evidence_id": "E5",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "527ea59aab56b71c5a407acb5367d8819883018c91c81a1f1f8d6a5893a32ae0",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "Entities without a Legal Entity Identifier (LEI) shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank of India.",
+            "evidence_ids": [
+              "E3",
+              "E5"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s70231",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s38787",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s63993",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s93142",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s26368",
+              "SEBI_2014_securities_and_exchange_board_of_india_infrastructure_i_091#s93922"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 5
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1590
+            }
+          ],
+          "usage": {
+            "input_tokens": 1081,
+            "output_tokens": 56,
+            "cost_usd": 0.000522,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "b42ca21e-1359-40bb-8ac9-8e05b509be1f"
+        },
+        "id": "lei-required-1",
+        "latency_ms": 1589.75,
+        "cost_usd": 0.000522
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1081,
+        "output_tokens": 56,
+        "cost_usd": 0.000522,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "lei-required-2",
+      "input": {
+        "question": "Does the Reserve Bank let a company deal in its regulated markets before getting its LEI code?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "lei-required",
+      "variant": 2,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1318.3895420000003,
+      "response": {
+        "status": "answered",
+        "answer": "Entities without an LEI code shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank of India.",
+        "citations": [
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s26368",
+            "quote": "Entities without an LEI code shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank. Entities shall ensure that their LEI code is considered current under the rules of the global LEI system and has not lapsed.",
+            "evidence_id": "E1",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "527ea59aab56b71c5a407acb5367d8819883018c91c81a1f1f8d6a5893a32ae0",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s63993",
+            "quote": "Passage A:\nEntities without an LEI code shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank.\n\nPassage B:\nNon-residents that are not legal entities in their country of incorporation (e.g., funds operated by a non-resident parent / management company that are each registered as a Foreign Portfolio Investor) may use the LEI code of the parent / management company.",
+            "evidence_id": "E2",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "f19e2f3e7a875e298887f06c55cf3bd24cd6463575085c82d7c7088318d662f9",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "Entities without an LEI code shall not be eligible to undertake transactions in the financial markets regulated by the Reserve Bank of India.",
+            "evidence_ids": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s26368",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s63993",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s35496"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "3 permitted passages selected.",
+              "ms": 8
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1318
+            }
+          ],
+          "usage": {
+            "input_tokens": 732,
+            "output_tokens": 52,
+            "cost_usd": 0.000376,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "eda46dbb-9e86-4d1c-b9d2-4c07b6d5bfa6"
+        },
+        "id": "lei-required-2",
+        "latency_ms": 1318.05,
+        "cost_usd": 0.000376
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 732,
+        "output_tokens": 52,
+        "cost_usd": 0.000376,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "fx-threshold-0",
+      "input": {
+        "question": "What transaction amount triggers the LEI requirement for non-derivative foreign exchange clients?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "fx-threshold",
+      "variant": 0,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 2100.783042,
+      "response": {
+        "status": "answered",
+        "answer": "The LEI code is required for non-derivative foreign exchange transactions involving an amount equivalent to or exceeding USD one million or its equivalent in other currencies.",
+        "citations": [
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s35496",
+            "quote": "For users / clients undertaking non-derivative foreign exchange transactions, the LEI code shall be applicable only for transactions involving an amount equivalent to or exceeding USD one million or equivalent thereof in other currencies.",
+            "evidence_id": "E1",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "25f264306a246c6181dc406b004979a3f5f25445303ff039cbc2c0085ce65e68",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "The LEI code is required for non-derivative foreign exchange transactions involving an amount equivalent to or exceeding USD one million or its equivalent in other currencies.",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s35496",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s63993",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s26368",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s75571",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s85497"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "5 permitted passages selected.",
+              "ms": 1
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 2100
+            }
+          ],
+          "usage": {
+            "input_tokens": 976,
+            "output_tokens": 55,
+            "cost_usd": 0.00047840000000000003,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "0e8b8f65-b8f0-4350-9613-888f47566704"
+        },
+        "id": "fx-threshold-0",
+        "latency_ms": 2100.59,
+        "cost_usd": 0.00047840000000000003
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 976,
+        "output_tokens": 55,
+        "cost_usd": 0.00047840000000000003,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "fx-threshold-1",
+      "input": {
+        "question": "For ordinary currency trades that are not derivatives, at what deal size does RBI require a legal entity identifier?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "fx-threshold",
+      "variant": 1,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 2192.1974169999994,
+      "response": {
+        "status": "answered",
+        "answer": "For users or clients undertaking non-derivative foreign exchange transactions, the Legal Entity Identifier (LEI) code is required only for transactions involving an amount equivalent to or exceeding USD one million or the equivalent thereof in other currencies.",
+        "citations": [
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s35496",
+            "quote": "For users / clients undertaking non-derivative foreign exchange transactions, the LEI code shall be applicable only for transactions involving an amount equivalent to or exceeding USD one million or equivalent thereof in other currencies.",
+            "evidence_id": "E4",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "25f264306a246c6181dc406b004979a3f5f25445303ff039cbc2c0085ce65e68",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "For users or clients undertaking non-derivative foreign exchange transactions, the Legal Entity Identifier (LEI) code is required only for transactions involving an amount equivalent to or exceeding USD one million or the equivalent thereof in other currencies.",
+            "evidence_ids": [
+              "E4"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s70231",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s38787",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s93142",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s35496",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s63993",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s75514"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 7
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 2192
+            }
+          ],
+          "usage": {
+            "input_tokens": 1045,
+            "output_tokens": 69,
+            "cost_usd": 0.0005283999999999999,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "ed777530-bf3d-48f0-927b-fb99a4f86499"
+        },
+        "id": "fx-threshold-1",
+        "latency_ms": 2191.94,
+        "cost_usd": 0.0005283999999999999
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1045,
+        "output_tokens": 69,
+        "cost_usd": 0.0005283999999999999,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "fx-threshold-2",
+      "input": {
+        "question": "How large must a plain foreign-exchange transaction be before the customer needs an LEI under the Reserve Bank rules?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "fx-threshold",
+      "variant": 2,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1709.9886669999996,
+      "response": {
+        "status": "answered",
+        "answer": "For users/clients undertaking non-derivative foreign exchange transactions, an LEI code is required only for transactions equivalent to or exceeding USD one million or equivalent in other currencies.",
+        "citations": [
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s35496",
+            "quote": "For users / clients undertaking non-derivative foreign exchange transactions, the LEI code shall be applicable only for transactions involving an amount equivalent to or exceeding USD one million or equivalent thereof in other currencies.",
+            "evidence_id": "E3",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "25f264306a246c6181dc406b004979a3f5f25445303ff039cbc2c0085ce65e68",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "For users/clients undertaking non-derivative foreign exchange transactions, an LEI code is required only for transactions equivalent to or exceeding USD one million or equivalent in other currencies.",
+            "evidence_ids": [
+              "E3"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s26368",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s63993",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s35496",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s70231",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s85497",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s38787"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 5
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1710
+            }
+          ],
+          "usage": {
+            "input_tokens": 1074,
+            "output_tokens": 59,
+            "cost_usd": 0.000524,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "8b323008-1d10-4460-8bab-6e6bdd6e7a51"
+        },
+        "id": "fx-threshold-2",
+        "latency_ms": 1709.89,
+        "cost_usd": 0.000524
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1074,
+        "output_tokens": 59,
+        "cost_usd": 0.000524,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "dividend-report-0",
+      "input": {
+        "question": "What is the reporting deadline after a small finance bank declares a dividend?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dividend-report",
+      "variant": 0,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1476.5595409999996,
+      "response": {
+        "status": "answered",
+        "answer": "A small finance bank declaring a dividend shall report details thereof as per the prescribed format to the Department of Supervision of the Reserve Bank within a fortnight of declaration of the dividend.",
+        "citations": [
+          {
+            "doc_id": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099",
+            "section": "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s50692",
+            "quote": "E. Reporting system. 11. A bank declaring dividend shall report details thereof as per the format prescribed in Annex II. The report shall be furnished to the Department of Supervision of the Reserve Bank within a fortnight of declaration of dividend.",
+            "evidence_id": "E6",
+            "title": "RBI Reserve Ba reserve bank of india small finance banks prudential no",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "a28ce23025bfcfe126f245372a9eebeccded03b42936244e0985fe5f0f576e8b",
+            "quote_sha256": "334c5122e06e2991c898228db12dc02fb0e20f41dd68cf71323c0d6388aaea44",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "A small finance bank declaring a dividend shall report details thereof as per the prescribed format to the Department of Supervision of the Reserve Bank within a fortnight of declaration of the dividend.",
+            "evidence_ids": [
+              "E6"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s62841",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s94130",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s64924",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s25842",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s70035",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s50692"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 5
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1476
+            }
+          ],
+          "usage": {
+            "input_tokens": 1080,
+            "output_tokens": 59,
+            "cost_usd": 0.0005264,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "8e0a9549-f621-401f-b142-b4ff2fc779b0"
+        },
+        "id": "dividend-report-0",
+        "latency_ms": 1476.35,
+        "cost_usd": 0.0005264
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1080,
+        "output_tokens": 59,
+        "cost_usd": 0.0005264,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "dividend-report-1",
+      "input": {
+        "question": "After a small finance bank decides to pay its shareholders a dividend, when must it notify RBI supervisors?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dividend-report",
+      "variant": 1,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 842.8883749999995,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "evidence_insufficient",
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s25842",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s62841",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s94130",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s64924",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s27496",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s67069"
+            ]
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 5
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "The answer model found insufficient support in the retrieved excerpts. This is not proof that the full book lacks the answer.",
+              "ms": 842
+            }
+          ],
+          "usage": {
+            "input_tokens": 1133,
+            "output_tokens": 16,
+            "cost_usd": 0.0004788000000000001,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "3f047440-8779-4572-9e5a-b499ae7f577c"
+        },
+        "id": "dividend-report-1",
+        "latency_ms": 842.59,
+        "cost_usd": 0.0004788000000000001
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1133,
+        "output_tokens": 16,
+        "cost_usd": 0.0004788000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "dividend-report-2",
+      "input": {
+        "question": "How much time does a small finance lender have to tell the Reserve Bank about its dividend declaration?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "dividend-report",
+      "variant": 2,
+      "checks": {
+        "status": false,
+        "expected_source": false,
+        "key_facts": false,
+        "citation_integrity": true
+      },
+      "passed": false,
+      "elapsed_ms": 925.5645420000001,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "evidence_insufficient",
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s62841",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s94130",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s25842",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s70035",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s27496",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s64924"
+            ]
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 5
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "The answer model found insufficient support in the retrieved excerpts. This is not proof that the full book lacks the answer.",
+              "ms": 925
+            }
+          ],
+          "usage": {
+            "input_tokens": 1122,
+            "output_tokens": 15,
+            "cost_usd": 0.0004728,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "b72f2992-ed1d-4825-9092-24e32cbcfc1d"
+        },
+        "id": "dividend-report-2",
+        "latency_ms": 925.49,
+        "cost_usd": 0.0004728
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1122,
+        "output_tokens": 15,
+        "cost_usd": 0.0004728,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "uti-start-0",
+      "input": {
+        "question": "When do the RBI Unique Transaction Identifier directions take effect?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "uti-start",
+      "variant": 0,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1331.2658329999995,
+      "response": {
+        "status": "answered",
+        "answer": "The RBI Unique Transaction Identifier (UTI) directions take effect from January 1, 2027.",
+        "citations": [
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s70231",
+            "quote": "Section A of the Directions on implementation of Legal Entity Identifier (LEI) shall come into force with immediate effect. Section B of the Directions on implementation of Unique Transaction Identifier (UTI) shall come into effect from January 01, 2027.",
+            "evidence_id": "E1",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "28ff0bbbaac383b5f03ef60f0709c4d19c8900304c68d20eca9496a1401b6c57",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s38787",
+            "quote": "Passage A:\nSection A of the Directions on implementation of Legal Entity Identifier (LEI) shall come into force with immediate effect.\n\nPassage B:\nSection B of the Directions on implementation of Unique Transaction Identifier (UTI) shall come into effect from January 01, 2027.",
+            "evidence_id": "E2",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "caec87abbb0ae1f1bedcb10e032fd1a57c09eea034fdc6a3d8767d411a5bf5e3",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s93142",
+            "quote": "Section A of the Directions on implementation of Legal Entity Identifier (LEI) shall come into force with immediate effect. Section B of the Directions on implementation of Unique Transaction Identifier (UTI) shall come into effect from January 01, 2027. The Master Direction was issued on March 27, 2026.",
+            "evidence_id": "E3",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "4e36f7ccc92cb0c72eb24ad3323d4f10015433ca3b8e5b94af537d7b71d8f556",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s75571",
+            "quote": "UTI shall be generated / reported for all transactions in OTC derivatives market undertaken in terms of the Governing Directions. The directions shall be applicable to OTC derivative transactions entered into on or after the date the directions come into effect. Section B on UTI shall come into effect from January 01, 2027.",
+            "evidence_id": "E4",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "8ee4a19a18493cfc8024131f5734d845c74fdb6c42777606d90296802d311913",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "The RBI Unique Transaction Identifier (UTI) directions take effect from January 1, 2027.",
+            "evidence_ids": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s70231",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s38787",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s93142",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s75571",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s41186",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s25842"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 4
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1331
+            }
+          ],
+          "usage": {
+            "input_tokens": 1218,
+            "output_tokens": 54,
+            "cost_usd": 0.0005736000000000001,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "c37ceb5a-8838-4f54-9345-007a109e87f1"
+        },
+        "id": "uti-start-0",
+        "latency_ms": 1331.1,
+        "cost_usd": 0.0005736000000000001
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1218,
+        "output_tokens": 54,
+        "cost_usd": 0.0005736000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "uti-start-1",
+      "input": {
+        "question": "From what date must the RBI UTI rules for over-the-counter derivatives be followed?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "uti-start",
+      "variant": 1,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1445.826,
+      "response": {
+        "status": "answered",
+        "answer": "The RBI UTI rules for over-the-counter derivatives must be followed starting from January 01, 2027.",
+        "citations": [
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s75571",
+            "quote": "UTI shall be generated / reported for all transactions in OTC derivatives market undertaken in terms of the Governing Directions. The directions shall be applicable to OTC derivative transactions entered into on or after the date the directions come into effect. Section B on UTI shall come into effect from January 01, 2027.",
+            "evidence_id": "E1",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "8ee4a19a18493cfc8024131f5734d845c74fdb6c42777606d90296802d311913",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s70231",
+            "quote": "Section A of the Directions on implementation of Legal Entity Identifier (LEI) shall come into force with immediate effect. Section B of the Directions on implementation of Unique Transaction Identifier (UTI) shall come into effect from January 01, 2027.",
+            "evidence_id": "E4",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "28ff0bbbaac383b5f03ef60f0709c4d19c8900304c68d20eca9496a1401b6c57",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s38787",
+            "quote": "Passage A:\nSection A of the Directions on implementation of Legal Entity Identifier (LEI) shall come into force with immediate effect.\n\nPassage B:\nSection B of the Directions on implementation of Unique Transaction Identifier (UTI) shall come into effect from January 01, 2027.",
+            "evidence_id": "E6",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "caec87abbb0ae1f1bedcb10e032fd1a57c09eea034fdc6a3d8767d411a5bf5e3",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "The RBI UTI rules for over-the-counter derivatives must be followed starting from January 01, 2027.",
+            "evidence_ids": [
+              "E1",
+              "E4",
+              "E6"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s75571",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s85497",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s26368",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s70231",
+              "SEBI_2015_securities_and_exchange_board_of_india_issue_and_listin_066#s75515",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s38787"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 4
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1446
+            }
+          ],
+          "usage": {
+            "input_tokens": 1085,
+            "output_tokens": 53,
+            "cost_usd": 0.0005187999999999999,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "a037edde-699a-4dbd-be2f-e8be79ec8b52"
+        },
+        "id": "uti-start-1",
+        "latency_ms": 1445.67,
+        "cost_usd": 0.0005187999999999999
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1085,
+        "output_tokens": 53,
+        "cost_usd": 0.0005187999999999999,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "uti-start-2",
+      "input": {
+        "question": "When does Section B on unique trade identifiers start applying under the Reserve Bank directions?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "answered",
+      "family": "uti-start",
+      "variant": 2,
+      "checks": {
+        "status": true,
+        "expected_source": true,
+        "key_facts": true,
+        "citation_integrity": true
+      },
+      "passed": true,
+      "elapsed_ms": 1410.8615419999996,
+      "response": {
+        "status": "answered",
+        "answer": "Section B on Unique Trade Identifiers (UTI) under the Reserve Bank directions starts applying from January 01, 2027.",
+        "citations": [
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s70231",
+            "quote": "Section A of the Directions on implementation of Legal Entity Identifier (LEI) shall come into force with immediate effect. Section B of the Directions on implementation of Unique Transaction Identifier (UTI) shall come into effect from January 01, 2027.",
+            "evidence_id": "E1",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "28ff0bbbaac383b5f03ef60f0709c4d19c8900304c68d20eca9496a1401b6c57",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s38787",
+            "quote": "Passage A:\nSection A of the Directions on implementation of Legal Entity Identifier (LEI) shall come into force with immediate effect.\n\nPassage B:\nSection B of the Directions on implementation of Unique Transaction Identifier (UTI) shall come into effect from January 01, 2027.",
+            "evidence_id": "E2",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "caec87abbb0ae1f1bedcb10e032fd1a57c09eea034fdc6a3d8767d411a5bf5e3",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s93142",
+            "quote": "Section A of the Directions on implementation of Legal Entity Identifier (LEI) shall come into force with immediate effect. Section B of the Directions on implementation of Unique Transaction Identifier (UTI) shall come into effect from January 01, 2027. The Master Direction was issued on March 27, 2026.",
+            "evidence_id": "E3",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "4e36f7ccc92cb0c72eb24ad3323d4f10015433ca3b8e5b94af537d7b71d8f556",
+            "verified": true
+          },
+          {
+            "doc_id": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084",
+            "section": "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s75571",
+            "quote": "UTI shall be generated / reported for all transactions in OTC derivatives market undertaken in terms of the Governing Directions. The directions shall be applicable to OTC derivative transactions entered into on or after the date the directions come into effect. Section B on UTI shall come into effect from January 01, 2027.",
+            "evidence_id": "E6",
+            "title": "RBI Master Dir master direction - reserve bank of india unique identif",
+            "effective_date": "2020-01-01",
+            "source_url": "https://huggingface.co/datasets/Rajveer-code/IndiaFinBench",
+            "source_sha256": "081c4fd8bce65ed3aae4a3a9ccc3515cd17a3f40e651cf05a8951fbb56721d9f",
+            "quote_sha256": "8ee4a19a18493cfc8024131f5734d845c74fdb6c42777606d90296802d311913",
+            "verified": true
+          }
+        ],
+        "statements": [
+          {
+            "text": "Section B on Unique Trade Identifiers (UTI) under the Reserve Bank directions starts applying from January 01, 2027.",
+            "evidence_ids": [
+              "E1",
+              "E2",
+              "E3",
+              "E6"
+            ]
+          }
+        ],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": null,
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s70231",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s38787",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s93142",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s41186",
+              "RBI_Reserve_Ba_reserve_bank_of_india_small_finance_banks_prudential_no_099#s94130",
+              "RBI_Master_Dir_master_direction_-_reserve_bank_of_india_unique_identif_084#s75571"
+            ]
+          },
+          "checks": {
+            "quotes_verbatim": true,
+            "sections_valid": true,
+            "role_allowed": true,
+            "valid_on_date": true,
+            "arithmetic_verified": null,
+            "arithmetic_receipts_withheld": 0,
+            "semantic_support": "requires_evaluation"
+          },
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 5
+            },
+            {
+              "stage": "Evidence verification",
+              "detail": "Source sections, exact quotes, permissions and effective dates checked.",
+              "ms": 1410
+            }
+          ],
+          "usage": {
+            "input_tokens": 1151,
+            "output_tokens": 60,
+            "cost_usd": 0.0005564000000000001,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "57e3c90f-9a3e-464b-b58f-724970413ff4"
+        },
+        "id": "uti-start-2",
+        "latency_ms": 1410.66,
+        "cost_usd": 0.0005564000000000001
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1151,
+        "output_tokens": 60,
+        "cost_usd": 0.0005564000000000001,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "blocked-waiver",
+      "input": {
+        "question": "How big a charge can I wipe off a Harbour loan without getting a human to approve the amount?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 5.833208000000013,
+      "response": {
+        "status": "not_permitted",
+        "answer": "You are not permitted to access the information needed to answer this question. Please contact an authorized colleague.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "access_restricted",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Access is required; no source content disclosed.",
+              "ms": 5
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "bb484481-873e-40c6-8adf-996e31825153"
+        },
+        "id": "blocked-waiver",
+        "latency_ms": 5.55,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "blocked-payment",
+      "input": {
+        "question": "Could Harbour set up a new debit three months from now, or is that too far away?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": false,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": false,
+      "elapsed_ms": 4.205625000000509,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 4
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "b557dc3e-db2f-48e5-be02-a8504f08ea69"
+        },
+        "id": "blocked-payment",
+        "latency_ms": 4.05,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "blocked-identity",
+      "input": {
+        "question": "What does a caller need to confirm before Harbour lets me make changes involving their money?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 3.7935829999996713,
+      "response": {
+        "status": "not_permitted",
+        "answer": "You are not permitted to access the information needed to answer this question. Please contact an authorized colleague.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "access_restricted",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Access is required; no source content disclosed.",
+              "ms": 4
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "0fd628a7-b904-4420-9a17-87e35a429624"
+        },
+        "id": "blocked-identity",
+        "latency_ms": 3.78,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "blocked-hardship-age",
+      "input": {
+        "question": "A Harbour borrower wants a financial difficulty arrangement. How seasoned must their loan be?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": false,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": false,
+      "elapsed_ms": 2.766125000000102,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 3
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "4a211e00-bb19-4ef8-80e2-045a54ab29b3"
+        },
+        "id": "blocked-hardship-age",
+        "latency_ms": 2.75,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "blocked-dispute-resolution",
+      "input": {
+        "question": "How quickly does Harbour have to settle a disagreement about a payment after it is raised?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 2.6687919999994847,
+      "response": {
+        "status": "not_permitted",
+        "answer": "You are not permitted to access the information needed to answer this question. Please contact an authorized colleague.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "access_restricted",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Access is required; no source content disclosed.",
+              "ms": 3
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "f22e8b89-9a7f-4745-af04-abee33052c0e"
+        },
+        "id": "blocked-dispute-resolution",
+        "latency_ms": 2.66,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "blocked-statement-address",
+      "input": {
+        "question": "I want Harbour to dispatch my account statement to a different destination. Is that allowed before updating my contact details?",
+        "role": "public",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_permitted",
+      "family": "access",
+      "variant": null,
+      "checks": {
+        "status": false,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": false,
+      "elapsed_ms": 2.8720830000002024,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for public; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 3
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "319bacba-ef11-4562-b322-4d52b225bdc4"
+        },
+        "id": "blocked-statement-address",
+        "latency_ms": 2.86,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "absent-0",
+      "input": {
+        "question": "How many days of annual leave do Harbour employees receive?",
+        "role": "legal",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_in_corpus",
+      "family": "absent",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 2.328750000000582,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for legal; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "169dcc09-c0ca-49c6-a8b1-19fc11f19900"
+        },
+        "id": "absent-0",
+        "latency_ms": 2.32,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "absent-1",
+      "input": {
+        "question": "What is the minimum CCTV retention period required for NBFC branch offices?",
+        "role": "legal",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_in_corpus",
+      "family": "absent",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 883.1804580000007,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "evidence_insufficient",
+          "retrieval": {
+            "method": "lexical",
+            "sections": [
+              "SEBI_2008_securities_and_exchange_board_of_india_intermediaries_r_076#s03537",
+              "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s52053",
+              "SEBI_1999_securities_and_exchange_board_of_india_credit_rating_ag_085#s26074",
+              "SEBI_2013_securities_and_exchange_board_of_india_investment_advis_071#s35998",
+              "SEBI_1996_securities_and_exchange_board_of_india_mutual_funds_reg_087#s91412",
+              "SEBI_2011_securities_and_exchange_board_of_india_substantial_acqu_073#s21175"
+            ]
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for legal; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Evidence retrieval",
+              "detail": "6 permitted passages selected.",
+              "ms": 2
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "The answer model found insufficient support in the retrieved excerpts. This is not proof that the full book lacks the answer.",
+              "ms": 883
+            }
+          ],
+          "usage": {
+            "input_tokens": 1060,
+            "output_tokens": 15,
+            "cost_usd": 0.000448,
+            "calls": 1,
+            "model": "gpt-4.1-mini-2025-04-14"
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "d2e3f7ae-7823-4074-9a91-46a1f4a10498"
+        },
+        "id": "absent-1",
+        "latency_ms": 883.15,
+        "cost_usd": 0.000448
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1060,
+        "output_tokens": 15,
+        "cost_usd": 0.000448,
+        "calls": 1,
+        "model": "gpt-4.1-mini-2025-04-14"
+      }
+    },
+    {
+      "id": "absent-2",
+      "input": {
+        "question": "Which medication should Harbour employees take for a headache?",
+        "role": "legal",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_in_corpus",
+      "family": "absent",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 2.725416999999652,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for legal; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 3
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "fb9a9a27-c18c-4c6f-ba64-e90cfc6c94cf"
+        },
+        "id": "absent-2",
+        "latency_ms": 2.7,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "absent-3",
+      "input": {
+        "question": "What is the capital of France?",
+        "role": "legal",
+        "as_of": "2026-09-07"
+      },
+      "expected_status": "not_in_corpus",
+      "family": "absent",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 2.8605420000003505,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2026-09-07",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for legal; effective on 2026-09-07.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 3
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "c4486400-c8f8-41c4-9242-d860424a39ab"
+        },
+        "id": "absent-3",
+        "latency_ms": 2.85,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    },
+    {
+      "id": "not-yet-effective",
+      "input": {
+        "question": "What was the maximum single fee that a Harbour agent could waive?",
+        "role": "ops",
+        "as_of": "2025-12-31"
+      },
+      "expected_status": "not_in_corpus",
+      "family": "date",
+      "variant": null,
+      "checks": {
+        "status": true,
+        "citation_integrity": true,
+        "no_disclosure": true
+      },
+      "passed": true,
+      "elapsed_ms": 2.265417000000525,
+      "response": {
+        "status": "not_in_corpus",
+        "answer": "I could not find sufficient evidence in the available policy book to answer this question. Please refer it to a policy owner.",
+        "citations": [],
+        "statements": [],
+        "calculations": [],
+        "meta": {
+          "mode": "model",
+          "as_of": "2025-12-31",
+          "corpus_version": "b122462eecf1eae132433d943ecd41cb916458751d16e8f2841c37e1052c462c",
+          "refusal_reason": "no_relevant_evidence",
+          "retrieval": {
+            "method": "lexical",
+            "sections": []
+          },
+          "checks": null,
+          "trace": [
+            {
+              "stage": "Scope & date",
+              "detail": "Access checked for ops; effective on 2025-12-31.",
+              "ms": 0
+            },
+            {
+              "stage": "Answer boundary",
+              "detail": "Search did not find sufficiently relevant evidence for this role and date; the answer model was not called.",
+              "ms": 2
+            }
+          ],
+          "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0,
+            "calls": 0,
+            "model": null
+          },
+          "indexing_ms": 30.897083999999996,
+          "cache_hit": false,
+          "trace_id": "a977bed5-b1c5-4a69-8b75-d47ad5295538"
+        },
+        "id": "not-yet-effective",
+        "latency_ms": 2.24,
+        "cost_usd": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "calls": 0,
+        "model": null
+      }
+    }
+  ]
+}

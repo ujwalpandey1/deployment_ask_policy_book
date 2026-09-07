@@ -1,0 +1,20 @@
+# Template only. Replace identity/repository/commit after creating a private repo.
+# Copy current results/manifest.json claimed values exactly when submitting.
+problem: OP-05
+handle: YOUR_GITHUB_HANDLE
+repo: https://github.com/YOUR_ACCOUNT/YOUR_PRIVATE_REPOSITORY
+commit: REPLACE_WITH_EXACT_CLEAN_COMMIT_SHA
+repo_visibility: private
+leaderboard: false
+season: 1
+pins_ack: true
+models_ack: true
+claimed:
+  coverage: 0.9832
+  citation_verbatim_rate: 1.0
+  ooc_refusal_rate: 1.0
+  detected_role_violations: 0
+spend:
+  results_usd: null # Complete metering, including judge and failed submitted runs, is pending.
+  compute_usd: null
+hardware: "macOS CPU live-model evaluation; Linux/ARM64 Docker Desktop offline smoke tested; no GPU."

@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-07",
+  "scope": "Summary of commands observed in the local Codex session, not an independent attestation.",
+  "service": {"url": "http://127.0.0.1:4600", "mode": "model", "health": "ready"},
+  "backend": {"command": "npm test", "passed": 25, "failed": 0},
+  "browser_offline": {"command": "npm run test:e2e", "passed": 8, "failed": 0, "report": "results/browser-report/index.html"},
+  "browser_live": {"command": "npm run test:e2e:live", "passed": 2, "failed": 0, "report": "results/live-browser-report/index.html"},
+  "corpus": {"command": "npm run verify:data", "files_verified": 51},
+  "freshness": {"command": "npm run rehearse", "passed": true, "report": "results/freshness_rehearsal.json"},
+  "container": {"command": "npm run test:container", "passed": true, "checks": 8, "report": "results/container-smoke.json"},
+  "load": {"command": "npm run benchmark", "requests": 146, "concurrency": 12, "errors": 0, "cache_hits": 0, "p95_ms": 2684.5791249999997, "report": "results/latency_bench.json"},
+  "development": {"run_id": "dev-model-hybrid-2026-09-07T11-02-31-140Z", "questions": 146, "errors": 0, "judge_calls": 292, "judge_errors": 0, "report": "results/report_dev.json"},
+  "heldout": {"run_id": "heldout-model-hybrid-2026-09-07T11-08-37-017Z", "questions": 272, "unique_ids": 272, "errors": 0, "score": null, "predictions": "results/answers.jsonl"},
+  "qualification": "not_established",
+  "remaining": ["Contradiction accuracy below target", "Access-refusal rate below target and semantic disclosure review incomplete", "Mean development input tokens above target", "Private held-out and freshness scoring", "Independent complete cost and matched-load Linux model measurements"]
+}

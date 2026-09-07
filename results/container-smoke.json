@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    "readiness",
+    "non-root user",
+    "no credentials or gold in image",
+    "read-only application",
+    "runner authentication",
+    "exact cited answer",
+    "role refusal",
+    "public catalog isolation"
+  ],
+  "platform": "linux",
+  "arch": "arm64",
+  "node": "v22.14.0",
+  "timestamp": "2026-09-07T11:50:58.004Z",
+  "duration_ms": 2526,
+  "image_id": "sha256:4cda148cb8c9550d32a8795d202b67b51e19194199f2e274c7b7922402304def",
+  "isolation": {
+    "network": "none",
+    "read_only": true,
+    "memory_bytes": 268435456,
+    "cpu_nanos": 1000000000
+  },
+  "scope": "Offline Linux container smoke test under Docker Desktop; not independent model-load qualification. No API key enters the container."
+}

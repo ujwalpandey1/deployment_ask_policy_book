@@ -1,0 +1,8 @@
+{
+  "source": "https://github.com/Deployment-inc/Deployment.inc-Hiring-Problems",
+  "commit": "d87699bb97de6504b33f681eed66918a4d433ba0",
+  "release": "season-1-2026-09-07",
+  "release_sha256": "2748064afacbfda95641068c61e6fdb54d1eb5da895722306ee990085a5345dc",
+  "files_verified": 51,
+  "note": "Upstream corpus, questions, scorer and documentation preserved byte-for-byte. Runtime reads only the corpus."
+}
